@@ -1,52 +1,42 @@
-import type {ReactNode} from 'react';
+import type { ReactNode } from 'react';
 import clsx from 'clsx';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
+import { 
+  CubeTransparentIcon, 
+  ShieldCheckIcon, 
+  LightBulbIcon 
+} from '@heroicons/react/24/outline';
 
 type FeatureItem = {
   title: string;
-  Svg: React.ComponentType<React.ComponentProps<'svg'>>;
+  Icon: React.ComponentType<React.SVGProps<SVGSVGElement>>; // Ensures proper typing
   description: ReactNode;
 };
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
-    description: (
-      <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
-      </>
-    ),
+    title: 'Easier',
+    Icon: CubeTransparentIcon, // Pass the component, not an instance
+    description: <>Experience a seamless and intuitive interface designed for effortless use.</>,
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
-    description: (
-      <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
-      </>
-    ),
+    title: 'Safer',
+    Icon: ShieldCheckIcon,
+    description: <>Enjoy full control of your assets with self-custody and complete transparency.</>,
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
-    description: (
-      <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
-      </>
-    ),
+    title: 'Smarter',
+    Icon: LightBulbIcon,
+    description: <>Leverage expert insights and proven strategies to make informed financial decisions.</>,
   },
 ];
 
-function Feature({title, Svg, description}: FeatureItem) {
+function Feature({ title, Icon, description }: FeatureItem) {
   return (
     <div className={clsx('col col--4')}>
-      <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
+      <div className="text--center h-20 flex justify-center items-center">
+        <Icon className="w-10 h-10 text-gray-400" style={{ maxWidth: '100px', maxHeight: '100px' }} /> 
       </div>
       <div className="text--center padding-horiz--md">
         <Heading as="h3">{title}</Heading>
@@ -56,10 +46,12 @@ function Feature({title, Svg, description}: FeatureItem) {
   );
 }
 
+
+
 export default function HomepageFeatures(): ReactNode {
   return (
     <section className={styles.features}>
-      <div className="container">
+      <div className="container flex justify-center items-center">
         <div className="row">
           {FeatureList.map((props, idx) => (
             <Feature key={idx} {...props} />

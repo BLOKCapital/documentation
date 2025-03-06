@@ -20,8 +20,10 @@ const config: Config = {
 
   // i18n: {
   //   defaultLocale: 'en',
-  //   locales: ['en', 'fr', 'es'], 
+  //   locales: ['en', 'fr', 'es'],
+
   // },
+  plugins: [require.resolve("docusaurus-lunr-search")],
 
   presets: [
     [

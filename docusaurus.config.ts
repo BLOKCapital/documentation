@@ -18,10 +18,12 @@ const config: Config = {
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
 
-  // i18n: {
-  //   defaultLocale: 'en',
-  //   locales: ['en', 'fr', 'es'], 
-  // },
+  i18n: {
+    defaultLocale: 'en',
+    locales: ['en', 'es'],
+
+  },
+  plugins: [require.resolve("docusaurus-lunr-search")],
 
   presets: [
     [
@@ -64,10 +66,10 @@ const config: Config = {
           position: "left",
           label: "Documentation",
         },
-        // {
-        //   type: 'localeDropdown', // This enables the language switcher
-        //   position: 'right',
-        // },
+        {
+          type: 'localeDropdown', // This enables the language switcher
+          position: 'right',
+        },
         {
           href: "https://github.com/BLOKCapital/documentation",
           label: "GitHub",

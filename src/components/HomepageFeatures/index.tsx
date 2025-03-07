@@ -7,30 +7,14 @@ import {
   ShieldCheckIcon, 
   LightBulbIcon 
 } from '@heroicons/react/24/outline';
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext'; // Import to get locale
+import translations from '../../data/translations.json'; // Adjust path as needed
 
 type FeatureItem = {
   title: string;
-  Icon: React.ComponentType<React.SVGProps<SVGSVGElement>>; // Ensures proper typing
-  description: ReactNode;
+  Icon: React.ComponentType<React.SVGProps<SVGSVGElement>>;
+  description: string; // Changed to string since translations are plain text
 };
-
-const FeatureList: FeatureItem[] = [
-  {
-    title: 'Easier',
-    Icon: CubeTransparentIcon, // Pass the component, not an instance
-    description: <>Experience a seamless and intuitive interface designed for effortless use.</>,
-  },
-  {
-    title: 'Safer',
-    Icon: ShieldCheckIcon,
-    description: <>Enjoy full control of your assets with self-custody and complete transparency.</>,
-  },
-  {
-    title: 'Smarter',
-    Icon: LightBulbIcon,
-    description: <>Leverage expert insights and proven strategies to make informed financial decisions.</>,
-  },
-];
 
 function Feature({ title, Icon, description }: FeatureItem) {
   return (
@@ -46,14 +30,34 @@ function Feature({ title, Icon, description }: FeatureItem) {
   );
 }
 
-
-
 export default function HomepageFeatures(): ReactNode {
+  const { i18n } = useDocusaurusContext(); // Get current locale
+  const currentLocale = i18n.currentLocale; // e.g., 'en' or 'es'
+  
+  // Load features based on the current locale, fallback to 'en' if locale not found
+  const featureList: FeatureItem[] = [
+    {
+      title: translations[currentLocale]?.features[0]?.title || translations['en'].features[0].title,
+      Icon: CubeTransparentIcon,
+      description: translations[currentLocale]?.features[0]?.description || translations['en'].features[0].description,
+    },
+    {
+      title: translations[currentLocale]?.features[1]?.title || translations['en'].features[1].title,
+      Icon: ShieldCheckIcon,
+      description: translations[currentLocale]?.features[1]?.description || translations['en'].features[1].description,
+    },
+    {
+      title: translations[currentLocale]?.features[2]?.title || translations['en'].features[2].title,
+      Icon: LightBulbIcon,
+      description: translations[currentLocale]?.features[2]?.description || translations['en'].features[2].description,
+    },
+  ];
+
   return (
     <section className={styles.features}>
       <div className="container flex justify-center items-center">
         <div className="row">
-          {FeatureList.map((props, idx) => (
+          {featureList.map((props, idx) => (
             <Feature key={idx} {...props} />
           ))}
         </div>

@@ -1,0 +1,14 @@
+{
+    "startDocumentation": {
+      "message": "Iniciar Documentación",
+      "description": "Text for the button linking to the intro documentation page"
+    },
+    "helloFrom": {
+      "message": "Hola desde {title}",
+      "description": "Title template for the homepage layout"
+    },
+    "metaDescription": {
+      "message": "Descripción irá en una metaetiqueta en <head />",
+      "description": "Meta description for the homepage"
+    }
+  }

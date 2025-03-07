@@ -1,0 +1,44 @@
+{
+    "en": {
+      "homepage": {
+        "startDocumentation": "Start Documentation",
+        "helloFrom": "Hello from {title}",
+        "metaDescription": "Description will go into a meta tag in <head />"
+      },
+      "features": [
+        {
+          "title": "Easier",
+          "description": "Experience a seamless and intuitive interface designed for effortless use."
+        },
+        {
+          "title": "Safer",
+          "description": "Enjoy full control of your assets with self-custody and complete transparency."
+        },
+        {
+          "title": "Smarter",
+          "description": "Leverage expert insights and proven strategies to make informed financial decisions."
+        }
+      ]
+    },
+    "es": {
+      "homepage": {
+        "startDocumentation": "Iniciar Documentación",
+        "helloFrom": "Hola desde {title}",
+        "metaDescription": "Descripción irá en una metaetiqueta en <head />"
+      },
+      "features": [
+        {
+          "title": "Más Fácil",
+          "description": "Experimenta una interfaz fluida e intuitiva diseñada para un uso sin esfuerzo."
+        },
+        {
+          "title": "Más Seguro",
+          "description": "Disfruta del control total de tus activos con autocustodia y transparencia completa."
+        },
+        {
+          "title": "Más Inteligente",
+          "description": "Aprovecha conocimientos expertos y estrategias probadas para tomar decisiones financieras informadas."
+        }
+      ]
+    }
+  }

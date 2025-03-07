@@ -1,0 +1,26 @@
+{
+    "feature.easier.title": {
+      "message": "Más Fácil",
+      "description": "Title for the 'Easier' feature on the homepage"
+    },
+    "feature.easier.description": {
+      "message": "Experimenta una interfaz fluida e intuitiva diseñada para un uso sin esfuerzo.",
+      "description": "Description for the 'Easier' feature on the homepage"
+    },
+    "feature.safer.title": {
+      "message": "Más Seguro",
+      "description": "Title for the 'Safer' feature on the homepage"
+    },
+    "feature.safer.description": {
+      "message": "Disfruta del control total de tus activos con autocustodia y transparencia completa.",
+      "description": "Description for the 'Safer' feature on the homepage"
+    },
+    "feature.smarter.title": {
+      "message": "Más Inteligente",
+      "description": "Title for the 'Smarter' feature on the homepage"
+    },
+    "feature.smarter.description": {
+      "message": "Aprovecha conocimientos expertos y estrategias probadas para tomar decisiones financieras informadas.",
+      "description": "Description for the 'Smarter' feature on the homepage"
+    }
+  }

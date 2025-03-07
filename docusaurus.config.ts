@@ -7,11 +7,9 @@ const config: Config = {
   tagline: "BLOK Capital",
   favicon: "img/blokclogo.svg",
 
-  // Set the production URL of your site
   url: "https://blokcapital.pages.dev",
   baseUrl: "/",
 
-  // GitHub pages deployment config
   organizationName: "BLOKCapital",
   projectName: "documentation",
 
@@ -19,9 +17,8 @@ const config: Config = {
   onBrokenMarkdownLinks: "warn",
 
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en', 'es'],
-
+    defaultLocale: "en",
+    locales: ["en", "es"],
   },
   plugins: [require.resolve("docusaurus-lunr-search")],
 
@@ -67,13 +64,14 @@ const config: Config = {
           label: "Documentation",
         },
         {
-          type: 'localeDropdown', // This enables the language switcher
-          position: 'right',
-        },
-        {
-          href: "https://github.com/BLOKCapital/documentation",
-          label: "GitHub",
+          type: "localeDropdown",
           position: "right",
+          dropdownItemsAfter: [
+            {
+              label: "Help us translate",
+              href: "https://github.com/BLOKCapital/documentation/issues", // Replace with your translation platform link
+            },
+          ],
         },
       ],
     },

@@ -1,3 +1,6 @@
+---
+sidebar_position: 11    
+---
 The aim of BLOK Capital is to enable financial inclusivity by enabling all walks of life to have access to the services of expert wealth managers but, at the same time, always have custody of their funds.
 
 It is clear following the demise of exchanges like FTX that we need more protocols that run on the blockchain as a DAO. In this way investors can be sure their funds are not being managed in any way by a centralized authority or CeFi.

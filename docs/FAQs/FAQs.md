@@ -1,3 +1,7 @@
+---
+sidebar_position: 12    
+---
+
 ### How does BLOK Capital work?
 BLOK Capital enables investors to maintain full control of their crypto assets while allowing wealth managers(Gardeners) to manage these assets under predefined terms set via smart contracts. Investors' assets remain in their personal smart wallets, and wealth managers are granted permission to trade or swap assets without the ability to transfer them out, ensuring security and transparency.
 

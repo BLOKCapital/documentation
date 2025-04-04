@@ -1,6 +1,7 @@
 ---
-sidebar_position: 8
+sidebar_position: 1
 ---
+# Governance & Voting in BLOKC DAO
 
 BLOK Capital will be a pure DAO (Decentralized Autonomous Organization) and governed by the community with a flat hierarchical structure, a true on-chain Blockchain Organisation.
 

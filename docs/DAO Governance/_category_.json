@@ -1,0 +1,8 @@
+{
+  "label": "DAO Governance",
+  "position": 8,
+  "link": {
+    "type": "generated-index",
+    "description": "In the following section, we will dive deeper into the operations of BLOKC DAO, exploring its governance structure, voting mechanisms, and the role of smart contracts in facilitating on-chain decision-making."
+  }
+}

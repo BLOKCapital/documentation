@@ -1,41 +1,91 @@
-# Website
+# Docusaurus Project with Multi-Language & Lunr Search
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+This project is built using [Docusaurus](https://docusaurus.io/) with multi-language support and the `docusaurus-lunr-search` plugin for search functionality.
 
-### Installation
+## How to Start
 
-```
-$ yarn
-```
-
-### Local Development
-
-```
-$ yarn start
+### Clone the Repository
+```sh
+git clone <your-repo-url>
+cd <your-repo-name>
 ```
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
-
-### Build
-
-```
-$ yarn build
-```
-
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
-
-### Deployment
-
-Using SSH:
-
-```
-$ USE_SSH=true yarn deploy
+### Install Dependencies
+```sh
+yarn install
+# or
+npm install
 ```
 
-Not using SSH:
-
+### Start Development Server
+To start the project with the default language:
+```sh
+yarn start
+# or
+npm run start
 ```
-$ GIT_USER=<Your GitHub username> yarn deploy
+
+### Running a Specific Language
+If you are using multiple languages and want to run only one language, use:
+```sh
+yarn start --locale <language-code>
+# Example:
+yarn start --locale en
 ```
 
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+## Configuration
+
+### Multi-Language Support
+Modify `docusaurus.config.js` to enable internationalization (i18n):
+
+```js
+module.exports = {
+  i18n: {
+    defaultLocale: 'en',
+    locales: ['en', 'fr', 'es'], // Add your languages here
+    localeConfigs: {
+      en: { label: 'English' },
+      fr: { label: 'Français' },
+      es: { label: 'Español' },
+    },
+  },
+};
+```
+
+### Add Lunr Search
+Install the search plugin:
+```sh
+yarn add docusaurus-lunr-search
+# or
+npm install docusaurus-lunr-search
+```
+
+Modify `docusaurus.config.js` to include the plugin:
+```js
+module.exports = {
+  plugins: [
+    [require.resolve("@cmfcmf/docusaurus-search-local"), {
+      indexDocs: true,
+      indexBlog: true,
+      indexPages: true,
+      language: ["en", "fr", "es"],
+    }],
+  ],
+};
+```
+
+### Run Local Search
+To use Lunr search locally, build the search index:
+```sh
+yarn build
+yarn serve
+# or
+npm run build
+npm run serve
+```
+
+## Deployment
+You can deploy your Docusaurus site to GitHub Pages, Vercel, Netlify, or any static hosting provider. Follow the [official deployment guide](https://docusaurus.io/docs/deployment).
+
+## License
+This project is licensed under the [MIT License](LICENSE).

@@ -10,7 +10,7 @@ import translations from '../data/translations.json'; // Adjust path as needed
 
 function HomepageHeader() {
   const {siteConfig, i18n} = useDocusaurusContext();
-  const currentLocale = i18n.currentLocale; // 'en' or 'es'
+  const currentLocale = i18n.currentLocale; // 'en', 'es', or 'fr'
   const t = translations[currentLocale]?.homepage || translations['en'].homepage; // Fallback to English
 
   return (
@@ -35,7 +35,7 @@ function HomepageHeader() {
 
 export default function Home(): ReactNode {
   const {siteConfig, i18n} = useDocusaurusContext();
-  const currentLocale = i18n.currentLocale; // 'en' or 'es'
+  const currentLocale = i18n.currentLocale; // 'en', 'es', or 'fr'
   const t = translations[currentLocale]?.homepage || translations['en'].homepage; // Fallback to English
 
   return (

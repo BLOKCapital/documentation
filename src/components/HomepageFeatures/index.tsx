@@ -7,13 +7,13 @@ import {
   ShieldCheckIcon, 
   LightBulbIcon 
 } from '@heroicons/react/24/outline';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext'; // Import to get locale
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import translations from '../../data/translations.json'; // Adjust path as needed
 
 type FeatureItem = {
   title: string;
   Icon: React.ComponentType<React.SVGProps<SVGSVGElement>>;
-  description: string; // Changed to string since translations are plain text
+  description: string;
 };
 
 function Feature({ title, Icon, description }: FeatureItem) {
@@ -31,8 +31,8 @@ function Feature({ title, Icon, description }: FeatureItem) {
 }
 
 export default function HomepageFeatures(): ReactNode {
-  const { i18n } = useDocusaurusContext(); // Get current locale
-  const currentLocale = i18n.currentLocale; // e.g., 'en' or 'es'
+  const { i18n } = useDocusaurusContext();
+  const currentLocale = i18n.currentLocale; // 'en', 'es', or 'fr'
   
   // Load features based on the current locale, fallback to 'en' if locale not found
   const featureList: FeatureItem[] = [

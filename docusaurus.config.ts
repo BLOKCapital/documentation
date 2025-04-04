@@ -18,7 +18,7 @@ const config: Config = {
 
   i18n: {
     defaultLocale: "en",
-    locales: ["en", "es"],
+    locales: ['en', 'es', 'fr'], // Add 'fr' here
   },
   plugins: [require.resolve("docusaurus-lunr-search")],
 

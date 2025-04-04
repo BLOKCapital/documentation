@@ -40,5 +40,26 @@
           "description": "Aprovecha conocimientos expertos y estrategias probadas para tomar decisiones financieras informadas."
         }
       ]
+    },
+    "fr": {
+      "homepage": {
+        "startDocumentation": "Commencer la Documentation",
+        "helloFrom": "Bonjour de {title}",
+        "metaDescription": "La description ira dans une balise meta dans <head />"
+      },
+      "features": [
+        {
+          "title": "Plus Facile",
+          "description": "Découvrez une interface fluide et intuitive conçue pour une utilisation sans effort."
+        },
+        {
+          "title": "Plus Sûr",
+          "description": "Profitez d’un contrôle total de vos actifs avec une auto-garde et une transparence complète."
+        },
+        {
+          "title": "Plus Intelligent",
+          "description": "Tirez parti des insights d’experts et de stratégies éprouvées pour prendre des décisions financières éclairées."
+        }
+      ]
     }
   }

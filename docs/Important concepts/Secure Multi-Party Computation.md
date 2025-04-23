@@ -1,7 +1,4 @@
-# Secure Multi-Party Computation (MPC)
-
-
-## 🔐 Secure Multi-Party Computation (MPC)
+# 🔐 Secure Multi-Party Computation (MPC)
 
 At BLOK Capital, we use Secure Multi-Party Computation (MPC) to keep your crypto secure—without needing a traditional private key or seed phrase.
 

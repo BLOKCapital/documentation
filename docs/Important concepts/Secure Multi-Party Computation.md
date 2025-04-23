@@ -1,23 +1,29 @@
 # Secure Multi-Party Computation (MPC)
 
-**Secure Multi-Party Computation (MPC)** is a subfield of cryptography that enables multiple parties to jointly compute a function over their inputs while keeping those inputs private. This means participants can collaborate to achieve a common computational goal without revealing their individual data to each other or any third party. 
 
-**Key Properties of MPC**:
+## 🔐 Secure Multi-Party Computation (MPC)
 
-1. **Input Privacy**: No information about the private data held by the parties can be inferred from the messages sent during the execution of the protocol. The only information that can be inferred about the private data is whatever could be inferred from seeing the output of the function alone.
+At BLOK Capital, we use Secure Multi-Party Computation (MPC) to keep your crypto secure—without needing a traditional private key or seed phrase.
 
-2. **Correctness**: Any proper subset of adversarial colluding parties willing to share information or deviate from the instructions during the protocol execution should not be able to force honest parties to output an incorrect result. This correctness goal comes in two flavors: either the honest parties are guaranteed to compute the correct output (a "robust" protocol), or they abort if they find an error (an MPC protocol "with abort").
+### What is MPC?
 
-**Applications of MPC**:
-MPC has a wide range of practical applications, including:
+MPC is a way for different computers or parties to work together to approve something—like a transaction—without anyone ever seeing or holding the full private key. Instead, the key is broken into smaller parts (called *shares*) and kept in different places. Only when enough of these parts come together can the action be completed.
 
-1. **Electronic Voting**: Ensuring that votes are tallied correctly without revealing individual votes.
-2. **Private Set Intersection**: Allowing two parties to compute the intersection of their datasets without revealing any other information.
-3. **Privacy-Preserving Data Mining**: Enabling organizations to collaboratively analyze data without exposing sensitive information.
+This means no single person or device ever has the full key, making it much harder for anyone to steal your crypto.
 
-**Simple Example**:
-Imagine three friends—Alice, Bob, and Charlie—who want to determine the highest salary among them without disclosing their actual earnings. Using MPC, they can compute the maximum salary without any of them learning the specific amounts that the others earn. 
+### Why We Use It ?
 
-**Applications in Cryptocurrency Wallets**:
-In the context of cryptocurrency wallets, MPC enhances security by distributing the control of private keys among multiple parties. This means that no single entity possesses the complete private key, reducing the risk of theft or loss. For instance, an MPC wallet might split the private key into several parts, requiring a predefined number of these parts to authorize a transaction. This approach ensures that even if one part is compromised, unauthorized transactions cannot occur without the necessary threshold of key shares. 
-By leveraging MPC, cryptocurrency wallets can offer enhanced security features, making them more resilient against hacks and unauthorized access.
+Traditional wallets use a single private key or seed phrase. If someone loses it or it gets stolen, their funds are at risk. With MPC, that risk is removed because there’s **no single key to lose or steal**.
+
+Here’s how it helps:
+- **No single point of failure**: Your key is never stored in one place.
+- **Safer transactions**: A transaction only goes through when enough parts of the key work together.
+- **Proven security**: This same technology is used by major crypto companies—and now BLOK Capital uses it to make decentralized systems safer for everyone.
+
+### How It Works at BLOK Capital?
+
+We use MPC behind the scenes in key parts of our platform—from authorizing transactions to managing DAO actions. It helps us offer stronger protection and more reliable systems, while still keeping things simple for our users.
+
+With MPC, BLOK Capital combines top-tier security with a smooth experience—no seed phrases, no risky backups, just safe and secure crypto interaction.
+
+

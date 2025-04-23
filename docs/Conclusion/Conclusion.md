@@ -1,5 +1,5 @@
 ---
-sidebar_position: 13    
+sidebar_position: 15    
 ---
 The aim of BLOK Capital is to enable financial inclusivity by enabling all walks of life to have access to the services of expert wealth managers but, at the same time, always have custody of their funds.
 

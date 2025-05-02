@@ -31,3 +31,16 @@
   --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.2);
 }
 
+.footer {
+  background: linear-gradient(to bottom, #F6F3E8 80%, #BFBDB1 100%) !important;
+  color: black !important;
+}
+
+/* Optional: make links in the footer black too */
+.footer a  {
+  color: black !important;
+}
+
+.footer__title {
+  color: black !important;
+}

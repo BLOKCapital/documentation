@@ -6,41 +6,69 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #3399ff;
-  /* --ifm-color-primary-dark: #006bb3;
+  --ifm-color-primary: #004eba;
+  --ifm-color-primary-dark: #006bb3;
   --ifm-color-primary-darker: #0061a3;
   --ifm-color-primary-darkest: #004f85;
   --ifm-color-primary-light: #0088e6;
   --ifm-color-primary-lighter: #1996f0;
-  --ifm-color-primary-lightest: #335efa; */
+  --ifm-color-primary-lightest: #335efa;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
 
-
-
 /* For readability concerns, you should choose a lighter palette in dark mode. */
-[data-theme='dark'] {
-  --ifm-color-primary: #7DD2FD;
-  /* --ifm-color-primary-dark: #2e8ceb;
+html[data-theme="dark"] {
+  --ifm-color-primary: #3399ff;
+  --ifm-color-primary-dark: #2e8ceb;
   --ifm-color-primary-darker: #2a81db;
   --ifm-color-primary-darkest: #2369b3;
   --ifm-color-primary-light: #4da6ff;
   --ifm-color-primary-lighter: #66b3ff;
-  --ifm-color-primary-lightest: #80c1ff; */
+  --ifm-color-primary-lightest: #80c1ff;
   --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.2);
 }
 
+/* Light mode footer styles (default) */
 .footer {
-  background: linear-gradient(to bottom, #F6F3E8 80%, #BFBDB1 100%) !important;
+  background: linear-gradient(to bottom, #f6f3e8 80%, #bfbdb1 100%) !important;
   color: black !important;
 }
 
-/* Optional: make links in the footer black too */
-.footer a  {
+.footer a {
   color: black !important;
 }
 
 .footer__title {
   color: black !important;
+}
+
+/* Dark mode footer styles */
+html[data-theme="dark"] .footer {
+  background-color: #303846 !important;
+  background-image: none !important; /* removes light gradient */
+  color: white !important;
+}
+
+html[data-theme="dark"] .footer a {
+  color: white !important;
+}
+
+html[data-theme="dark"] .footer__title {
+  color: white !important;
+}
+
+
+/* Light mode title color */
+.markdown h1,
+.markdown h2,
+.markdown h3 {
+  color: #004eba; /* your desired color for light mode */
+}
+
+/* Dark mode title color */
+html[data-theme='dark'] .markdown h1,
+html[data-theme='dark'] .markdown h2,
+html[data-theme='dark'] .markdown h3 {
+  color: #3399ff; /* your desired color for dark mode */
 }

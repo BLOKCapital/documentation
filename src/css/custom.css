@@ -72,3 +72,35 @@ html[data-theme='dark'] .markdown h2,
 html[data-theme='dark'] .markdown h3 {
   color: #3399ff; /* your desired color for dark mode */
 }
+
+
+
+html[data-theme='light'] .menu__link:hover {
+  background-color: #F6F3E8;
+ 
+}
+
+html[data-theme='light'] .menu__link--active {
+  background-color: #F6F3E8;  /* same as hover */
+  color: #003366;             /* optional: your preferred text color */
+}
+/* Base sidebar link styles on hover and active */
+html[data-theme='light'] .menu__link:hover,
+html[data-theme='light'] .menu__link--active {
+  background-color: #F6F3E8; /* light blue background */
+  color: #003366;            /* deep blue text */
+ 
+}
+
+/* Expandable category button: on hover and when open */
+html[data-theme='light'] .menu__link--sublist:hover,
+html[data-theme='light'] .menu__link--sublist[aria-expanded='true'] {
+  background-color: #F6F3E8;
+  color: #003366;
+
+}
+
+/* Optional: indentation for nested items (submenus) */
+html[data-theme='light'] .menu__list .menu__list {
+  padding-left: 1rem; /* indent submenus */
+}

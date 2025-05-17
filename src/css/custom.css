@@ -30,3 +30,10 @@
   --ifm-color-primary-lightest: #80c1ff;
   --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.2);
 }
+
+.brand-link {
+  color: var(--ifm-color-primary-darker);
+  font-weight: bold;
+  text-decoration: none; 
+}
+

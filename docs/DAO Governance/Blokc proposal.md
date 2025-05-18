@@ -9,6 +9,8 @@ At BLOKC, we’re redefining decentralized governance by building a robust and m
 ### Why Aragon?
 Aragon provides a powerful and flexible toolkit for building modular DAOs, allowing us to create a governance system that adapts to the evolving needs of our ecosystem. With Aragon’s battle-tested infrastructure, we ensure secure and autonomous governance that aligns with the principles of decentralization.
 
+![Alt text](/img/daoProposal.png)
+
 ### The BLOKC Proposal System: Power in Your Hands
 Our proposal system is the heartbeat of the BLOKC ecosystem, designed to make governance simple yet impactful. Here’s what it brings to the table:
 

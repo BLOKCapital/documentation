@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+sidebar_position: 2
 ---
 
 We see a future where holders of Cryptoassets will want to connect and engage with asset managers to grow their wealth without having to release custody of their funds to anyone. Our BLOK Capital DAO will ensure that not only will this be possible, but it will be transparent and cut out all the middle men, thereby reducing unnecessary fees and leave the Investor in total control and ownership with complete visibility of their wealth each second or as they wish.

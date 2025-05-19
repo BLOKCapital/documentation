@@ -17,10 +17,8 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
 
-
-
 /* For readability concerns, you should choose a lighter palette in dark mode. */
-[data-theme='dark'] {
+html[data-theme="dark"] {
   --ifm-color-primary: #3399ff;
   --ifm-color-primary-dark: #2e8ceb;
   --ifm-color-primary-darker: #2a81db;
@@ -31,6 +29,81 @@
   --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.2);
 }
 
+/* Light mode footer styles (default) */
+.footer {
+  background: linear-gradient(to bottom, #f6f3e8 80%, #bfbdb1 100%) !important;
+  color: black !important;
+}
+
+.footer a {
+  color: black !important;
+}
+
+.footer__title {
+  color: black !important;
+}
+
+/* Dark mode footer styles */
+html[data-theme="dark"] .footer {
+  background-color: #303846 !important;
+  background-image: none !important; /* removes light gradient */
+  color: white !important;
+}
+
+html[data-theme="dark"] .footer a {
+  color: white !important;
+}
+
+html[data-theme="dark"] .footer__title {
+  color: white !important;
+}
+
+
+/* Light mode title color */
+.markdown h1,
+.markdown h2,
+.markdown h3 {
+  color: #004eba; /* your desired color for light mode */
+}
+
+/* Dark mode title color */
+html[data-theme='dark'] .markdown h1,
+html[data-theme='dark'] .markdown h2,
+html[data-theme='dark'] .markdown h3 {
+  color: #3399ff; /* your desired color for dark mode */
+}
+
+
+
+html[data-theme='light'] .menu__link:hover {
+  background-color: #F6F3E8;
+ 
+}
+
+html[data-theme='light'] .menu__link--active {
+  background-color: #F6F3E8;  /* same as hover */
+  color: #003366;             /* optional: your preferred text color */
+}
+/* Base sidebar link styles on hover and active */
+html[data-theme='light'] .menu__link:hover,
+html[data-theme='light'] .menu__link--active {
+  background-color: #F6F3E8; /* light blue background */
+  color: #003366;            /* deep blue text */
+ 
+}
+
+/* Expandable category button: on hover and when open */
+html[data-theme='light'] .menu__link--sublist:hover,
+html[data-theme='light'] .menu__link--sublist[aria-expanded='true'] {
+  background-color: #F6F3E8;
+  color: #003366;
+
+}
+
+/* Optional: indentation for nested items (submenus) */
+html[data-theme='light'] .menu__list .menu__list {
+  padding-left: 1rem; /* indent submenus */
+}
 .brand-link {
   color: var(--ifm-color-primary-darker);
   font-weight: bold;

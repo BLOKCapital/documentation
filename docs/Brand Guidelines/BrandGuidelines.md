@@ -1,8 +1,8 @@
 ---
-sidebar_position: 13
+sidebar_position: 1
 ---
 
-# Brand Guidelines
+# Color Pallete
 
 At BLOK Capital, our color palette is carefully curated to reflect both our technological innovation and our community-first approach. Each color has been chosen with intentional symbolism, supporting our brand narrative and enhancing visual coherence across all platforms.
 

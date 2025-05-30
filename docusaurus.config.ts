@@ -18,16 +18,14 @@ const config: Config = {
 
   i18n: {
     defaultLocale: "en",
-    locales: ['en', 'es', 'fr'], // Add 'fr' here
+    locales: ["en", "es", "fr"], // Add 'fr' here
   },
-  plugins: [require.resolve("docusaurus-lunr-search")],
-
   presets: [
     [
       "@docusaurus/preset-classic",
       {
         docs: {
-          sidebarPath: require.resolve("./sidebars.ts"),
+          sidebarPath: require.resolve("./sidebar/sidebars.ts"),
           routeBasePath: "/",
         },
         blog: {
@@ -47,6 +45,40 @@ const config: Config = {
     ],
   ],
 
+  plugins: [
+    [
+      "docusaurus-lunr-search", // if you're using it
+      {},
+    ],
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "educ",
+        path: "educ-docs",
+        routeBasePath: "educ",
+        sidebarPath: require.resolve("./sidebar/sidebars-educ.ts"),
+      },
+    ],
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "builders",
+        path: "builders-docs",
+        routeBasePath: "builders",
+        sidebarPath: require.resolve("./sidebar/sidebars-builders.ts"),
+      },
+    ],
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "resources",
+        path: "resources-docs",
+        routeBasePath: "resources",
+        sidebarPath: require.resolve("./sidebar/sidebars-resources.ts"),
+      },
+    ],
+  ],
+
   themeConfig: {
     image: "img/docusaurus-social-card.jpg",
     navbar: {
@@ -63,6 +95,21 @@ const config: Config = {
           position: "left",
           label: "Documentation",
         },
+        {
+          to: "/educ/intro",
+          label: "Education",
+          position: "left",
+        },
+        {
+        to: '/builders/intro',
+        label: 'Builders',
+        position: 'left',
+      },
+      {
+        to: '/resources/intro',
+        label: 'Resources',
+        position: 'left',
+      },
         {
           type: "localeDropdown",
           position: "right",

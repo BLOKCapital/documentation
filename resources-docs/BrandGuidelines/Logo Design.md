@@ -1,38 +1,7 @@
 ---
-sidebar_position: 13
+sidebar_position: 2
 ---
-
-# Brand Guidelines
-
-At BLOK Capital, our color palette is carefully curated to reflect both our technological innovation and our community-first approach. Each color has been chosen with intentional symbolism, supporting our brand narrative and enhancing visual coherence across all platforms.
-
-Our visual identity bridges the world of blockchain with the elegance of being easier, safer, and smarter. The use of colors in our illustrations, UI elements, and overall website design aims to express this balance, creating an environment that feels secure, vibrant, and forward-thinking.
- 
-## **The Palette**
-
-Our color palette is built to resonate with our core values and design philosophy. Each color plays a strategic role across our interface, illustrations, and brand communication.
-
-| Color       | Hex      | Preview                                | Meaning & Usage |
-|-------------|----------|----------------------------------------|-----------------|
-| Sky Blue    | `#7DD2FD` | <div style={{backgroundColor: '#7DD2FD', width: '70px', height: '40px', borderRadius: '4px', border: '1px solid #ccc'}}></div> | Rooted in our brand logo, this refreshing blue represents clarity, vision, and trust. It anchors our visual identity and is prominently used in UI highlights,, and focal illustration elements. |
-| Lime Green  | `#7ED116` | <div style={{backgroundColor: '#7ED116', width: '70px', height: '40px', borderRadius: '4px', border: '1px solid #ccc'}}></div> | Inspired by our internal metaphor of BLOK as a garden, this vibrant green represents organic growth, sustainability, and progressive thinking. Commonly used in illustrations to convey action and momentum. |
-| Neutral Linen   | `#F6F3E8` | <div style={{backgroundColor: '#F6F3E8', width: '70px', height: '40px', borderRadius: '4px', border: '1px solid #ccc'}}></div> | A gentle neutral that adds calm and balance. Ideal for backgrounds, layouts, or secondary shapes, it provides depth without competing for attention. |
-| Coral Red   | `#EC464D` | <div style={{backgroundColor: '#EC464D',width: '70px', height: '40px', borderRadius: '4px', border: '1px solid #ccc'}}></div> | Bold and expressive, this color is used sparingly to draw attention. Whether highlighting a button or emphasizing narrative moments, it introduces emotion, urgency, and warmth. |
-| Earth Brown | `#844947` | <div style={{backgroundColor: '#844947', width: '70px', height: '40px', borderRadius: '4px', border: '1px solid #ccc'}}></div> | A grounding tone symbolizing stability, trust, and maturity. It is typically used in outlines, shadows, or visual support elements to reinforce contrast and structural consistency. |
-
-
-### Why This Palette Works
-
-This palette is modern, modular, and meaningful. Each color aligns with a part of our identity:
-
-- **Sky Blue**: Our foundation, inspired by the brand mark.
-- **Lime Green**: Our metaphor for cultivating growth—financially and intellectually.
-- **The Rest**: Designed to support, balance, and enhance the overall visual experience.
-
-
----
-
-## **Logo Design**
+# Logo Design
 
 The BLOK Capital logo is a foundational element of our visual identity.
 It features a custom-designed symbol paired with a distinctive logotype, crafted for flexibility across diverse applications and environments. This section outlines the official logo formats, usage guidelines, and visual standards to ensure consistent and impactful representation of the BLOK Capital brand.
@@ -53,7 +22,6 @@ The primary logo should be used whenever possible to maintain brand consistency.
     marginTop: '1rem'
   }}
 >
-
   <figure style={{ textAlign: 'center', margin: 0 }}>
     <img
       src="/img/primary-w.png"
@@ -98,7 +66,6 @@ In cases where full color printing is not feasible (e.g., due to production cost
     marginTop: '1rem'
   }}
 >
-
   <figure style={{ textAlign: 'center', margin: 0 }}>
     <img
       src="/img/bg-w.jpg"
@@ -111,8 +78,8 @@ In cases where full color printing is not feasible (e.g., due to production cost
         border: '2px solid #e0e0e0'
       }}
     />
-    <figcaption style={{ marginTop: '0.5rem' }}>
-      White Logo on Black Background
+    <figcaption style={{ marginTop: '0.5rem', fontWeight: '500' }}>
+      Black Logo on White Background
     </figcaption>
   </figure>
 
@@ -128,8 +95,8 @@ In cases where full color printing is not feasible (e.g., due to production cost
         border: '2px solid #e0e0e0'
       }}
     />
-    <figcaption style={{ marginTop: '0.5rem' }}>
-      Black Logo on White Background
+    <figcaption style={{ marginTop: '0.5rem', fontWeight: '500' }}>
+      White Logo on Black Background
     </figcaption>
   </figure>
 
@@ -201,7 +168,6 @@ Here are approved color combinations for placing the logo on different backgroun
     alignItems: 'start'
   }}
 >
-
 
   <figure style={{ textAlign: 'center', margin: 0 }}>
     <img
@@ -292,7 +258,6 @@ To protect brand integrity, never alter the logo. Here are examples of incorrect
   }}
 >
 
-
   <figure style={{ textAlign: 'center', margin: 0 }}>
     <img
       src="/img/dont-1.jpg"
@@ -305,9 +270,9 @@ To protect brand integrity, never alter the logo. Here are examples of incorrect
         border: '2px solid #e0e0e0'
       }}
     />
-    <figcaption style={{ marginTop: '0.5rem' }}>
-      Don’t use logo as a frame for imagery
-    </figcaption>
+    <figcaption style={{ marginTop: '0.5rem', fontWeight: '500' }}>
+  Don’t place the icon after the logotype.
+</figcaption>
   </figure>
 
   <figure style={{ textAlign: 'center', margin: 0 }}>
@@ -322,8 +287,8 @@ To protect brand integrity, never alter the logo. Here are examples of incorrect
         border: '2px solid #e0e0e0'
       }}
     />
-    <figcaption style={{ marginTop: '0.5rem' }}>
-      Don’t use drop shadows
+    <figcaption style={{ marginTop: '0.5rem', fontWeight: '500' }}>
+      Don’t distort or warp the logo.
     </figcaption>
   </figure>
 
@@ -339,8 +304,8 @@ To protect brand integrity, never alter the logo. Here are examples of incorrect
         border: '2px solid #e0e0e0'
       }}
     />
-    <figcaption style={{ marginTop: '0.5rem' }}>
-      Don’t use busy backgrounds
+    <figcaption style={{ marginTop: '0.5rem', fontWeight: '500' }}>
+      Don’t overlap the icon with the text.
     </figcaption>
   </figure>
 
@@ -356,8 +321,8 @@ To protect brand integrity, never alter the logo. Here are examples of incorrect
         border: '2px solid #e0e0e0'
       }}
     />
-    <figcaption style={{ marginTop: '0.5rem' }}>
-      Don’t rotate the logo
+   <figcaption style={{ marginTop: '0.5rem', fontWeight: '500' }}>
+      Don’t use 3D or heavy effects.
     </figcaption>
   </figure>
   <figure style={{ textAlign: 'center', margin: 0 }}>
@@ -372,8 +337,8 @@ To protect brand integrity, never alter the logo. Here are examples of incorrect
         border: '2px solid #e0e0e0'
       }}
     />
-    <figcaption style={{ marginTop: '0.5rem' }}>
-      Don’t use logo as a frame for imagery
+    <figcaption style={{ marginTop: '0.5rem', fontWeight: '500' }}>
+     Don’t change the brand colors.
     </figcaption>
   </figure>
   <figure style={{ textAlign: 'center', margin: 0 }}>
@@ -388,8 +353,8 @@ To protect brand integrity, never alter the logo. Here are examples of incorrect
         border: '2px solid #e0e0e0'
       }}
     />
-    <figcaption style={{ marginTop: '0.5rem' }}>
-      Don’t use logo as a frame for imagery
+    <figcaption style={{ marginTop: '0.5rem', fontWeight: '500' }}>
+      Don’t outline the logo.
     </figcaption>
   </figure>
   <figure style={{ textAlign: 'center', margin: 0 }}>
@@ -404,8 +369,8 @@ To protect brand integrity, never alter the logo. Here are examples of incorrect
         border: '2px solid #e0e0e0'
       }}
     />
-    <figcaption style={{ marginTop: '0.5rem' }}>
-      Don’t use logo as a frame for imagery
+    <figcaption style={{ marginTop: '0.5rem', fontWeight: '500' }}>
+     Don’t rearrange logo elements.
     </figcaption>
   </figure>
   <figure style={{ textAlign: 'center', margin: 0 }}>
@@ -420,8 +385,8 @@ To protect brand integrity, never alter the logo. Here are examples of incorrect
         border: '2px solid #e0e0e0'
       }}
     />
-    <figcaption style={{ marginTop: '0.5rem' }}>
-      Don’t use logo as a frame for imagery
+    <figcaption style={{ marginTop: '0.5rem', fontWeight: '500' }}>
+      Don’t stack the logo vertically.
     </figcaption>
   </figure>
 

@@ -1,1 +1,5 @@
-# smart contracts
+---
+sidebar_position: 2   
+---
+
+# Smart contracts

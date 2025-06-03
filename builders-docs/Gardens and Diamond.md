@@ -1,1 +1,5 @@
-# Gardens and diamond
+---
+sidebar_position: 4   
+---
+
+# Gardens and diamonds

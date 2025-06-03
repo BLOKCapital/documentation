@@ -30,4 +30,3 @@ This palette is modern, modular, and meaningful. Each color aligns with a part o
 - **The Rest**: Designed to support, balance, and enhance the overall visual experience.
 
 
----

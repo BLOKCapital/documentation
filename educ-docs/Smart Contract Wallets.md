@@ -1,4 +1,4 @@
-#  Smart contract wallet (SWA)
+#  Smart Contract Wallet (SWA)
 
 A **smart contract wallet** is a type of cryptocurrency wallet that utilizes programmable code, known as smart contracts, to manage and control digital assets on the blockchain. Unlike traditional wallets that rely solely on private keys, smart contract wallets enable advanced features such as multi-signature approvals, spending limits, and account recovery options, enhancing both security and flexibility for users. 
 

@@ -1,0 +1,10 @@
+{
+  "label": "Glossary of Terms",
+  "position": 4,
+  "link": {
+    "type": "generated-index",
+    "description": "The Glossary section provides explanations of the features that define our protocol. It covers topics such as Decentralized Wealth Management, Garden NFTs, the Gardens ecosystem, lending mechanisms, swaps, transfers, and innovations like SWA and gasless transactions. This section is essential for understanding how the system works at a functional level."
+
+
+  }
+}

@@ -101,7 +101,7 @@ const config: Config = {
         },
         {
           to: "/educ/intro",
-          label: "Education",
+          label: "Concepts",
           position: "left",
         },
         {
@@ -124,6 +124,11 @@ const config: Config = {
             },
           ],
         },
+        {
+          label: "Whitepaper",
+          position: "right",
+          href: "https://docsend.com/view/qqzdvsv2q47g6t9y",
+        }
       ],
     },
     footer: {

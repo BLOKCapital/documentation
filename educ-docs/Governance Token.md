@@ -1,1 +1,1 @@
-# Governance token utility
+# Governance Token Utility

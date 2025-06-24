@@ -110,3 +110,10 @@ html[data-theme='light'] .menu__list .menu__list {
   text-decoration: none; 
 }
 
+.theme-doc-markdown > h1:where(:first-child) {
+  text-align: center;
+}
+
+.theme-doc-markdown > h1::after {
+  content: attr(data-mdx-title);
+}

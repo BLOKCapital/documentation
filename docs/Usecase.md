@@ -16,9 +16,9 @@ Certainly. Here's an expanded and formal version of the use case section for the
 
 In summary, the BLOKC protocol can be deployed in any context where:
 
-* An investor wishes to engage with a fund or wealth manager,
+* An investor wishes to engage with a fund or wealth manager with onchain verification of a performance stats,
 * Investment activities are to be transparently executed on-chain,
-* Custody of funds remains with the investor, and
+* Self-Custody of investor funds 
 * Oversight and governance are maintained through a decentralized and democratic mechanism.
 
 This makes BLOKC a powerful solution for building trustless, transparent, and permissionless asset management ecosystems.

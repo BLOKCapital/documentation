@@ -49,6 +49,3 @@ export default function Home(): ReactNode {
     </Layout>
   );
 }
-
-
-//commit 

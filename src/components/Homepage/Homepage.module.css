@@ -6,13 +6,22 @@
   padding-top: 2rem;
   padding-bottom: 4rem;
 }
+
+.title {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 750;
+  color: #004eba;
+  margin-bottom: 0.5rem;
+}
+
 .subtitle {
   text-align: center;
   font-size: 2.5rem;
   margin-bottom: 3rem;
   margin-top: 0.5rem;
   font-weight: 700;
-  color: var(--ifm-color-primary);
+  color: var(--ifm-color-primary-light);
 }
 
 .overlay {

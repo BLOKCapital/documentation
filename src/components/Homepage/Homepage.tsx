@@ -33,13 +33,13 @@ const sections: Section[] = [
     icon: <FaShieldAlt />,
   },
   {
-    title: 'Smart Contract Wallet (SWA)',
+    title: 'Governance',
     description: 'Modular account abstraction wallet',
     href: '/educ/Smart%20Contract%20Wallets',
     icon: <FaNetworkWired />,
   },
   {
-    title: 'Tokenomics',
+    title: 'BLOK Capital Architecture',
     description: 'Token supply & governance distribution',
     href: '/resources/category/tokenomics',
     icon: <FaGavel />,
@@ -51,7 +51,7 @@ const sections: Section[] = [
     icon: <FaPalette />,
   },
   {
-    title: 'Builder',
+    title: 'Builder Section',
     description: 'SDK, APIs and modules for developers',
     href: '/builders/intro',
     icon: <FaCode />,
@@ -75,6 +75,7 @@ export default function Homepage() {
     <section className={styles.heroSection}>
       <div className={styles.overlay}>
      <div className={`container ${styles.heroContainer}`}>
+     <h2 className={styles.title}>BLOK Capital Documentation</h2>
           <h1 className={styles.subtitle}>
             The Decentralised Wealth Management Protocol
           </h1>

@@ -2,7 +2,7 @@
     "en": {
       "homepage": {
         "startDocumentation": "Start Documentation",
-        "helloFrom": "Hello from {title}",
+        "helloFrom": "Documentation ",
         "metaDescription": "Description will go into a meta tag in <head />"
       },
       "features": [
@@ -23,7 +23,7 @@
     "es": {
       "homepage": {
         "startDocumentation": "Iniciar Documentación",
-        "helloFrom": "Hola desde {title}",
+        "helloFrom": "Documentación ",
         "metaDescription": "Descripción irá en una metaetiqueta en <head />"
       },
       "features": [
@@ -44,7 +44,7 @@
     "fr": {
       "homepage": {
         "startDocumentation": "Commencer la Documentation",
-        "helloFrom": "Bonjour de {title}",
+        "helloFrom": "Documentation ",
         "metaDescription": "La description ira dans une balise meta dans <head />"
       },
       "features": [

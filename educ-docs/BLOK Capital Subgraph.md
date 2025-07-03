@@ -20,6 +20,8 @@ Here’s how subgraphs work under the hood:
 
 In the context of BLOK Capital, this enables our frontend clients, analytics dashboards, and DAO tooling to pull **live, trustless data** directly from our onchain protocol state — without relying on any mutable or opaque middleware.
 
+- Checkout our subgraph here :: [blokc-dao-token-voting](https://thegraph.com/explorer/subgraphs/kbrg2GxMGs8DrQcLUtVbn8becrzYjwhxsY1EaLF5pFq?view=Query&chain=arbitrum-one)
+
 ---
 
 ### Why We Use Subgraphs Over Offchain Data Providers

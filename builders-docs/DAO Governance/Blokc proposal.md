@@ -22,5 +22,5 @@ Our proposal system is the heartbeat of the BLOKC ecosystem, designed to make go
 By partnering with Aragon, we’re future-proofing our governance. Whether it’s onboarding new DeFi integrations, enhancing capital efficiency, or refining existing protocols, our system is built to evolve. It’s transparent, accessible, and designed to put the community first—because at BLOKC, decentralization isn’t just a buzzword, it’s our mission.
 
 Join us as we revolutionize DAO governance with a transparent, efficient, and community-first approach.
-- 👉  Discover BLOK Capital's vision [here](https://blokcapital.io/)
-- 👉  Learn more about Aragon [here](https://docs.aragon.org/)
+-  Discover BLOK Capital's vision [here](https://blokcapital.io/)
+-  Learn more about Aragon [here](https://docs.aragon.org/)

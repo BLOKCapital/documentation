@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # Blok Capital V1 Architecture
 
-![Alt text](/img/ar.png)
+![Alt text](/img/architect.png)
 
 ## The core parts of our architecture is as follows :
 

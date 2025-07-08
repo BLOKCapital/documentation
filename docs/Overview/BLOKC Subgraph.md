@@ -12,12 +12,14 @@ A **subgraph** is an open API that indexes blockchain data in real-time and make
 
 In BLOK Capital, subgraphs allow us to fetch DAO proposal data directly from Aragon DAO contracts, enabling:
 
-* ✅ Real-time proposal updates
-* ✅ Efficient filtering and sorting of proposals
-* ✅ Seamless integration with our governance dashboards
-* ✅ Enhanced performance with no need for centralized servers
+*  Real-time proposal updates
+*  Efficient filtering and sorting of proposals
+*  Seamless integration with our governance dashboards
+*  Enhanced performance with no need for centralized servers
 
 By leveraging subgraphs, BLOK Capital ensures that our users can interact with DAO governance in a **transparent, fast, and reliable** manner—making decentralized decision-making truly accessible.
+
+> **Checkout our subgraph endpoin** : [blokc-dao-token-voting](https://thegraph.com/explorer/subgraphs/kbrg2GxMGs8DrQcLUtVbn8becrzYjwhxsY1EaLF5pFq?view=Query&chain=arbitrum-one)
 
 #### Built on Decentralization
 

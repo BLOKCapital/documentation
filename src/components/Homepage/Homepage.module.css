@@ -6,15 +6,43 @@
   padding-top: 2rem;
   padding-bottom: 4rem;
 }
+
+.title {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 750;
+  margin-bottom: 0.5rem;
+}
+
+/* Light Mode: title is black */
+html[data-theme='light'] .title {
+  color: #ffffff;
+}
+
+/* Dark Mode: title is white */
+html[data-theme='dark'] .title {
+  color: #000000;
+}
+
 .subtitle {
   text-align: center;
   font-size: 2.5rem;
   margin-bottom: 3rem;
   margin-top: 0.5rem;
   font-weight: 700;
-  color: var(--ifm-color-primary);
+ 
 }
 
+/* Light Mode: title is black */
+html[data-theme='light'] .subtitle {
+  color: #ffffff;
+}
+
+/* Dark Mode: title is white */
+html[data-theme='dark'] .subtitle {
+  
+  color: #000000;
+}
 .overlay {
   padding: 0;
 }

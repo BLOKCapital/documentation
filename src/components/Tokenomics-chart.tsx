@@ -61,9 +61,9 @@ export default function Chart() {
           dominantBaseline="central"
           fill={colorMode === "dark" ? "#fff" : "#000"}
           fontSize={16}
-          fontWeight={500}
+          fontWeight="bold"
         >
-          {label.title}
+          {`${Math.round(percent * 100)}%`}
         </text>
         {percent > 0.015 && (
           <text

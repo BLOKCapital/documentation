@@ -7,7 +7,7 @@ import Heading from '@theme/Heading';
 import styles from './index.module.css';
 import translations from '../data/translations.json';
 import Homepage from "../components/Homepage/Homepage"
-
+import homepageStyles from '../components/Homepage/Homepage.module.css'
 function HomepageHeader() {
   const {siteConfig, i18n} = useDocusaurusContext();
   const t = translations[i18n.currentLocale]?.homepage || translations.en.homepage;
@@ -15,14 +15,10 @@ function HomepageHeader() {
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
-        <Heading as="h1" className="hero-title">{siteConfig.title}</Heading>
-        <p className="hero-subtitle">{t.subtitle || siteConfig.tagline}</p>
-        <div className={styles.buttons}>
-          
-          <Link className="button button--secondary button--lg" to="/intro">
-            {t.startDocumentation}
-          </Link>
-        </div>
+        <Heading as="h1" className={homepageStyles.title}>{t.title}</Heading>
+<p className={homepageStyles.subtitle}>{t.subtitle}</p>
+
+    
       </div>
     </header>
   );
@@ -34,7 +30,7 @@ export default function Home(): ReactNode {
 
   return (
     <Layout title={t.helloFrom.replace('{title}', siteConfig.title)} description={t.metaDescription}>
-      {/* <HomepageHeader /> */}
+      <HomepageHeader />
       <main>
         <Homepage />
       </main>

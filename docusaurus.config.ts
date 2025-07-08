@@ -13,7 +13,7 @@ const config: Config = {
   organizationName: "BLOKCapital",
   projectName: "documentation",
 
-  onBrokenLinks: "warn",
+  onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
 
   i18n: {

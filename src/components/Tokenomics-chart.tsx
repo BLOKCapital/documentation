@@ -63,7 +63,7 @@ export default function Chart() {
           fontSize={16}
           fontWeight="bold"
         >
-          {`${Math.round(percent * 100)}%`}
+          {data[index].title}
         </text>
         {percent > 0.015 && (
           <text

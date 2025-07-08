@@ -1,65 +1,26 @@
 {
-    "en": {
-      "homepage": {
-        "startDocumentation": "Start Documentation",
-        "helloFrom": "Documentation ",
-        "metaDescription": "Description will go into a meta tag in <head />"
-      },
-      "features": [
-        {
-          "title": "Easier",
-          "description": "Experience a seamless and intuitive interface designed for effortless use."
-        },
-        {
-          "title": "Safer",
-          "description": "Enjoy full control of your assets with self-custody and complete transparency."
-        },
-        {
-          "title": "Smarter",
-          "description": "Leverage expert insights and proven strategies to make informed financial decisions."
-        }
-      ]
-    },
-    "es": {
-      "homepage": {
-        "startDocumentation": "Iniciar Documentación",
-        "helloFrom": "Documentación ",
-        "metaDescription": "Descripción irá en una metaetiqueta en <head />"
-      },
-      "features": [
-        {
-          "title": "Más Fácil",
-          "description": "Experimenta una interfaz fluida e intuitiva diseñada para un uso sin esfuerzo."
-        },
-        {
-          "title": "Más Seguro",
-          "description": "Disfruta del control total de tus activos con autocustodia y transparencia completa."
-        },
-        {
-          "title": "Más Inteligente",
-          "description": "Aprovecha conocimientos expertos y estrategias probadas para tomar decisiones financieras informadas."
-        }
-      ]
-    },
-    "fr": {
-      "homepage": {
-        "startDocumentation": "Commencer la Documentation",
-        "helloFrom": "Documentation ",
-        "metaDescription": "La description ira dans une balise meta dans <head />"
-      },
-      "features": [
-        {
-          "title": "Plus Facile",
-          "description": "Découvrez une interface fluide et intuitive conçue pour une utilisation sans effort."
-        },
-        {
-          "title": "Plus Sûr",
-          "description": "Profitez d’un contrôle total de vos actifs avec une auto-garde et une transparence complète."
-        },
-        {
-          "title": "Plus Intelligent",
-          "description": "Tirez parti des insights d’experts et de stratégies éprouvées pour prendre des décisions financières éclairées."
-        }
-      ]
+  "en": {
+    "homepage": {
+      "title": "BLOK Capital Documentation",
+      "subtitle": "The Decentralized Wealth Management Protocol",
+      "helloFrom": "Documentation ",
+      "metaDescription": "Description will go into a meta tag in <head />"
+    }
+  },
+  "es": {
+    "homepage": {
+      "title": "Documentación de BLOK Capital",
+      "subtitle": "El protocolo descentralizado de gestión patrimonial",
+      "helloFrom": "Documentación ",
+      "metaDescription": "Descripción irá en una metaetiqueta en <head />"
+    }
+  },
+  "fr": {
+    "homepage": {
+      "title": "Documentation BLOK Capital",
+      "subtitle": "Le protocole de gestion de patrimoine décentralisé",
+      "helloFrom": "Documentation ",
+      "metaDescription": "La description ira dans une balise meta dans <head />"
     }
   }
+}

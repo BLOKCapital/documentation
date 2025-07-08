@@ -1,58 +1,3 @@
-// import type {ReactNode} from 'react';
-// import clsx from 'clsx';
-// import Link from '@docusaurus/Link';
-// import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-// import Layout from '@theme/Layout';
-
-// import Heading from '@theme/Heading';
-// import styles from './index.module.css';
-// import translations from '../data/translations.json'; // Adjust path as needed
-
-// function HomepageHeader() {
-//   const {siteConfig, i18n} = useDocusaurusContext();
-//   const currentLocale = i18n.currentLocale; // 'en', 'es', or 'fr'
-//   const t = translations[currentLocale]?.homepage || translations['en'].homepage; // Fallback to English
-
-//   return (
-//     <header className={clsx('hero hero--primary', styles.heroBanner)}>
-//       <div className="container">
-//         <Heading as="h1" className="hero__title">
-//           {siteConfig.title} {/* Brand name, no translation needed */}
-//         </Heading>
-//         {/* Uncomment and translate tagline if needed */}
-//         {/* <p className="hero__subtitle">{siteConfig.tagline}</p> */}
-//         <div className={styles.buttons}>
-//           <h1></h1>
-//           <Link
-//             className="button button--secondary button--lg"
-//             to="/intro">
-//             {t.startDocumentation}
-//           </Link>
-//         </div>
-//       </div>
-//     </header>
-//   );
-// }
-
-// export default function Home(): ReactNode {
-//   const {siteConfig, i18n} = useDocusaurusContext();
-//   const currentLocale = i18n.currentLocale; // 'en', 'es', or 'fr'
-//   const t = translations[currentLocale]?.homepage || translations['en'].homepage; // Fallback to English
-
-//   return (
-//     <Layout
-//       title={t.helloFrom.replace('{title}', siteConfig.title)} // Replace placeholder manually
-//       description={t.metaDescription}>
-//       <HomepageHeader />
-//       <main>
-     
-//       </main>
-//     </Layout>
-//   );
-// }
-
-
-
 import type {ReactNode} from 'react';
 import clsx from 'clsx';
 import Link from '@docusaurus/Link';
@@ -61,8 +6,8 @@ import Layout from '@theme/Layout';
 import Heading from '@theme/Heading';
 import styles from './index.module.css';
 import translations from '../data/translations.json';
-import HomepageSections from '@site/src/components/HomepageSections';
-
+import Homepage from "../components/Homepage/Homepage"
+import homepageStyles from '../components/Homepage/Homepage.module.css'
 function HomepageHeader() {
   const {siteConfig, i18n} = useDocusaurusContext();
   const t = translations[i18n.currentLocale]?.homepage || translations.en.homepage;
@@ -70,14 +15,10 @@ function HomepageHeader() {
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
-        <Heading as="h1" className="hero__title">{siteConfig.title}</Heading>
-        <p className="hero__subtitle">{t.subtitle || siteConfig.tagline}</p>
-        <div className={styles.buttons}>
-          
-          <Link className="button button--secondary button--lg" to="/intro">
-            {t.startDocumentation}
-          </Link>
-        </div>
+        <Heading as="h1" className={homepageStyles.title}>{t.title}</Heading>
+<p className={homepageStyles.subtitle}>{t.subtitle}</p>
+
+    
       </div>
     </header>
   );
@@ -89,9 +30,9 @@ export default function Home(): ReactNode {
 
   return (
     <Layout title={t.helloFrom.replace('{title}', siteConfig.title)} description={t.metaDescription}>
-      {/* <HomepageHeader /> */}
+      <HomepageHeader />
       <main>
-        <HomepageSections />
+        <Homepage />
       </main>
     </Layout>
   );

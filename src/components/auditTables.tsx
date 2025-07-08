@@ -1,6 +1,7 @@
 import React from 'react';
 import auditData from '../data/AuditData.json';
 import { ShieldCheckIcon } from 'lucide-react';
+import { useColorMode } from '@docusaurus/theme-common';
 
 // Order in which findings are displayed
 const findingOrder = [
@@ -46,21 +47,32 @@ const AuditCard = ({
   showStatus = false,
   status = 'Passed',
 }: AuditCardProps) => {
-  const { bg, color } = statusStyles[status] || statusStyles.Default;
+ const { colorMode } = useColorMode();
+ const headingColor = colorMode === 'dark' ? '#3399ff' : '#004eba';
 
+const { bg, color } = statusStyles[status] || statusStyles.Default;
+
+const cardBg = colorMode === 'dark' ? '#1f2937' : '#ffffff'; // Tailwind's gray-800
+const textPrimary = colorMode === 'dark' ? '#e5e7eb' : '#0f172a'; // Tailwind's slate-100 or slate-900
+const textSecondary = colorMode === 'dark' ? '#9ca3af' : '#4b5563'; // soft readable gray
+const shadow = colorMode === 'dark'
+  ? '0 4px 20px rgba(0,0,0,0.4)'
+  : '0 4px 16px rgba(0,0,0,0.1)';
   return (
     <div style={{
-      backgroundColor: 'white',
-      padding: '1.5rem',
-      borderRadius: '1rem',
-      boxShadow: '0 4px 16px rgba(0,0,0,0.1)',
-      width: '100%',
-      maxWidth: '480px',
-      margin: '1rem auto',
-      fontFamily: 'sans-serif'
-    }}>
+  backgroundColor: cardBg,
+  padding: '1.5rem',
+  borderRadius: '1rem',
+  boxShadow: shadow,
+  width: '100%',
+  maxWidth: '480px',
+  margin: '1rem auto',
+  fontFamily: 'sans-serif',
+  border: colorMode === 'dark' ? '1px solid #374151' : 'none'
+}}>
+
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.5rem' }}>
-        <h3 style={{ margin: 0, color: '#1D4ED8' }}>{name}</h3>
+        <h3 style={{ margin: 0, color: headingColor }}>{name}</h3>
         {showStatus && (
           <span style={{
             backgroundColor: bg,
@@ -75,16 +87,17 @@ const AuditCard = ({
         )}
       </div>
 
-      <p style={{ margin: '0.25rem 0' }}>
+   <p style={{ margin: '0.25rem 0', color: textPrimary }}>
+
         <strong>Auditor:</strong>{' '}
         {auditorlink ? (
-          <a href={auditorlink} target="_blank" rel="noopener noreferrer" style={{ color: '#3B82F6' }}>
+          <a href={auditorlink} target="_blank" rel="noopener noreferrer" style={{ color: '#60a5fa' }}>
             {auditor}
           </a>
         ) : auditor}
       </p>
 
-      <p style={{ margin: '0.25rem 0 1rem', color: '#4B5563' }}>
+      <p style={{ margin: '0.25rem 0 1rem', color: textSecondary }}>
         <strong>Date:</strong> {date}
       </p>
 
@@ -96,7 +109,7 @@ const AuditCard = ({
               display: 'flex',
               justifyContent: 'space-between',
               marginBottom: '0.4rem',
-              color: '#0F172A'
+              color: textPrimary
             }}>
               <strong>{findingLabels[key] || key}</strong>
               <span>

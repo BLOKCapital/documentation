@@ -6,7 +6,7 @@ sidebar_position: 2
 The BLOK Capital logo is a foundational element of our visual identity.
 It features a custom-designed symbol paired with a distinctive logotype, crafted for flexibility across diverse applications and environments. This section outlines the official logo formats, usage guidelines, and visual standards to ensure consistent and impactful representation of the BLOK Capital brand.
 
-For full brand guidelines please see <a href="https://drive.google.com/file/d/1kJIUS7sVRpXlJOmYu7-L4MpeiuN80cMl/view?usp=sharing" class="brand-link">BLOK Capital Brand Guidelines</a>.
+<!-- For full brand guidelines please see <a href="https://drive.google.com/file/d/1kJIUS7sVRpXlJOmYu7-L4MpeiuN80cMl/view?usp=sharing" class="brand-link">BLOK Capital Brand Guidelines</a>. -->
 
 
 ### Primary Logo

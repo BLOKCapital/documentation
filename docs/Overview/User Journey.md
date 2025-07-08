@@ -6,7 +6,7 @@ sidebar_position: 7
 
 In this section, the user interaction flow at BLOK Capital is examined, highlighting its frictionless onboarding and portfolio management processes. Through a streamlined Gmail-based authentication, a self‑custodial smart‑contract wallet is provided without burdening the user with private keys or seed phrases, all gas fees are sponsored by the DAO.
 
-![Alt text](/img/userflow.png)
+![Alt text](/img/userflow2.png)
 
 ### Onboarding & Account Creation
 **Enter Gmail address**

@@ -17,7 +17,7 @@ A factory contract is a smart contract that creates and deploys other smart cont
 
 ### Need for Diamond proxy
 
-![Alt text](/img/diamondProxy.png)
+![Alt text](/img/diamondProxy2.png)
 
 While Beacon and UUPS proxies offer simpler upgrade mechanisms, they have a key limitation: each upgrade requires replacing the entire implementation contract. This approach lacks flexibility, especially when the system needs to evolve and support modular extensibility.
 

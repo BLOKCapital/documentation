@@ -2,7 +2,7 @@
 
 Account Abstraction (ERC-4337) is a framework that allows smart contract wallets to act like regular user accounts (EOAs) by removing the need for private keys and enabling powerful programmable features.
 
-![Alt text](/img/AA.png)
+![Alt text](/img/AA2.png)
 
 ### Transaction Flow in ERC-4337
 1. **Initiation**: A user creates a UserOperation, specifying their transaction intent (e.g., transferring tokens).

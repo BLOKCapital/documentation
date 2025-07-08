@@ -118,10 +118,10 @@ export default function Homepage() {
     <section className={styles.heroSection}>
       <div className={styles.overlay}>
         <div className={`container ${styles.heroContainer}`}>
-          <h2 className={styles.title}>BLOK Capital Documentation</h2>
+          {/* <h2 className={styles.title}>BLOK Capital Documentation</h2>
           <h1 className={styles.subtitle}>
             The Decentralized Wealth Management Protocol
-          </h1>
+          </h1> */}
           <div className="row">
             {sectionData.map(({ title, description, href, icon }) => {
               const IconComponent = (Icons as any)[icon] || FaCoins;

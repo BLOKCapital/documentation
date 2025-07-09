@@ -1,3 +1,7 @@
+---
+sidebar_position: 2
+---
+
 # Decentralized Wealth Management
 
 **Decentralized Wealth Management** refers to the use of blockchain technology and DeFi (Decentralized Finance) protocols to manage assets and investments without reliance on traditional intermediaries such as banks, financial advisors, or centralized wealth management firms.

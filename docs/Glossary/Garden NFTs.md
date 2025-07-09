@@ -2,7 +2,9 @@
 sidebar_position: 3
 ---
 
-# Garden NFTs : NFTs as Art and Ownership
+# Garden NFTs 
+
+### NFTs as Art and Ownership
 
 NFTs play an integral part for maintaining ownership of Gardens. 
 Each garden is uniquely identifies with a NFT, which represents the ownership of the Garden with it's owner. 

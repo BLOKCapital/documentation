@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# BLOKC x Aragon: Building the Future of DAO Governance
+# Governance with Aragon
 
 At BLOKC, we’re redefining decentralized governance by building a robust and modular DAO proposal system, seamlessly powered by Aragon OSX. By tapping into Aragon’s cutting-edge framework, we’re empowering our community with a governance process that’s transparent, scalable, and—most importantly—community-driven. This isn’t just about technology; it’s about creating a future where every voice in the BLOKC ecosystem matters.
 

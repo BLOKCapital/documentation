@@ -2,7 +2,7 @@
 sidebar_position: 1   
 ---
 
-# Overview of Smart contract infrastructure of BLOK Capital
+# Overview 
 
 ## Gardens
 Gardens are programmable crypto portfolios implemented as ERC-2535 Diamond contracts. Each Garden acts as a smart “hub” for a user’s investments, enabling upgradable DeFi strategies while abstracting away gas and transaction complexity. Investors control Gardens via an ERC-721 NFT (unique token), which represents ownership of the portfolio. The system leverages Account Abstraction (ERC-4337) concepts (bundlers and paymasters) to make investing seamless and gas-efficient. A DAO-managed Facet Registry ensures only approved modules (facets) can be added, enabling a secure, governance-curated upgrade path.

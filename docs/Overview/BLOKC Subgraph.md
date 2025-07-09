@@ -1,4 +1,4 @@
-# BLOKC Protocol Subgraph
+# Protocol Subgraph
 
 ### 🔍 Subgraphs: Seamless Data Access for Web3 Applications
 

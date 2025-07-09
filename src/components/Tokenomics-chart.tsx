@@ -66,6 +66,7 @@ export default function Chart() {
           fontWeight={500}
         >
           {label.title}
+          {data[index].title}
         </text>
 
         {/* % inside slice */}

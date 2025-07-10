@@ -1,4 +1,4 @@
-# Why do we need the Diamond Proxy pattern?
+# Neccesity of Diamond Proxy
 
 ### Some brief on Proxy and Factory contracts
 

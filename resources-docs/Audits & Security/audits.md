@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Audits and Security
+# Overview
 
 At BLOK Capital, security isn’t just a feature, it’s our foundation. We are committed to ensuring that our smart contracts are as secure, reliable, and resilient as possible. To achieve this, we are taking a proactive approach by launching a bug bounty program on Immunefi and audit contests on Cantina and Code4rena.
 

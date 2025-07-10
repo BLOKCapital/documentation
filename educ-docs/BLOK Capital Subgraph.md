@@ -1,4 +1,4 @@
-# Understanding Subgraphs in BLOK Capital’s Data Architecture
+# Neccesity of Subgraphs
 
 At BLOK Capital, protocol transparency and trustlessness are not optional — they are foundational. That’s why we rely on **The Graph Protocol’s Subgraph framework** to index and query onchain data directly, rather than depending on centralized or semi-centralized offchain data services.
 

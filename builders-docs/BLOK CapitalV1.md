@@ -2,7 +2,7 @@
 sidebar_position: 2   
 ---
 
-# Blok Capital V1 Architecture
+# Protocol Architecture V1
 
 ![Alt text](/img/architect.png)
 

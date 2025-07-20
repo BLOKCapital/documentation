@@ -12,21 +12,20 @@ Our visual identity bridges the world of blockchain with the elegance of being e
 
 Our color palette is built to resonate with our core values and design philosophy. Each color plays a strategic role across our interface, illustrations, and brand communication.
 
-| Color       | Hex      | Preview                                | Meaning & Usage |
-|-------------|----------|----------------------------------------|-----------------|
-| Sky Blue    | `#7DD2FD` | <div style={{backgroundColor: '#7DD2FD', width: '70px', height: '40px', borderRadius: '4px', border: '1px solid #ccc'}}></div> | Rooted in our brand logo, this refreshing blue represents clarity, vision, and trust. It anchors our visual identity and is prominently used in UI highlights,, and focal illustration elements. |
-| Lime Green  | `#7ED116` | <div style={{backgroundColor: '#7ED116', width: '70px', height: '40px', borderRadius: '4px', border: '1px solid #ccc'}}></div> | Inspired by our internal metaphor of BLOK as a garden, this vibrant green represents organic growth, sustainability, and progressive thinking. Commonly used in illustrations to convey action and momentum. |
-| Neutral Linen   | `#F6F3E8` | <div style={{backgroundColor: '#F6F3E8', width: '70px', height: '40px', borderRadius: '4px', border: '1px solid #ccc'}}></div> | A gentle neutral that adds calm and balance. Ideal for backgrounds, layouts, or secondary shapes, it provides depth without competing for attention. |
-| Coral Red   | `#EC464D` | <div style={{backgroundColor: '#EC464D',width: '70px', height: '40px', borderRadius: '4px', border: '1px solid #ccc'}}></div> | Bold and expressive, this color is used sparingly to draw attention. Whether highlighting a button or emphasizing narrative moments, it introduces emotion, urgency, and warmth. |
-| Earth Brown | `#844947` | <div style={{backgroundColor: '#844947', width: '70px', height: '40px', borderRadius: '4px', border: '1px solid #ccc'}}></div> | A grounding tone symbolizing stability, trust, and maturity. It is typically used in outlines, shadows, or visual support elements to reinforce contrast and structural consistency. |
-
+| Color         | Hex      | Preview                                | Meaning & Usage |
+|---------------|----------|----------------------------------------|-----------------|
+| Sky Blue      | `#7DD2FD` | <div style={{backgroundColor: '#7DD2FD', width: '70px', height: '40px', borderRadius: '4px', border: '1px solid #ccc'}}></div> | Rooted in our brand logo, this refreshing blue represents clarity, vision, and trust. It anchors our visual identity and is prominently used in UI highlights and focal illustration elements. |
+| Deep Indigo   | `#004EBA` | <div style={{backgroundColor: '#004EBA', width: '70px', height: '40px', borderRadius: '4px', border: '1px solid #ccc'}}></div> | A strong, confident blue that deepens our brand's sense of credibility and technological excellence. It strengthens the palette with a sense of depth and digital clarity. |
+| Lime Green    | `#7ED116` | <div style={{backgroundColor: '#7ED116', width: '70px', height: '40px', borderRadius: '4px', border: '1px solid #ccc'}}></div> | Inspired by our internal metaphor of BLOK as a garden, this vibrant green represents organic growth, sustainability, and progressive thinking. Commonly used in illustrations to convey action and momentum. |
+| Neutral Linen | `#F6F3E8` | <div style={{backgroundColor: '#F6F3E8', width: '70px', height: '40px', borderRadius: '4px', border: '1px solid #ccc'}}></div> | A gentle neutral that adds calm and balance. Ideal for backgrounds, layouts, or secondary shapes, it provides depth without competing for attention. |
+| Coral Red     | `#EC464D` | <div style={{backgroundColor: '#EC464D', width: '70px', height: '40px', borderRadius: '4px', border: '1px solid #ccc'}}></div> | Bold and expressive, this color is used sparingly to draw attention. Whether highlighting a button or emphasizing narrative moments, it introduces emotion, urgency, and warmth. |
+| Earth Brown   | `#844947` | <div style={{backgroundColor: '#844947', width: '70px', height: '40px', borderRadius: '4px', border: '1px solid #ccc'}}></div> | A grounding tone symbolizing stability, trust, and maturity. It is typically used in outlines, shadows, or visual support elements to reinforce contrast and structural consistency. |
 
 ## Why This Palette Works
 
 This palette is modern, modular, and meaningful. Each color aligns with a part of our identity:
 
 - **Sky Blue**: Our foundation, inspired by the brand mark.
+- **Deep Indigo**: A visual anchor of trust and intellect, evoking our technical backbone.
 - **Lime Green**: Our metaphor for cultivating growth—financially and intellectually.
 - **The Rest**: Designed to support, balance, and enhance the overall visual experience.
-
-

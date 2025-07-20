@@ -1,0 +1,8 @@
+{
+  "label": "Gouvernance DAO",
+  "position": 4,
+  "link": {
+    "type": "generated-index",
+    "description": "Dans la section suivante, nous approfondirons le fonctionnement de la DAO BLOKC, en explorant sa structure de gouvernance, ses mécanismes de vote et le rôle des smart contracts dans la prise de décision on-chain."
+  }
+} 

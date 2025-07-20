@@ -1,0 +1,8 @@
+{
+  "label": "Glossaire des Termes",
+  "position": 4,
+  "link": {
+    "type": "generated-index",
+    "description": "La section Glossaire fournit des explications sur les fonctionnalités qui définissent notre protocole. Elle couvre des sujets tels que la gestion de patrimoine décentralisée, les NFTs de Jardin, l'écosystème des Jardins, les mécanismes de prêt, les swaps, les transferts et les innovations comme SWA et les transactions sans gaz. Cette section est essentielle pour comprendre le fonctionnement du système au niveau fonctionnel."
+  }
+} 

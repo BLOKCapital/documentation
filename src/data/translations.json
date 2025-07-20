@@ -5,6 +5,46 @@
       "subtitle": "The Decentralized Wealth Management Protocol",
       "helloFrom": "Documentation ",
       "metaDescription": "Description will go into a meta tag in <head />"
+    },
+    "auditTables": {
+      "critical": "Critical",
+      "high": "High",
+      "major": "Major",
+      "medium": "Medium",
+      "minor": "Minor",
+      "low": "Low",
+      "informational": "Informational",
+      "tips": "Tips",
+      "passed": "Passed",
+      "failed": "Failed",
+      "default": "Default",
+      "auditor": "Auditor",
+      "date": "Date",
+      "fixed": "Fixed",
+      "viewAuditReport": "View Audit Report",
+      "securityAudits": "Security Audits",
+      "securityAuditsDesc": "Our protocol undergoes regular security audits by leading blockchain security firms to ensure the highest level of safety for our users.",
+      "auditPassRate": "100% Audit Pass Rate",
+      "blokAudits": "BLOK Capital DAO Audits",
+      "zerodevAudits": "Zerodev Smart Wallet Audits"
+    },
+    "navbar": {
+      "introduction": "Introduction",
+      "concepts": "Concepts",
+      "builders": "Builders",
+      "resources": "Resources",
+      "whitepaper": "Whitepaper",
+      "helpTranslate": "Help us translate"
+    },
+    "footer": {
+      "community": "Community",
+      "telegram": "Telegram",
+      "twitter": "X (Twitter)",
+      "farcaster": "Farcaster",
+      "more": "More",
+      "website": "Website",
+      "github": "GitHub",
+      "copyright": "Copyright © {year} BLOK Capital DAO LLC. All rights reserved."
     }
   },
   "es": {
@@ -13,6 +53,46 @@
       "subtitle": "El protocolo descentralizado de gestión patrimonial",
       "helloFrom": "Documentación ",
       "metaDescription": "Descripción irá en una metaetiqueta en <head />"
+    },
+    "auditTables": {
+      "critical": "Crítico",
+      "high": "Alto",
+      "major": "Mayor",
+      "medium": "Medio",
+      "minor": "Menor",
+      "low": "Bajo",
+      "informational": "Informativo",
+      "tips": "Consejos",
+      "passed": "Aprobado",
+      "failed": "Fallido",
+      "default": "Por defecto",
+      "auditor": "Auditor",
+      "date": "Fecha",
+      "fixed": "Corregido",
+      "viewAuditReport": "Ver informe de auditoría",
+      "securityAudits": "Auditorías de seguridad",
+      "securityAuditsDesc": "Nuestro protocolo se somete regularmente a auditorías de seguridad por las principales firmas de seguridad blockchain para garantizar el más alto nivel de seguridad para nuestros usuarios.",
+      "auditPassRate": "100% Tasa de aprobación de auditorías",
+      "blokAudits": "Auditorías DAO de BLOK Capital",
+      "zerodevAudits": "Auditorías de Smart Wallet Zerodev"
+    },
+    "navbar": {
+      "introduction": "Introducción",
+      "concepts": "Conceptos",
+      "builders": "Constructores",
+      "resources": "Recursos",
+      "whitepaper": "Libro Blanco",
+      "helpTranslate": "Ayúdanos a traducir"
+    },
+    "footer": {
+      "community": "Comunidad",
+      "telegram": "Telegram",
+      "twitter": "X (Twitter)",
+      "farcaster": "Farcaster",
+      "more": "Más",
+      "website": "Sitio web",
+      "github": "GitHub",
+      "copyright": "Copyright © {year} BLOK Capital DAO LLC. Todos los derechos reservados."
     }
   },
   "fr": {
@@ -21,6 +101,46 @@
       "subtitle": "Le protocole de gestion de patrimoine décentralisé",
       "helloFrom": "Documentation ",
       "metaDescription": "La description ira dans une balise meta dans <head />"
+    },
+    "auditTables": {
+      "critical": "Critique",
+      "high": "Élevé",
+      "major": "Majeur",
+      "medium": "Moyen",
+      "minor": "Mineur",
+      "low": "Faible",
+      "informational": "Informationnel",
+      "tips": "Conseils",
+      "passed": "Réussi",
+      "failed": "Échoué",
+      "default": "Par défaut",
+      "auditor": "Auditeur",
+      "date": "Date",
+      "fixed": "Corrigé",
+      "viewAuditReport": "Voir le rapport d'audit",
+      "securityAudits": "Audits de sécurité",
+      "securityAuditsDesc": "Notre protocole fait régulièrement l'objet d'audits de sécurité par les principales sociétés de sécurité blockchain afin de garantir le plus haut niveau de sécurité à nos utilisateurs.",
+      "auditPassRate": "100% de réussite aux audits",
+      "blokAudits": "Audits DAO de BLOK Capital",
+      "zerodevAudits": "Audits du Smart Wallet Zerodev"
+    },
+    "navbar": {
+      "introduction": "Introduction",
+      "concepts": "Concepts",
+      "builders": "Bâtisseurs",
+      "resources": "Ressources",
+      "whitepaper": "Livre blanc",
+      "helpTranslate": "Aidez-nous à traduire"
+    },
+    "footer": {
+      "community": "Communauté",
+      "telegram": "Telegram",
+      "twitter": "X (Twitter)",
+      "farcaster": "Farcaster",
+      "more": "Plus",
+      "website": "Site web",
+      "github": "GitHub",
+      "copyright": "Copyright © {year} BLOK Capital DAO LLC. Tous droits réservés."
     }
   }
 }

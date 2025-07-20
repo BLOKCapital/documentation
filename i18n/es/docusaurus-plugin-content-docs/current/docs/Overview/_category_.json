@@ -1,0 +1,8 @@
+{
+  "label": "Resumen",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "La sección Resumen introduce los elementos fundamentales del proyecto. Expone nuestra visión central, los participantes clave del ecosistema y cómo funciona la estructura general. También explica el modelo de tokenómica que impulsa el protocolo y destaca las ventajas estratégicas que nos posicionan para el éxito."
+  }
+} 

@@ -1,0 +1,93 @@
+[
+  {
+    "title": "IDO",
+    "value": 20.0,
+    "color": "#0083FF",
+    "description": "Oferta inicial en DEX",
+    "subtitle": "Venta pública"
+  },
+  {
+    "title": "Desarrollo de Producto",
+    "value": 15.0,
+    "color": "#1991FF",
+    "description": "Desarrollo técnico",
+    "subtitle": "Desarrollo principal"
+  },
+  {
+    "title": "Equipo",
+    "value": 20,
+    "color": "#339EFF",
+    "description": "Vesting durante 3 años",
+    "subtitle": "Compromiso a largo plazo del equipo"
+  },
+  {
+    "title": "Tesorería",
+    "value": 12.5,
+    "color": "#4DABFF",
+    "description": "Desarrollo y mantenimiento de la plataforma",
+    "subtitle": "Reservas operativas"
+  },
+  {
+    "title": "Marketing y PR",
+    "value": 10.0,
+    "color": "#66B8FF",
+    "description": "Crecimiento y reconocimiento",
+    "subtitle": "Expansión de mercado"
+  },
+  {
+    "title": "Liquidez",
+    "value": 10.0,
+    "color": "#80C5FF",
+    "description": "Estabilidad de mercado",
+    "subtitle": "Liquidez de trading"
+  },
+  {
+    "title": "Seed",
+    "value": 5.0,
+    "color": "#99D2FF",
+    "description": "Vesting durante 3 años",
+    "subtitle": "Inversores iniciales"
+  },
+  {
+    "title": "Influencers",
+    "value": 3.0,
+    "color": "#B3DFFF",
+    "description": "Marketing y promoción",
+    "subtitle": "Alianzas estratégicas"
+  },
+  {
+    "title": "Bug Bounty",
+    "value": 3.0,
+    "color": "#CCE9FF",
+    "description": "Seguridad y mejoras",
+    "subtitle": "Seguridad de la plataforma"
+  },
+  {
+    "title": "Preventa",
+    "value": 3.0,
+    "color": "#B0DAFF",
+    "description": "Soporte temprano",
+    "subtitle": "Ronda privada"
+  },
+  {
+    "title": "Asesores",
+    "value": 3.0,
+    "color": "#99CBFF",
+    "description": "Asesoría estratégica",
+    "subtitle": "Consultoría experta"
+  },
+  {
+    "title": "Comunidad",
+    "value": 2.0,
+    "color": "#80BBFF",
+    "description": "Desarrollo comunitario",
+    "subtitle": "Construcción del ecosistema"
+  },
+  {
+    "title": "Air Drop",
+    "value": 1.0,
+    "color": "#66ACFF",
+    "description": "Recompensas y participación comunitaria",
+    "subtitle": "Incentivos comunitarios"
+  }
+] 

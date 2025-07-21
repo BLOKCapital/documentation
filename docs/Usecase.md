@@ -1,7 +1,7 @@
 ---
-sidebar_position: 3   
+sidebar_position: 4   
 ---
-# Use Cases of the BLOK Capital 
+# Use Cases
 
 1. **Non-Custodial Investment Management for Fund Managers:**
    The BLOKC protocol enables professional fund managers to actively manage their clients' portfolios without taking custody of the clients' assets. This preserves client ownership and security while allowing managers to deploy capital across decentralized financial strategies in a transparent and verifiable manner.

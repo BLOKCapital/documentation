@@ -1,0 +1,8 @@
+{
+  "label": "Auditorías y Seguridad",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "Esta sección destaca la hoja de ruta de seguridad de BLOKC y los informes de auditoría."
+  }
+} 

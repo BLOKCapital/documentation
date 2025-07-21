@@ -1,0 +1,8 @@
+{
+  "label": "Gobernanza DAO",
+  "position": 4,
+  "link": {
+    "type": "generated-index",
+    "description": "En la siguiente sección, profundizaremos en el funcionamiento de la DAO de BLOKC, explorando su estructura de gobernanza, los mecanismos de votación y el papel de los contratos inteligentes en la toma de decisiones on-chain."
+  }
+} 

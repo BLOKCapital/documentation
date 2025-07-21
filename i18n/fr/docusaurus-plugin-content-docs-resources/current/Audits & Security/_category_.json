@@ -1,0 +1,8 @@
+{
+  "label": "Audits & Sécurité",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "Cette section met en avant la feuille de route sécurité de BLOKC et les rapports d'audit."
+  }
+} 

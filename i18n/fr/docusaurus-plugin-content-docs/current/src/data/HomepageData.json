@@ -1,0 +1,56 @@
+[
+  {
+    "title": "Qu'est-ce que BLOK Capital ?",
+    "description": "Découvrez les concepts clés de BLOK Capital",
+    "href": "/intro",
+    "icon": "FaCoins"
+  },
+  {
+    "title": "Aperçu",
+    "description": "Familiarisez-vous avec les éléments fondamentaux du projet",
+    "href": "/category/overview",
+    "icon": "FaCogs"
+  },
+  {
+    "title": "Contrats BLOK Capital",
+    "description": "En savoir plus sur nos contrats de protocole",
+    "href": "/builders/category/smart-contracts",
+    "icon": "FaShieldAlt"
+  },
+  {
+    "title": "Gouvernance",
+    "description": "Comprendre comment la DAO est gouvernée et comment les propositions sont exécutées",
+    "href": "/builders/category/dao-governance",
+    "icon": "FaBalanceScale"
+  },
+  {
+    "title": "Architecture BLOK Capital",
+    "description": "Architecture système de BLOK Capital V1",
+    "href": "/builders/BLOK%20CapitalV1",
+    "icon": "FaProjectDiagram"
+  },
+  {
+    "title": "Audits et sécurité",
+    "description": "Rapports de sécurité et d'audit",
+    "href": "/resources/category/audits--security",
+    "icon": "FaLock"
+  },
+  {
+    "title": "Section Builder",
+    "description": "En savoir plus sur nos concepts techniques",
+    "href": "/builders/intro",
+    "icon": "FaCode"
+  },
+  {
+    "title": "Contribuer",
+    "description": "Créer des tutoriels, guides et vidéos",
+    "href": "/resources/CreateVideo",
+    "icon": "FaChalkboardTeacher"
+  },
+  {
+    "title": "FAQ",
+    "description": "Questions fréquentes répondues",
+    "href": "/resources/FAQs/",
+    "icon": "FaQuestionCircle"
+  }
+] 

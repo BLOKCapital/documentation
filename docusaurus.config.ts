@@ -127,7 +127,7 @@ const config: Config = {
         {
           label: "Whitepaper",
           position: "right",
-          href: "https://docsend.com/view/qqzdvsv2q47g6t9y",
+          href: "https://docsend.com/view/4j6qvvrudyr6izyb",
         }
       ],
     },

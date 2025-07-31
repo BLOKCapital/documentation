@@ -1,6 +1,7 @@
 ---
 title: Luca
 sidebar_position: 5
+description: Meet Luca, the wise guardian of BLOK — embodying trust, clarity, and our community-first mission.
 ---
 
 

@@ -19,5 +19,5 @@
 - The features are set as local variables in a Features facet. The Features facet is responsible for containing all the values such as discount, swap fees, protocol fees, etc, corresponding to the NFT collection.
 - The features can be updated in the future depending on a community voting, which aligns with our design choice of making the features live in a facet which is upgradable.
 - There exists a registry, which maintains track of NFT ID, owner’s address and Garden address to ensure proper ownership of Gardens and NFTs. 
-
+- The NFT collection would be launched on our source chain Arbitrum, and the other chains on which BLOK Capital will be operating will contain a registry that keeps track of the ownership of NFTs with their respective user/owner.
 

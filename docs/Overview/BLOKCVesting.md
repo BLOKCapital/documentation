@@ -1,0 +1,9 @@
+# BLOKC Token Vesting
+- The BLOK Capital vesting contract is a foundational component of our commitment to building a transparent and sustainable ecosystem. Vesting plays a critical role in ensuring long-term alignment, as it mitigates the risk of immediate token sales that could adversely impact the market stability of BLOKC tokens.
+- To achieve this, we will leverage OpenZeppelin’s token vesting contracts as a baseline, while extending their functionality to include delegation features. This enhancement allows token holders to maintain governance rights by delegating voting power, even while their tokens remain subject to vesting schedules.
+- The vesting framework is structured as follows:
+  - **Cliff**: 15% of tokens will vest at the IDO date.
+  - **Linear Vesting**: The remaining 85% will vest through a continuous linear stream over a two-year period.
+- Importantly, the vesting contract will be DAO-owned, reinforcing community oversight and governance. In exceptional circumstances, the DAO retains the authority—via governance proposals—to revoke vesting for specific token holders. This ensures both accountability and adaptability in unforeseen situations.
+- During our evaluation of available vesting and token streaming protocols, we identified a significant risk factor: most solutions require transferring tokens to contracts controlled by third-party protocols. This introduces potential vulnerabilities, as any failure or compromise of the external protocol could directly impact the BLOKC community. To mitigate this, we designed our contract architecture to minimize such dependencies while maintaining security and transparency.
+- Finally, all vesting schedules and token streams will be publicly visible through our interface and indexed via a subgraph, providing the community with real-time, verifiable transparency into the distribution and vesting process.

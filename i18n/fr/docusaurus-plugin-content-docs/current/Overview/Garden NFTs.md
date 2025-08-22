@@ -12,7 +12,6 @@ sidebar_position: 4
 
 Au-delà de leur fonction principale en tant que preuve de propriété, les NFTs de Jardin chez BLOK Capital servent également d’œuvres d’art génératif à collectionner. L’art apporte une personnalisation unique et une connexion avec la communauté. En sélectionnant et en collaborant avec des artistes, nous veillons à ce que chaque NFT soit non seulement fonctionnel mais également précieux en tant que création artistique unique.
 
----
 
 #### Artistes
 
@@ -28,7 +27,6 @@ De plus, les artistes bénéficient d’un modèle économique durable :
 
 Avec ce modèle, BLOK Capital cherche à revitaliser la valeur culturelle des NFTs, en les restaurant comme un médium de créativité, d’expression et de construction communautaire plutôt que comme de simples instruments spéculatifs.
 
----
 
 #### Les NFTs définissent les fonctionnalités des Jardins
 

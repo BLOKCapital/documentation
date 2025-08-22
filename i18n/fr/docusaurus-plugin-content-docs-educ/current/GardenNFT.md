@@ -1,22 +1,23 @@
 # Vue d’ensemble du marché NFT & Garden
 
 ### Principes fondamentaux du marché NFT & Garden : 
-- Les NFT doivent être transférés via la place de marché BLOK Capital ; ils doivent toujours rester dans notre écosystème et ne jamais en sortir. Pourquoi ? Les NFT représentent la propriété du Jardin et de son propriétaire ; si le NFT quitte l’écosystème BLOK, la propriété du jardin serait compromise, ce qui entraînerait une perte définitive du Jardin de l’utilisateur.
-- Les échanges de jardins doivent être effectués via la place de marché BLOK Capital ; les jardins doivent toujours rester à l’intérieur de notre écosystème.
-- Les créateurs de collections de NFT doivent recevoir des royalties sur les échanges de NFT.
-- Différentes collections de NFT débloqueront un ensemble unique de fonctionnalités de BLOK Capital Gardens, qui considèrent les Jardins à la fois comme une œuvre d’art numérique et un portefeuille d’actifs crypto en constante évolution.
-- Les NFT sont mintés sur Arbitrum, sur lequel la DAO BLOK Capital réside. C’est la chaîne source.
-- Un registre de propriété des NFT Garden et de leurs propriétaires sera maintenu sur toutes les autres chaînes sur lesquelles BLOK Capital choisira d’opérer prochainement.
-- Nous utiliserons Chainlink CCIP, ce qui nous permettra de communiquer entre chaînes et de mettre à jour les registres de NFT sur les chaînes de destination après une transaction réussie de Garden.
-- Une architecture appropriée doit être développée pour permettre la messagerie inter-chaînes afin de mettre à jour instantanément le registre de NFT. Sinon, nous risquons de perdre les Gardens sur les chaînes de destination lors du transfert.
-- Une fois qu’un Garden est listé sur la place de marché par le vendeur, sa propriété sera transférée au contrat de la Marketplace, empêchant tout accès au Garden tant qu’il n’est pas vendu à un acheteur ou retiré.
-- Le contrat de la marketplace est détenu et gouverné par la DAO.
-- Le contrat de la marketplace sera un proxy beacon ou un proxy UUPS, ce qui sera finalisé lors de discussions ultérieures.
-- Actuellement, le contrat de la Marketplace sera déployé mais non opérationnel, jusqu’à son lancement complet.
-- À chaque transaction réussie de Gardens, BLOK Capital prélèvera un petit pourcentage en tant que frais de plateforme.
+* Les NFTs seront toujours transférés via le **Marketplace BLOK Capital**. Ils resteront dans notre écosystème et ne le quitteront jamais.
+* **Raison :** Les NFTs représentent la propriété des Jardins. Si un NFT quitte l’écosystème BLOK, la propriété de son Jardin correspondant est compromise, entraînant une perte définitive du Jardin de l’utilisateur.
+* Le **commerce des Jardins** se fera exclusivement via le Marketplace BLOK Capital. Les Jardins resteront toujours dans notre écosystème.
+* Les créateurs de collections NFT recevront des **redevances** sur chaque transaction de leurs NFTs.
+* Différentes collections NFT débloqueront des fonctionnalités uniques pour les Jardins BLOK Capital, positionnant les Jardins à la fois comme **œuvres d’art numériques** et comme un **portefeuille crypto en croissance continue**.
+* Les NFTs seront **mintés sur Arbitrum**, la chaîne où réside le DAO BLOK Capital (chaîne source).
+* Un **registre de propriété des NFTs Jardins** sera maintenu sur toutes les autres chaînes où BLOK Capital opérera dans le futur.
+* BLOK Capital intégrera **Chainlink CCIP** pour permettre la communication inter-chaînes, garantissant que les registres NFT sur les chaînes de destination soient mis à jour après chaque échange réussi de Jardin.
+* Une **architecture inter-chaînes** appropriée sera développée pour assurer des mises à jour instantanées des registres. Sans cela, les Jardins sur les chaînes de destination pourraient être exposés à des risques lors des transferts.
+* Lorsqu’un Jardin est listé sur le Marketplace par un vendeur, la **propriété sera temporairement transférée au contrat Marketplace**, empêchant tout accès utilisateur jusqu’à sa vente ou son retrait.
+* Le **contrat Marketplace** sera possédé et gouverné par le DAO.
+* Le contrat adoptera le **standard Beacon Proxy ou UUPS Proxy**, après examen.
+* Le contrat Marketplace sera déployé mais restera **inactif jusqu’au lancement officiel** du protocole.
+* Pour chaque échange réussi de Jardin, BLOK Capital prélèvera un **petit pourcentage en frais de plateforme**.
 
-### Attribuer des fonctionnalités aux jardins via des collections NFT : 
-- Les fonctionnalités sont définies en tant que variables locales dans une facette Features. La facette Features contient toutes les valeurs telles que la remise, les frais d’échange, les frais de protocole, etc., correspondant à la collection NFT.
-- Les fonctionnalités peuvent être mises à jour à l’avenir en fonction d’un vote de la communauté, ce qui cadre avec notre choix de conception de rendre les fonctionnalités vivantes dans une facette upgradable.
-- Il existe un registre qui suit l’ID NFT, l’adresse du propriétaire et l’adresse du Garden afin d’assurer la bonne propriété des Gardens et des NFT.
-- La collection NFT sera lancée sur notre chaîne source, Arbitrum, et les autres chaînes sur lesquelles BLOK Capital opérera contiendront un registre qui suit la propriété des NFT avec leurs utilisateurs/propriétaires respectifs.
+### Attacher des fonctionnalités aux Jardins via les Collections NFT
+
+* Les fonctionnalités seront définies comme **variables locales** dans une **Features Facet**, qui contiendra des paramètres tels que : taux de réduction, frais de swap et frais de protocole, tous liés à la collection NFT correspondante.
+* Les fonctionnalités seront **évolutives** et pourront être mises à jour dans le futur via un **vote communautaire**, conformément au principe d’évolution guidée par la gouvernance.
+* Les collections NFT seront lancées sur **Arbitrum (chaîne source)**. Sur toutes les autres chaînes supportées, des registres suivront la propriété et les détenteurs des NFTs.

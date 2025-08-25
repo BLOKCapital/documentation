@@ -242,6 +242,5 @@ The Diamond Standard, paired with a factory-based deployment, offers:
 
 The Diamond Standard is a powerful tool for building modular, upgradable smart contract systems, akin to cultivating a garden where each plant (facet) contributes to a thriving ecosystem. By using `DiamondFactory.sol`, you can automate diamond deployment, making it easy to scale your garden across multiple instances. Whether you’re building a DeFi protocol, a DAO, or an NFT marketplace, the Diamond Standard offers the flexibility to grow and adapt.
 
-For more details, check out the [forgenie diamond-foundry](https://github.com/forgenie/diamond-foundry) repository and [EIP-2535](https://eips.ethereum.org/EIPS/eip-2535).
 
 Happy gardening!

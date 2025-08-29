@@ -96,10 +96,6 @@ contract A {
 ### Natspec and commenting guide
 - Refer to the following repo for natspec and commenting examples : [link](https://github.com/CollarNetworks/protocol-core/blob/develop/src/ChainlinkOracle.sol)
 
-### Framework 
-- BLOK Capital uses Foundry Framework for development of smart contracts. Follow the official Foundry guide for more : [link](https://getfoundry.sh/introduction/getting-started)
-
-
 ### Sample contract
 ```js
 // SPDX-License-Identifier: GPL-3.0

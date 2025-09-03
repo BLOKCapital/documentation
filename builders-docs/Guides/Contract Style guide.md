@@ -1,6 +1,53 @@
 # Smart contract style guide
 
+### Naming conventions
+#### 1. Architectural Overview
+Our protocol uses a modular diamond/facet architecture, where each facet encapsulates a specific domain (e.g., Uniswap swaps, garden creation, access control). Facets expose external interfaces, delegate logic to internal base contracts, and use storage libraries for state management. This pattern enables upgradability, separation of concerns, and clear boundaries between protocol features.
+Example: Uniswap Facet
+- **External Facet**: `UniswapFacet` exposes swap and TWAP functions.
+- **Interface**: `IUniswap` defines the external API and parameter structs.
+- **Internal Base**: `UniswapBase` implements core logic, only callable by the facet.
+- **Storage Library**: `UniswapStorage` manages persistent state.
+- **Error Library**: `IUniswapBase` defines errors and events.
+
+#### 2. Naming Conventions
+
+**Contracts & Facets**
+- **Facet Contracts**: Suffix with Facet (e.g., `UniswapFacet`).
+- **Base Contracts**: Suffix with Base (e.g., `UniswapBase`).
+- **Storage Libraries**: Suffix with Storage (e.g., `UniswapStorage`).
+- **Interfaces**: Prefix with I (e.g., `IUniswap`).
+- **Base Interfaces**: Prefix with I and suffix with base (e.g. `IUniswapBase`)
+
+**Functions**
+- **External Functions**: Use descriptive **camelCase** names (e.g., `swapExactInputSingleHop`).
+- **Internal Functions**: Prefix with **_** (e.g., `_swapExactInputSingleHop`).
+- **Initialization**: Suffix with **_init** (e.g., `UniswapFacet_init`).
+
+**Structs**
+- **Parameter Structs**: Suffix with Params (e.g., `GardenSwapParams`).
+- **Composite Types**: Use descriptive names (e.g., `TokenWithFee`).
+
+**Errors**
+- **Domain Prefix**: Prefix with facet name (e.g., `UniswapFacet_InsufficientBalance`).
+- **Descriptive**: Use **PascalCase**, describe the failure (e.g., `UniswapFacet_SwapDeadlineHasPassed`).
+
+**Events**
+- **Past Tense**: Use past tense for state changes (e.g., `UniswapFacetTokensSwapped`).
+- **Domain Prefix**: Prefix with facet name for clarity.
+
+**Variables**
+- **State Variables**: Private, prefixed with **_** in base contracts, stored in storage libraries.
+- **Struct Variables**: Use camelCase, descriptive.
+
+**Folders**
+- **Facets**: Each facet should have a separate folder.
+- **Descriptive**: Use camelCase (e.g., `liquidityPoolRegistry`)
+
+---
+
 ### Copyright Header
+
 ```md
 /*###############################################################################
 
@@ -93,8 +140,6 @@ contract A {
     // ...
 }
 ```
-### Natspec and commenting guide
-- Refer to the following repo for natspec and commenting examples : [link](https://github.com/CollarNetworks/protocol-core/blob/develop/src/ChainlinkOracle.sol)
 
 ### Sample contract
 ```js

@@ -1,0 +1,442 @@
+
+# Guide de style pour contrats intelligents
+
+### Conventions de nommage
+#### 1. Vue d’ensemble architecturale
+Notre protocole utilise une architecture modulaire diamant/facette, où chaque facette encapsule un domaine spécifique (par ex. : swaps Uniswap, création de « gardens », contrôle d’accès). Les facettes exposent des interfaces externes, délèguent la logique à des contrats de base internes et utilisent des bibliothèques de stockage pour la gestion de l’état. Ce modèle permet l’upgradabilité, la séparation des responsabilités et des frontières claires entre les fonctionnalités du protocole.  
+Exemple : Facette Uniswap  
+- **Facette externe** : `UniswapFacet` expose les fonctions de swap et TWAP.  
+- **Interface** : `IUniswap` définit l’API externe et les structs de paramètres.  
+- **Base interne** : `UniswapBase` implémente la logique core, appelable uniquement par la facette.  
+- **Bibliothèque de stockage** : `UniswapStorage` gère l’état persistant.  
+- **Bibliothèque d’erreurs** : `IUniswapBase` définit erreurs et événements.
+
+#### 2. Conventions de nommage
+
+**Contrats & Facettes**
+- **Contrats de facette** : Suffixer par `Facet` (ex. `UniswapFacet`).  
+- **Contrats de base** : Suffixer par `Base` (ex. `UniswapBase`).  
+- **Bibliothèques de stockage** : Suffixer par `Storage` (ex. `UniswapStorage`).  
+- **Interfaces** : Préfixer par `I` (ex. `IUniswap`).  
+- **Interfaces de base** : Préfixer par `I` et suffixer par `Base` (ex. `IUniswapBase`).
+
+**Fonctions**
+- **Fonctions externes** : Utiliser des noms descriptifs en **camelCase** (ex. `swapExactInputSingleHop`).  
+- **Fonctions internes** : Préfixer par **_** (ex. `_swapExactInputSingleHop`).  
+- **Initialisation** : Suffixer par **_init** (ex. `UniswapFacet_init`).
+
+**Structs**
+- **Structs de paramètres** : Suffixer par `Params` (ex. `GardenSwapParams`).  
+- **Types composites** : Utiliser des noms descriptifs (ex. `TokenWithFee`).
+
+**Erreurs**
+- **Préfixe de domaine** : Préfixer par le nom de la facette (ex. `UniswapFacet_InsufficientBalance`).  
+- **Descriptif** : Utiliser **PascalCase**, décrire la raison de l’échec (ex. `UniswapFacet_SwapDeadlineHasPassed`).
+
+**Événements**
+- **Temps passé** : Utiliser le passé pour les changements d’état (ex. `UniswapFacetTokensSwapped`).  
+- **Préfixe de domaine** : Préfixer par le nom de la facette pour plus de clarté.
+
+**Variables**
+- **Variables d’état** : Privées, préfixées par **_** dans les contrats de base, stockées dans les bibliothèques de stockage.  
+- **Variables de structs** : Utiliser camelCase, noms descriptifs.
+
+**Dossiers**
+- **Facettes** : Chaque facette doit avoir son dossier séparé.  
+- **Descriptifs** : Utiliser camelCase (ex. `liquidityPoolRegistry`).
+
+---
+
+### En-tête Copyright
+
+```md
+/*###############################################################################
+
+    @title Diamond
+    @author BLOK Capital DAO
+
+    ▗▄▄▖ ▗▖    ▗▄▖ ▗▖ ▗▖     ▗▄▄▖ ▗▄▖ ▗▄▄▖▗▄▄▄▖▗▄▄▄▖▗▄▖ ▗▖       ▗▄▄▄  ▗▄▖  ▗▄▖ 
+    ▐▌ ▐▌▐▌   ▐▌ ▐▌▐▌▗▞▘    ▐▌   ▐▌ ▐▌▐▌ ▐▌ █    █ ▐▌ ▐▌▐▌       ▐▌  █▐▌ ▐▌▐▌ ▐▌
+    ▐▛▀▚▖▐▌   ▐▌ ▐▌▐▛▚▖     ▐▌   ▐▛▀▜▌▐▛▀▘  █    █ ▐▛▀▜▌▐▌       ▐▌  █▐▛▀▜▌▐▌ ▐▌
+    ▐▙▄▞▘▐▙▄▄▖▝▚▄▞▘▐▌ ▐▌    ▝▚▄▄▖▐▌ ▐▌▐▌  ▗▄█▄▖  █ ▐▌ ▐▌▐▙▄▄▖    ▐▙▄▄▀▐▌ ▐▌▝▚▄▞▘
+
+
+################################################################################*/
+````
+
+---
+
+### Ordre de disposition des éléments du contrat intelligent
+
+**Les éléments du contrat doivent être disposés dans l’ordre suivant :**
+
+1. Directives `pragma`
+2. Directives `import`
+3. Événements
+4. Erreurs
+5. Interfaces
+6. Bibliothèques (`libraries`)
+7. Contrats
+
+**À l’intérieur de chaque contrat, bibliothèque ou interface, utiliser l’ordre suivant :**
+
+1. Déclarations de types
+2. Variables d’état
+3. Événements
+4. Erreurs
+5. Modificateurs
+6. Fonctions
+
+Consultez la guide officiel de Solidity pour plus de détails : [link](https://docs.soliditylang.org/en/latest/style-guide.html#order-of-layout)
+
+### Ordre des fonctions
+
+L’ordre aide le lecteur à identifier quelles fonctions il peut appeler et à trouver plus facilement le constructeur et les définitions `receive` / `fallback`.
+
+Les fonctions doivent être regroupées selon leur visibilité et ordonnées :
+
+* constructor
+* receive (si présent)
+* fallback (si présent)
+* external
+* public
+* internal
+* private
+
+Dans un même groupe, placer les fonctions `view` et `pure` à la fin.
+
+---
+
+```js
+// SPDX-License-Identifier: GPL-3.0
+pragma solidity >=0.7.0 <0.9.0;
+
+contract A {
+    constructor() {
+        // ...
+    }
+
+    receive() external payable {
+        // ...
+    }
+
+    fallback() external {
+        // ...
+    }
+
+    // External functions
+    // ...
+
+    // External functions that are view
+    // ...
+
+    // External functions that are pure
+    // ...
+
+    // Public functions
+    // ...
+
+    // Internal functions
+    // ...
+
+    // Private functions
+    // ...
+}
+```
+
+### Contrat exemple
+
+> Le bloc de code suivant est laissé tel quel (syntaxe inchangée). Si vous souhaitez, je peux traduire les commentaires de documentation (`/// @notice`, `/// @dev`, etc.) en français tout en conservant la syntaxe Solidity.
+
+```js
+// SPDX-License-Identifier: GPL-3.0
+/*###############################################################################
+
+    @title Diamond
+    @author BLOK Capital DAO
+
+    ▗▄▄▖ ▗▖    ▗▄▖ ▗▖ ▗▖     ▗▄▄▖ ▗▄▖ ▗▄▄▖▗▄▄▄▖▗▄▄▄▖▗▄▖ ▗▖       ▗▄▄▄  ▗▄▖  ▗▄▖ 
+    ▐▌ ▐▌▐▌   ▐▌ ▐▌▐▌▗▞▘    ▐▌   ▐▌ ▐▌▐▌ ▐▌ █    █ ▐▌ ▐▌▐▌       ▐▌  █▐▌ ▐▌▐▌ ▐▌
+    ▐▛▀▚▖▐▌   ▐▌ ▐▌▐▛▚▖     ▐▌   ▐▛▀▜▌▐▛▀▘  █    █ ▐▛▀▜▌▐▌       ▐▌  █▐▛▀▜▌▐▌ ▐▌
+    ▐▙▄▞▘▐▙▄▄▖▝▚▄▞▘▐▌ ▐▌    ▝▚▄▄▖▐▌ ▐▌▐▌  ▗▄█▄▖  █ ▐▌ ▐▌▐▙▄▄▖    ▐▙▄▄▀▐▌ ▐▌▝▚▄▞▘
+
+
+################################################################################*/
+
+pragma solidity ^0.8.24;
+
+/*//////////////////////////////////////////////////////////////
+                            IMPORTS
+//////////////////////////////////////////////////////////////*/
+
+import {IERC20} from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
+import {SafeERC20} from "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
+
+/*//////////////////////////////////////////////////////////////
+                           CONTRACTS
+//////////////////////////////////////////////////////////////*/
+
+/// @title ProtocolTemplate
+/// @notice A starting point for BLOK Capital protocol modules adhering to the style guide.
+/// @dev Replace placeholders with domain-specific logic. Follow visibility and layout ordering strictly.
+contract ProtocolTemplate {
+    /*//////////////////////////////////////////////
+                1) TYPE DECLARATIONS
+    //////////////////////////////////////////////*/
+
+    /// @notice Example struct for cohesive configuration/state.
+    struct Config {
+        // slot 0
+        address admin;     // privileged controller (e.g., DAO multisig or Diamond facet admin)
+        // slot 1
+        uint96  feeBps;    // example fee in basis points
+        bool    paused;    // simple circuit breaker
+    }
+
+    /*//////////////////////////////////////////////
+                2) STATE VARIABLES
+    //////////////////////////////////////////////*/
+
+    /// @notice Packed configuration/state.
+    Config private _cfg;
+
+    /// @notice Generic key-value parameters (optional pattern).
+    mapping(bytes32 => uint256) private _params;
+
+    /// @notice Example immutable version tag for off-chain tooling.
+    string public constant VERSION = "v0.1.0-template";
+
+    /*//////////////////////////////////////////////
+                    3) EVENTS
+    //////////////////////////////////////////////*/
+    /// @notice Emitted when the admin address is updated.
+    /// @param oldAdmin The previous admin.
+    /// @param newAdmin The new admin.
+    event AdminUpdated(address indexed oldAdmin, address indexed newAdmin);
+
+    /*//////////////////////////////////////////////
+                    4) ERRORS
+    //////////////////////////////////////////////*/
+    /// @notice Thrown when a caller that is not the admin invokes an admin-only function.
+    error NotAdmin();
+
+    /// @notice Thrown when an operation uses a zero address where it is not allowed.
+    error ZeroAddress();
+
+    /*//////////////////////////////////////////////
+                    5) MODIFIERS
+    //////////////////////////////////////////////*/
+
+    /// @notice Restricts function to the current admin.
+    modifier onlyAdmin() {
+        if (msg.sender != _cfg.admin) revert NotAdmin();
+        _;
+    }
+
+    /// @notice Reverts when the contract is paused.
+    modifier whenNotPaused() {
+        if (_cfg.paused) revert InvalidParameter(LibKeys.K_PAUSED, 1);
+        _;
+    }
+
+    /*//////////////////////////////////////////////
+                    6) FUNCTIONS
+    //////////////////////////////////////////////*/
+
+    //------------- Constructor -------------
+
+    /// @notice Initializes the template with an admin and optional initial params.
+    /// @param initialAdmin The admin address (DAO, multisig, or Diamond owner).
+    /// @param initialFeeBps Initial fee basis points (0–10_000).
+    /// @param initiallyPaused Whether the module starts paused.
+    constructor(address initialAdmin, uint96 initialFeeBps, bool initiallyPaused) {
+        if (initialAdmin == address(0)) revert ZeroAddress();
+        if (initialFeeBps > 10_000) revert InvalidParameter(LibKeys.K_FEE_BPS, initialFeeBps);
+
+        _cfg.admin = initialAdmin;
+        _cfg.feeBps = initialFeeBps;
+        _cfg.paused = initiallyPaused;
+
+        _params[LibKeys.K_FEE_BPS] = initialFeeBps;
+        _params[LibKeys.K_PAUSED] = initiallyPaused ? 1 : 0;
+    }
+
+    //------------- Receive (if exists) -------------
+
+    /// @notice Accepts ETH transfers.
+    receive() external payable {
+        // Intentionally empty. Consider emitting an event if tracking deposits is required.
+    }
+
+    //------------- Fallback (if exists) -------------
+
+    /// @notice Fallback for non-matching function selectors.
+    fallback() external payable {
+        // Intentionally empty. Consider delegating or reverting depending on module design.
+    }
+
+    //------------- External -------------
+
+    /// @notice Update the admin address.
+    /// @param newAdmin The new admin address.
+    /// @dev External to keep the interface surface clear; restricted via onlyAdmin.
+    function setAdmin(address newAdmin) external onlyAdmin {
+        if (newAdmin == address(0)) revert ZeroAddress();
+        address old = _cfg.admin;
+        _cfg.admin = newAdmin;
+        emit AdminUpdated(old, newAdmin);
+    }
+
+    /// @notice Update a numeric parameter by key.
+    /// @param key The parameter key (see LibKeys).
+    /// @param value The new value.
+    /// @dev Example: setting FEE_BPS or PAUSED.
+    function setParam(bytes32 key, uint256 value) external onlyAdmin {
+        uint256 old = _params[key];
+
+        // Example validation: enforce bounds for known keys.
+        if (key == LibKeys.K_FEE_BPS) {
+            if (value > 10_000) revert InvalidParameter(key, value);
+            _cfg.feeBps = uint96(value);
+        } else if (key == LibKeys.K_PAUSED) {
+            _cfg.paused = (value != 0);
+        }
+
+        _params[key] = value;
+        emit ParamUpdated(key, old, value);
+    }
+
+    //------------- External view -------------
+
+    /// @inheritdoc IProtocolTemplate
+    function admin() external view returns (address) {
+        return _cfg.admin;
+    }
+
+    /// @inheritdoc IProtocolTemplate
+    function getParam(bytes32 key) external view returns (uint256 value) {
+        return _params[key];
+    }
+
+    /// @notice Get the current fee in basis points.
+    function feeBps() external view returns (uint96) {
+        return _cfg.feeBps;
+    }
+
+    /// @notice Return whether the contract is paused.
+    function paused() external view returns (bool) {
+        return _cfg.paused;
+    }
+
+    //------------- Public -------------
+
+    /// @notice Example public function demonstrating the `whenNotPaused` guard.
+    /// @dev Replace with real business logic (e.g., deposit/withdraw/swap).
+    function exampleAction(uint256 amount) public whenNotPaused {
+        // Implement domain-specific logic. This is a stub.
+        // e.g., _takeFee(amount); _doSomething(amount);
+        amount; // silence compiler warning for template
+    }
+
+    //------------- Internal -------------
+
+    /// @notice Example internal helper to compute a fee.
+    /// @param amount The gross amount.
+    /// @return fee The computed fee based on current feeBps.
+    function _computeFee(uint256 amount) internal view returns (uint256 fee) {
+        unchecked {
+            fee = (amount * _cfg.feeBps) / 10_000;
+        }
+    }
+
+    //------------- Private -------------
+
+    // Add private helpers as needed, placed after internal functions.
+}
+```
+
+### Modèle de contrat
+
+> Le modèle ci-dessous est laissé en code tel quel. Si vous le souhaitez, je peux traduire les commentaires `/// @notice`, `/// @dev` et autres en français tout en conservant la syntaxe du contrat.
+
+```js
+// SPDX-License-Identifier: GPL-3.0
+pragma solidity ^0.8.24;
+/*###############################################################################
+
+    @title Enter contract title
+    @author BLOK Capital DAO
+    @notice Enter contract utility
+
+    ▗▄▄▖ ▗▖    ▗▄▖ ▗▖ ▗▖     ▗▄▄▖ ▗▄▖ ▗▄▄▖▗▄▄▄▖▗▄▄▄▖▗▄▖ ▗▖       ▗▄▄▄  ▗▄▖  ▗▄▖ 
+    ▐▌ ▐▌▐▌   ▐▌ ▐▌▐▌▗▞▘    ▐▌   ▐▌ ▐▌▐▌ ▐▌ █    █ ▐▌ ▐▌▐▌       ▐▌  █▐▌ ▐▌▐▌ ▐▌
+    ▐▛▀▚▖▐▌   ▐▌ ▐▌▐▛▚▖     ▐▌   ▐▛▀▜▌▐▛▀▘  █    █ ▐▛▀▜▌▐▌       ▐▌  █▐▛▀▜▌▐▌ ▐▌
+    ▐▙▄▞▘▐▙▄▄▖▝▚▄▞▘▐▌ ▐▌    ▝▚▄▄▖▐▌ ▐▌▐▌  ▗▄█▄▖  █ ▐▌ ▐▌▐▙▄▄▖    ▐▙▄▄▀▐▌ ▐▌▝▚▄▞▘
+
+
+################################################################################*/
+
+
+/*//////////////////////////////////////////////////////////////
+                            IMPORTS
+//////////////////////////////////////////////////////////////*/
+
+/*//////////////////////////////////////////////////////////////
+                           CONTRACTS
+//////////////////////////////////////////////////////////////*/
+
+contract ProtocolTemplate {
+    /*//////////////////////////////////////////////
+                1) TYPE DECLARATIONS
+    //////////////////////////////////////////////*/
+
+
+    /*//////////////////////////////////////////////
+                2) STATE VARIABLES
+    //////////////////////////////////////////////*/
+
+    /// constant
+    /// public  
+    /// private
+    /// mapping
+    
+    /*//////////////////////////////////////////////
+                    3) EVENTS
+    //////////////////////////////////////////////*/
+
+
+    /*//////////////////////////////////////////////
+                    4) ERRORS
+    //////////////////////////////////////////////*/
+
+
+    /*//////////////////////////////////////////////
+                    5) MODIFIERS
+    //////////////////////////////////////////////*/
+
+
+    /*//////////////////////////////////////////////
+                    6) FUNCTIONS
+    //////////////////////////////////////////////*/
+
+    //------------- Constructor -------------
+
+    //------------- Receive (if exists) -------------
+
+    //------------- Fallback (if exists) -------------
+
+    //------------- External -------------
+
+    //------------- External view -------------
+
+    //------------- Public -------------
+
+    //------------- Internal -------------
+
+    //------------- Private -------------
+
+    // Add private helpers as needed, placed after internal functions.
+}
+```
+
+---

@@ -1,3 +1,7 @@
+---
+sidebar_position: 3   
+---
+
 # Guide: Creating a New Diamond Facet
 
 ### Overview 

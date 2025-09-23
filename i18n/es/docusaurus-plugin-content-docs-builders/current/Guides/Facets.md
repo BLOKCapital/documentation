@@ -1,3 +1,7 @@
+---
+sidebar_position: 3   
+---
+
 # Guía: Crear un Nuevo Facet de Diamante
 
 ### Visión General

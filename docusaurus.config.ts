@@ -22,6 +22,7 @@ const config: Config = {
     defaultLocale: "en",
     locales: ["en", "es", "fr"], // Add 'fr' here
   },
+  
   presets: [
     [
       "@docusaurus/preset-classic",

@@ -1,3 +1,4 @@
+# Indices Garden
 Un indice pondéré par la capitalisation boursière attribue des poids aux actifs proportionnels à leur capitalisation boursière par rapport à la capitalisation boursière totale du portefeuille (ou panier).
 
 ---

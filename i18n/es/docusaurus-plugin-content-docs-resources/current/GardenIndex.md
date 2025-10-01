@@ -1,3 +1,4 @@
+# Índices Garden
 Un índice ponderado por capitalización de mercado asigna pesos a los activos en proporción a su capitalización de mercado relativa al total de la capitalización de mercado del portafolio (o cesta).
 
 ---

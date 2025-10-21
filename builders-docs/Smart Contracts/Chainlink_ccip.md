@@ -12,8 +12,7 @@ We are limiting ccip usage in the main architecture upto Registries for now, get
 
 **Whiteboard (Canvas reference):**
 
-![image.png](attachment:5e2ad9e2-2359-4d59-a7bd-bc3572d7d38f:image.png)
-
+<image-card alt="Blok Capital Whiteboard Architecture Diagram" src="images/whiteboard-canvas.png" ></image-card>
 *Note: Remember, the DAO and broadcaster logic sits on Arbitrum Mainnet (this is the parent chain for pure orchestration whereas there is Base as sidechain as of now. Future integrations may include other networks like Avalanche and OP Mainnet).* 
 
 **Overview (Canvas):**

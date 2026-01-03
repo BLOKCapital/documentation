@@ -2,40 +2,53 @@
 sidebar_position: 1
 ---
 
-# ¿Qué es BLOK Capital?
+## ¿Qué es BLOK Capital?
 
-**BLOK Capital** es una **Organización Autónoma Descentralizada (DAO)** construida sobre **Arbitrum**, una blockchain de Capa 2 de Ethereum altamente escalable. Conecta a **Inversores** y **Gestores de Patrimonio** mediante contratos inteligentes, permitiendo una gestión patrimonial descentralizada, transparente y segura.
+**BLOK Capital** te permite hacer crecer tu patrimonio cripto sin renunciar nunca al control.
 
----
+Puedes seguir índices cripto seleccionados profesionalmente (como un índice similar al Standard & Poor’s 500, pero para cripto) o gestionar todo tú mismo con herramientas DeFi integradas. En cualquier caso, tus activos nunca salen de tu billetera.
 
-## Custodia y control del inversor
+<div style={{ textAlign: 'center' }}>
 
-A diferencia de los modelos tradicionales en los que los inversores ceden el control de sus activos a un fondo, BLOK Capital garantiza que:
-
-* Los inversores siempre mantienen la custodia de sus activos.
-* Los activos permanecen en todo momento en la billetera del inversor.
-* Los gestores de patrimonio nunca obtienen control total ni derechos de retiro sobre los activos.
+ **Son totalmente tus activos. Tu control.**
+ 
+</div>
 
 ---
 
-## Acuerdos impulsados por contratos inteligentes
+## ¿Por qué “BLOK Capital”?
 
-Todas las relaciones entre inversores y gestores están gobernadas por contratos inteligentes:
+Nuestro fundador, el Sr. Sheetal Nehra, quería un nombre que realmente definiera el producto que ofrecemos.
 
-* Definen la duración, las comisiones y las condiciones de salida.
-* Otorgan a los gestores de patrimonio **acceso limitado** para gestionar o comerciar los activos.
-* Restringen transferencias no autorizadas fuera de la billetera del inversor.
-* Permiten que cualquiera de las partes finalice el contrato en cualquier momento, otorgando al inversor control y flexibilidad totales.
+**BLOK** = Somos blockchain-first. Todo lo que hacemos se basa en los principios que hacen poderosa a la cripto: transparencia, descentralización y código en el que puedes confiar en lugar de intermediarios.
+
+**Capital** = Nos tomamos muy en serio el crecimiento de tu patrimonio. Esto no es un experimento DeFi que desaparecerá el próximo año. Estamos construyendo una infraestructura real de gestión patrimonial a largo plazo — el tipo de infraestructura financiera que respeta la finanza tradicional, pero reconstruida de la forma correcta: on-chain.
+
+Piénsanos como la infraestructura de cómo se gestionará la riqueza en el futuro.
+
+**Nuestro lema: Cripto, pero diferente**
+
+Así es literalmente como funciona el protocolo. Tú tienes las claves, tú tomas las decisiones y nadie puede quitarte ese control.
+
+---
+
+## ¿Por qué construimos BLOK Capital como una DAO?
+
+Elegimos la estructura DAO porque creemos que la comunidad debe tener un control real. Esto es lo que significa para ti:
+
+Cuando el protocolo necesita actualizaciones, la comunidad vota directamente en la blockchain. Las reglas no las impone una empresa que podría cambiar de opinión mañana — están escritas en el código. No custodiamos tus fondos en una cuenta bancaria corporativa. Tú mantienes el control. ¿Las grandes decisiones sobre el futuro de BLOK Capital? Las toman los poseedores de tokens como tú, no un pequeño grupo a puerta cerrada.
+
+Este enfoque nos da algo que las empresas tradicionales no pueden ofrecer: transparencia total en la toma de decisiones, protección contra la censura o cierres arbitrarios y una estructura donde los incentivos de todos están alineados a largo plazo. Cuando la comunidad tiene éxito, **todos tenemos éxito**.
 
 ---
 
 ## La analogía del jardín
 
-BLOK Capital reinventa la gestión patrimonial:
+**BLOK Capital** reimagina la gestión patrimonial:
 
-* El **Inversor** es como el **propietario de un jardín**: total visibilidad y control.
-* El **Gestor de Patrimonio** es como un **jardinero**: autorizado a cuidar y hacer crecer los activos (el “Jardín”).
-* El acceso continúa solo mientras el inversor esté satisfecho con el desempeño del gestor.
+Un **Jardín** es tu portafolio cripto **personal** en BLOK Capital, donde tus activos viven y crecen.
+
+**Propietario del Jardín = Inversor**: esto significa que tienes visibilidad total de tu portafolio y control completo sobre tus fondos. Tus activos nunca salen de tu billetera y solo tú decides qué sucede con ellos.
 
 ---
 
@@ -43,15 +56,26 @@ BLOK Capital reinventa la gestión patrimonial:
 
 Este enfoque:
 
-* Elimina intermediarios.
-* Establece un modelo de inversión transparente entre pares.
-* Promueve la inclusión financiera al democratizar el acceso a herramientas de gestión patrimonial.
+- Elimina intermediarios.
+- Establece un modelo de inversión transparente entre pares.
+- Promueve la inclusión financiera al democratizar el acceso a herramientas de gestión patrimonial.
 
 ---
 
-## Una DAO para la inclusión financiera
+### **¿Qué ERC y EIP respaldan el protocolo?**
 
-BLOK Capital es más que un protocolo: es un movimiento:
+- **[ERC-20](https://eips.ethereum.org/EIPS/eip-20)** – Estándar para tokens fungibles, garantizando compatibilidad en todo el ecosistema DeFi.
 
-* Construido y gobernado por su comunidad.
-* Busca **reducir la brecha de riqueza** y ampliar el acceso a la gestión de activos cripto para todos.
+- **[ERC-165](https://eips.ethereum.org/EIPS/eip-165)** – Detección de interfaces para una comunicación fluida entre contratos.
+
+- **[ERC-173](https://eips.ethereum.org/EIPS/eip-173)** – Estándar de propiedad para un control claro y transparente de los contratos.
+
+- **[ERC-721](https://eips.ethereum.org/EIPS/eip-721)** – Estándar NFT que representa tu Jardín como un activo único y verificable on-chain.
+
+- **[EIP-2535 (Diamond Proxy)](https://eips.ethereum.org/EIPS/eip-2535)** – Patrón de contratos actualizables que permite mejorar el protocolo sin interrumpir los fondos de los usuarios.
+
+- **[ERC-4337](https://eips.ethereum.org/EIPS/eip-4337)** – Abstracción de cuentas para billeteras inteligentes, haciendo tu Jardín más potente y fácil de usar.
+
+- **[ERC-5484](https://eips.ethereum.org/EIPS/eip-5484)**– Tokens soulbound para identidad y reputación, credenciales no transferibles que permanecen contigo.
+
+- **[EIP-7702](https://eips.ethereum.org/EIPS/eip-7702)** – Actualización de Ethereum que permite a las cuentas externas (EOA) convertirse en cuentas inteligentes.

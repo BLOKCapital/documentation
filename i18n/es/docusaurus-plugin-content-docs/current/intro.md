@@ -4,54 +4,54 @@ sidebar_position: 1
 
 # ¿Qué es BLOK Capital?
 
-**BLOK Capital** es una **Organización Autónoma Descentralizada (DAO)** construida sobre **Arbitrum**, una blockchain escalable de Capa 2 de Ethereum. Conecta a **Inversores** y **Gestores de Patrimonios** a través de contratos inteligentes, permitiendo una gestión de patrimonio descentralizada, transparente y segura.
+**BLOK Capital** es una **Organización Autónoma Descentralizada (DAO)** construida sobre **Arbitrum**, una blockchain de Capa 2 de Ethereum altamente escalable. Conecta a **Inversores** y **Gestores de Patrimonio** mediante contratos inteligentes, permitiendo una gestión patrimonial descentralizada, transparente y segura.
 
 ---
 
-## Custodia y Control del Inversor
+## Custodia y control del inversor
 
-A diferencia de los modelos tradicionales donde los inversores entregan el control de sus activos a un fondo, BLOK Capital garantiza:
+A diferencia de los modelos tradicionales en los que los inversores ceden el control de sus activos a un fondo, BLOK Capital garantiza que:
 
-* Los inversores siempre retienen la custodia de sus activos.
-* Los activos permanecen en la cartera del inversor en todo momento.
-* Los Gestores de Patrimonios nunca obtienen control total ni derechos de retiro sobre los activos.
+* Los inversores siempre mantienen la custodia de sus activos.
+* Los activos permanecen en todo momento en la billetera del inversor.
+* Los gestores de patrimonio nunca obtienen control total ni derechos de retiro sobre los activos.
 
 ---
 
-## Acuerdos Impulsados por Contratos Inteligentes
+## Acuerdos impulsados por contratos inteligentes
 
 Todas las relaciones entre inversores y gestores están gobernadas por contratos inteligentes:
 
-* Definen la duración, tarifas y condiciones de salida.
-* Otorgan a los Gestores de Patrimonios **acceso limitado** para gestionar o comerciar activos.
-* Restringen transferencias no autorizadas fuera de la cartera del inversor.
-* Permiten que cualquiera de las partes termine el contrato en cualquier momento, dando al inversor control y flexibilidad total.
+* Definen la duración, las comisiones y las condiciones de salida.
+* Otorgan a los gestores de patrimonio **acceso limitado** para gestionar o comerciar los activos.
+* Restringen transferencias no autorizadas fuera de la billetera del inversor.
+* Permiten que cualquiera de las partes finalice el contrato en cualquier momento, otorgando al inversor control y flexibilidad totales.
 
 ---
 
-## La Analogía del Jardín
+## La analogía del jardín
 
-BLOK Capital reinventa la gestión de patrimonio:
+BLOK Capital reinventa la gestión patrimonial:
 
-* El **Inversor** es como el **Propietario del Jardín**: total visibilidad y control.
-* El **Gestor de Patrimonios** es como el **Jardinero**: recibe permiso para cuidar y hacer crecer los activos (el "Jardín").
+* El **Inversor** es como el **propietario de un jardín**: total visibilidad y control.
+* El **Gestor de Patrimonio** es como un **jardinero**: autorizado a cuidar y hacer crecer los activos (el “Jardín”).
 * El acceso continúa solo mientras el inversor esté satisfecho con el desempeño del gestor.
 
 ---
 
-## Por Qué Es Importante
+## Por qué es importante
 
 Este enfoque:
 
 * Elimina intermediarios.
-* Establece un modelo de inversión transparente y entre pares.
-* Promueve la inclusión financiera al democratizar el acceso a herramientas de gestión de patrimonio.
+* Establece un modelo de inversión transparente entre pares.
+* Promueve la inclusión financiera al democratizar el acceso a herramientas de gestión patrimonial.
 
 ---
 
-## Una DAO para la Inclusión Financiera
+## Una DAO para la inclusión financiera
 
 BLOK Capital es más que un protocolo: es un movimiento:
 
 * Construido y gobernado por su comunidad.
-* Busca **cerrar la brecha de riqueza** y expandir el acceso a la gestión de criptoactivos para todos. 
+* Busca **reducir la brecha de riqueza** y ampliar el acceso a la gestión de activos cripto para todos.

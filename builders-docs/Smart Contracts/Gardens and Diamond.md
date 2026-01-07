@@ -49,7 +49,7 @@ Imagine the diamond as a central hub (the `Diamond.sol` contract) that routes fu
 
 Here’s a simplified example of the `Diamond.sol` fallback function, which delegates calls to facets:
 
-```js
+```solidity
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
@@ -93,8 +93,8 @@ Deploying diamonds manually can be tricky, especially for systems requiring mult
 #### How `DiamondFactory.sol` Works
 
 The factory deploys a new `Diamond` contract and initializes it with specified facets. Here’s a simplified version of `DiamondFactory.sol`:
-```js
-// SPDX-License-License: MIT
+```solidity
+// SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
 import {IDiamondCut} from "../interfaces/IDiamondCut.sol";
@@ -147,7 +147,7 @@ This factory pattern enables scalable deployment, allowing you to plant multiple
 #### Deployment Example
 
 Here’s how you might deploy a diamond using Foundry’s scripting:
-```js
+```solidity
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
@@ -182,7 +182,7 @@ forge script script/DeployDiamond.s.sol --fork-url http://localhost:8545 --broad
 ### Testing the Garden
 
 To ensure your diamond garden thrives, you need robust tests. Foundry’s Solidity-based testing makes this straightforward. Below is a test suite verifying the factory deployment and diamond functionality:
-```js
+```solidity
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 

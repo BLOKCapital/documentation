@@ -25,7 +25,7 @@ Our founder Mr. Sheetal Nehra wanted a name which could actually define the prod
 
 Think of us as the infrastructure for how wealth will be managed in the future.
 
-**Our Motto: It's Cryto but Diffrent**
+Our Motto: **It's Cryto but Diffrent**
 
 This is what literally how the protocol works. You hold the keys, you make the decisions, and nobody can take that away from you.
 
@@ -81,7 +81,7 @@ This approach:
 
 ---
 
-### **Which ERCs and EIPs back the protocol?**
+## **Which ERCs and EIPs back the protocol?**
 
 - **[ERC-20](https://eips.ethereum.org/EIPS/eip-20)** – Standard for fungible tokens, ensuring your assets work everywhere in DeFi.
 

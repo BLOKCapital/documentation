@@ -8,12 +8,20 @@ import {
   ResponsiveContainer,
   PieLabelRenderProps,
 } from "recharts";
-import data from "../data/tokenData.json";
+import defaultData from "../data/tokenData.json";
 import { useColorMode } from "@docusaurus/theme-common";
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 
 const RADIAN = Math.PI / 180;
 
 export default function Chart() {
+  const { i18n } = useDocusaurusContext();
+  let data;
+  try {
+    data = require(`../../i18n/${i18n.currentLocale}/docusaurus-plugin-content-docs/current/src/data/tokenData.json`);
+  } catch {
+    data = defaultData;
+  }
   const { colorMode } = useColorMode();
   const renderCustomLabel = ({
     cx = 0,

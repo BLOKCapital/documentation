@@ -19,13 +19,13 @@
   "zerodevAudits": [
     {
       "name": "Audit du Smart Wallet Zerodev",
-      "auditor": "Auditeurs multiples",
-      "description": "Le protocole BLOK Capital utilise un Zerodev Smart Wallet Account Kernel v3 pour garantir la sécurité de votre portefeuille auto-détenu.",
+      "auditor": "Plusieurs Auditeurs",
+      "description": "Le protocole BLOK Capital utilise un noyau de compte Zerodev Smart Wallet v3 pour garantir que votre portefeuille en auto-garde est sécurisé.",
       "reports": [
         {
           "name": "Chainlight v3.0",
           "link": "https://github.com/zerodevapp/kernel/blob/main/audits/chainlight_v3_0.pdf",
-          "date": "5 avril 2024",
+          "date": "5 avr 2024",
           "auditor": "Chainlight",
           "findings": {
             "critical": "-",
@@ -38,7 +38,7 @@
         {
           "name": "Kalos v3 Plugins",
           "link": "https://github.com/zerodevapp/kernel/blob/main/audits/kalos_v3_plugins.pdf",
-          "date": "12 avril 2024",
+          "date": "12 avr 2024",
           "auditor": "Kalos",
           "auditorlink": "https://kalos.xyz/",
           "findings": {
@@ -52,7 +52,7 @@
         {
           "name": "Kalos WebAuthn v1",
           "link": "https://github.com/zerodevapp/kernel/blob/main/audits/kalos_webauthn_v1.pdf",
-          "date": "22 février 2024",
+          "date": "22 fév 2024",
           "auditor": "Kalos",
           "auditorlink": "https://kalos.xyz/",
           "findings": {
@@ -66,7 +66,7 @@
         {
           "name": "Kalos Recovery v2",
           "link": "https://github.com/zerodevapp/kernel/blob/main/audits/kalos_recovery_v2.pdf",
-          "date": "6 février 2024",
+          "date": "6 fév 2024",
           "auditor": "Kalos",
           "auditorlink": "https://kalos.xyz/",
           "findings": {
@@ -80,7 +80,7 @@
         {
           "name": "Kalos Recovery v1",
           "link": "https://github.com/zerodevapp/kernel/blob/main/audits/kalos_recovery_v1.pdf",
-          "date": "12 décembre 2023",
+          "date": "12 déc 2023",
           "auditor": "Kalos",
           "auditorlink": "https://kalos.xyz/",
           "findings": {
@@ -94,7 +94,7 @@
         {
           "name": "Kalos v2.2 Lite",
           "link": "https://github.com/zerodevapp/kernel/blob/main/audits/kalos_v2_2_lite.pdf",
-          "date": "20 septembre 2023",
+          "date": "20 sep 2023",
           "auditor": "Kalos",
           "auditorlink": "https://kalos.xyz/",
           "findings": {
@@ -136,7 +136,7 @@
         {
           "name": "Kalos v1",
           "link": "https://github.com/zerodevapp/kernel/blob/main/audits/kalos_v1.pdf",
-          "date": "13 juillet 2023",
+          "date": "13 juil 2023",
           "auditor": "Kalos",
           "auditorlink": "https://kalos.xyz/",
           "findings": {
@@ -150,4 +150,4 @@
       ]
     }
   ]
-} 
+}

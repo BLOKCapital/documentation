@@ -1,0 +1,64 @@
+---
+title: Le Contrôleur Diamond
+sidebar_position: 2
+---
+
+## **2. Point d'Entrée : Le Contrôleur Diamond (`Garden.sol`)**
+
+**Fichier :**
+
+`src/garden/Garden.sol`
+
+Il s'agit du **contrat contrôleur principal** et de la **seule adresse de contrat** avec laquelle les utilisateurs finaux et la plupart des intégrations doivent interagir.
+
+### **Ce qu'est `Garden.sol`**
+
+- Un **proxy Diamond** :
+  - Il possède le **registre des facettes** (via `LibDiamond` (Library diamond) et le stockage associé).
+  - Il ne définit pas la logique métier lui-même.
+  - Il transmet les appels, basés sur `msg.sig`, à la bonne facette via `delegatecall`.
+- Une **surface d'API stable** :
+  - Même lorsque les facettes sont mises à jour, les utilisateurs continuent d'appeler la même adresse.
+
+### **Ce qui se passe dans le constructeur**
+
+Sans citer le code, le constructeur effectue généralement :
+
+- L'**initialisation du stockage Diamond** via `LibDiamond` :
+  - Définit le **propriétaire du contrat** (pour l'administration).
+  - Enregistre les **facettes initiales** et leurs sélecteurs (les facettes de base au minimum).
+
+- Il peut **exécuter un « diamond cut » initial** :
+  - Ajouter les facettes de propriété, de loupe et de découpe/mise à jour.
+  - Enregistrer éventuellement les premières facettes de fonctionnalités (indice, utilitaire).
+
+Le résultat final : une fois déployé, `Garden.sol` sait quelles fonctions existent et quelle facette implémente chacune d'elles, mais il **ne code pas en dur** ce mappage.
+
+### **Ce que le Diamond fait et ne fait pas**
+
+**Fait :**
+
+- Acheminer les fonctions vers les facettes via `delegatecall`.
+- Maintenir les **structures de données d'acheminement principales** dans le stockage Diamond.
+- Fournir un point d'entrée d'interface unique et cohérent pour toutes les fonctionnalités du protocole.
+
+**Ne fait pas :**
+
+- Implémenter directement la logique des fonctionnalités comme « rééquilibrer l'indice », « échanger sur Uniswap » ou « ouvrir une position GMX ».
+- Posséder directement les contrats de logique métier tels que `Index.sol` et les registres — ceux-ci font partie de la couche domaine et sont appelés depuis les facettes.
+
+### **Acheminement des appels**
+
+Lorsque vous appelez `Garden` :
+
+1. L'appel atteint `Garden.sol`.
+2. Le Diamond recherche `msg.sig` dans son mappage interne **sélecteur → adresse de facette** (maintenu par `LibDiamond` et le stockage du diamond cut).
+3. Il lance un `delegatecall` vers la facette :
+   - Le code s'exécute dans le contexte du Garden.
+   - Le stockage accédé est le **stockage du Garden**, pas celui de la facette.
+4. Le résultat est renvoyé à l'appelant comme si le Garden avait implémenté la fonction directement.
+
+Pour un builder, cela signifie :
+
+- Lorsque vous voyez une fonction dans une facette comme `IndexBase.connectToIndex`, elle est en réalité **exécutée dans le stockage du Garden**.
+- Toute logique avec état doit utiliser les **bonnes bibliothèques de disposition de stockage**.

@@ -1,0 +1,30 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.sidebar.category.Audits & Security": {
+    "message": "Audits & Security",
+    "description": "The label for category 'Audits & Security' in sidebar 'sidebar'"
+  },
+  "sidebar.sidebar.category.Audits & Security.link.generated-index.description": {
+    "message": "This section underlines BLOKC's security roadmap and audit reports.",
+    "description": "The generated-index page description for category 'Audits & Security' in sidebar 'sidebar'"
+  },
+  "sidebar.sidebar.category.Tokenomics": {
+    "message": "Tokenomics",
+    "description": "The label for category 'Tokenomics' in sidebar 'sidebar'"
+  },
+  "sidebar.sidebar.category.Tokenomics.link.generated-index.description": {
+    "message": "The following section will describe the token of the BLOK Capital ecosystem, with its native token, BLOKC, at its core. All the key features of the platform are enabled by BLOKC tokenomics. In this way, BLOKC is the lifeblood of the protocol and provides a game theoretically coherent framework that stimulates Investors and Wealth Managers behavior to facilitate growth of the ecosystem.",
+    "description": "The generated-index page description for category 'Tokenomics' in sidebar 'sidebar'"
+  },
+  "sidebar.sidebar.category.Brand Guidelines": {
+    "message": "Brand Guidelines",
+    "description": "The label for category 'Brand Guidelines' in sidebar 'sidebar'"
+  },
+  "sidebar.sidebar.category.Brand Guidelines.link.generated-index.description": {
+    "message": "This section outlines BLOKC's visual identity, including the color palette and logo design.",
+    "description": "The generated-index page description for category 'Brand Guidelines' in sidebar 'sidebar'"
+  }
+}

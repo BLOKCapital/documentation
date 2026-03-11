@@ -1,0 +1,26 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.sidebar.category.Smart Contracts": {
+    "message": "Smart Contracts",
+    "description": "The label for category 'Smart Contracts' in sidebar 'sidebar'"
+  },
+  "sidebar.sidebar.category.Smart Contracts.link.generated-index.description": {
+    "message": "In the following section, we will explore the smart contract infrastructure powering BLOKC, detailing the core contracts, their functionalities, and how they interact to enable secure, automated protocol operations.",
+    "description": "The generated-index page description for category 'Smart Contracts' in sidebar 'sidebar'"
+  },
+  "sidebar.sidebar.category.DAO Governance": {
+    "message": "DAO Governance",
+    "description": "The label for category 'DAO Governance' in sidebar 'sidebar'"
+  },
+  "sidebar.sidebar.category.DAO Governance.link.generated-index.description": {
+    "message": "In the following section, we will dive deeper into the operations of BLOKC DAO, exploring its governance structure, voting mechanisms, and the role of smart contracts in facilitating on-chain decision-making.",
+    "description": "The generated-index page description for category 'DAO Governance' in sidebar 'sidebar'"
+  },
+  "sidebar.sidebar.category.Guides": {
+    "message": "Guides",
+    "description": "The label for category 'Guides' in sidebar 'sidebar'"
+  }
+}

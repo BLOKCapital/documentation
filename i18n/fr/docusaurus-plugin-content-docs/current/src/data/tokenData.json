@@ -3,22 +3,22 @@
     "title": "IDO",
     "value": 20.0,
     "color": "#0083FF",
-    "description": "Offre initiale sur DEX",
+    "description": "Offre initiale DEX",
     "subtitle": "Vente publique"
   },
   {
-    "title": "Développement Produit",
+    "title": "Développement de Produit",
     "value": 15.0,
     "color": "#1991FF",
     "description": "Développement technique",
-    "subtitle": "Développement principal"
+    "subtitle": "Développement du cœur"
   },
   {
     "title": "Équipe",
     "value": 20,
     "color": "#339EFF",
-    "description": "Acquis sur 3 ans",
-    "subtitle": "Engagement à long terme de l'équipe"
+    "description": "Vested sur 3 ans",
+    "subtitle": "Engagement de l'équipe à long terme"
   },
   {
     "title": "Trésorerie",
@@ -39,14 +39,14 @@
     "value": 10.0,
     "color": "#80C5FF",
     "description": "Stabilité du marché",
-    "subtitle": "Liquidité de trading"
+    "subtitle": "Liquidité pour le trading"
   },
   {
     "title": "Seed",
     "value": 5.0,
     "color": "#99D2FF",
-    "description": "Acquis sur 3 ans",
-    "subtitle": "Investisseurs en phase initiale"
+    "description": "Vested sur 3 ans",
+    "subtitle": "Investisseurs de la phase initiale"
   },
   {
     "title": "Influenceurs",
@@ -66,8 +66,8 @@
     "title": "Prévente",
     "value": 3.0,
     "color": "#B0DAFF",
-    "description": "Soutiens précoces",
-    "subtitle": "Tour privé"
+    "description": "Partisans de la première heure",
+    "subtitle": "Round privé"
   },
   {
     "title": "Conseillers",
@@ -87,7 +87,7 @@
     "title": "Air Drop",
     "value": 1.0,
     "color": "#66ACFF",
-    "description": "Récompenses et engagement communautaires",
+    "description": "Récompenses et engagement de la communauté",
     "subtitle": "Incentives communautaires"
   }
-] 
+]

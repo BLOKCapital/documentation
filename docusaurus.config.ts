@@ -16,13 +16,22 @@ const config: Config = {
   projectName: "documentation",
 
   onBrokenLinks: "throw",
-  onBrokenMarkdownLinks: "warn",
+  markdown: {
+    format: 'mdx', // explicitly setting format to avoid confusion if needed
+    mermaid: true, // common v3+ setting, though not strictly required for this fix
+    hooks: {
+      onBrokenMarkdownLinks: (url) => {
+        // Just warning as before
+        console.warn(`Broken markdown link found: ${url}`);
+      },
+    },
+  },
 
   i18n: {
     defaultLocale: "en",
     locales: ["en", "es", "fr"], // Add 'fr' here
   },
-  
+
   presets: [
     [
       "@docusaurus/preset-classic",
@@ -50,7 +59,7 @@ const config: Config = {
       } satisfies Preset.Options,
     ],
   ],
-    stylesheets: [
+  stylesheets: [
     {
       href: 'https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css',
       type: 'text/css',
@@ -107,27 +116,28 @@ const config: Config = {
         href: "/",
       },
       items: [
+
         {
-          type: "docSidebar",
-          sidebarId: "tutorialSidebar",
-          position: "left",
-          label: "Introduction",
-        },
-        {
-          to: "/educ/intro",
+          to: "/educ/blok-c-overview",
           label: "Concepts",
           position: "left",
         },
         {
-        to: '/builders/intro',
-        label: 'Builders',
-        position: 'left',
-      },
-      {
-        to: '/resources/intro',
-        label: 'Resources',
-        position: 'left',
-      },
+          type: "docSidebar",
+          sidebarId: "tutorialSidebar",
+          position: "left",
+          label: "Smart contracts",
+        },
+        {
+          to: '/builders/intro',
+          label: 'Builders',
+          position: 'left',
+        },
+        {
+          to: '/resources/intro',
+          label: 'Resources',
+          position: 'left',
+        },
         {
           type: "localeDropdown",
           position: "right",
@@ -162,6 +172,10 @@ const config: Config = {
             {
               label: "Farcaster",
               href: "https://warpcast.com/blokc",
+            },
+            {
+              label: "Discord",
+              href: "https://discord.gg/AhsCVANrkA",
             },
           ],
         },

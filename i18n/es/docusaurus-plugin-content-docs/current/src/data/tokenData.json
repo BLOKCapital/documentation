@@ -3,7 +3,7 @@
     "title": "IDO",
     "value": 20.0,
     "color": "#0083FF",
-    "description": "Oferta inicial en DEX",
+    "description": "Oferta inicial de DEX",
     "subtitle": "Venta pública"
   },
   {
@@ -11,14 +11,14 @@
     "value": 15.0,
     "color": "#1991FF",
     "description": "Desarrollo técnico",
-    "subtitle": "Desarrollo principal"
+    "subtitle": "Desarrollo del núcleo"
   },
   {
     "title": "Equipo",
     "value": 20,
     "color": "#339EFF",
-    "description": "Vesting durante 3 años",
-    "subtitle": "Compromiso a largo plazo del equipo"
+    "description": "Vested por 3 años",
+    "subtitle": "Compromiso del equipo a largo plazo"
   },
   {
     "title": "Tesorería",
@@ -28,32 +28,32 @@
     "subtitle": "Reservas operativas"
   },
   {
-    "title": "Marketing y PR",
+    "title": "Marketing y Relaciones Públicas",
     "value": 10.0,
     "color": "#66B8FF",
-    "description": "Crecimiento y reconocimiento",
-    "subtitle": "Expansión de mercado"
+    "description": "Crecimiento y concienciación",
+    "subtitle": "Expansión del mercado"
   },
   {
     "title": "Liquidez",
     "value": 10.0,
     "color": "#80C5FF",
-    "description": "Estabilidad de mercado",
-    "subtitle": "Liquidez de trading"
+    "description": "Estabilidad del mercado",
+    "subtitle": "Liquidez para el comercio"
   },
   {
-    "title": "Seed",
+    "title": "Semilla",
     "value": 5.0,
     "color": "#99D2FF",
-    "description": "Vesting durante 3 años",
-    "subtitle": "Inversores iniciales"
+    "description": "Vested por 3 años",
+    "subtitle": "Inversores de etapa temprana"
   },
   {
     "title": "Influencers",
     "value": 3.0,
     "color": "#B3DFFF",
     "description": "Marketing y promoción",
-    "subtitle": "Alianzas estratégicas"
+    "subtitle": "Asociaciones estratégicas"
   },
   {
     "title": "Bug Bounty",
@@ -66,28 +66,28 @@
     "title": "Preventa",
     "value": 3.0,
     "color": "#B0DAFF",
-    "description": "Soporte temprano",
+    "description": "Seguidores de etapa temprana",
     "subtitle": "Ronda privada"
   },
   {
     "title": "Asesores",
     "value": 3.0,
     "color": "#99CBFF",
-    "description": "Asesoría estratégica",
-    "subtitle": "Consultoría experta"
+    "description": "Orientación estratégica",
+    "subtitle": "Consulta experta"
   },
   {
     "title": "Comunidad",
     "value": 2.0,
     "color": "#80BBFF",
     "description": "Desarrollo comunitario",
-    "subtitle": "Construcción del ecosistema"
+    "subtitle": "Construyendo el ecosistema"
   },
   {
     "title": "Air Drop",
     "value": 1.0,
     "color": "#66ACFF",
-    "description": "Recompensas y participación comunitaria",
+    "description": "Recompensas y compromiso de la comunidad",
     "subtitle": "Incentivos comunitarios"
   }
-] 
+]

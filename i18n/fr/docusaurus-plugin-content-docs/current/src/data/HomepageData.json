@@ -1,14 +1,14 @@
 [
   {
-    "title": "Qu'est-ce que BLOK Capital ?",
+    "title": "Aperçu de Blok C",
     "description": "Découvrez les concepts clés de BLOK Capital",
-    "href": "/Introduction",
+    "href": "/educ/blok-c-overview",
     "icon": "FaCoins"
   },
   {
-    "title": "Aperçu",
+    "title": "Documentation V1",
     "description": "Familiarisez-vous avec les éléments fondamentaux du projet",
-    "href": "/category/overview",
+    "href": "/v1/introduction",
     "icon": "FaCogs"
   },
   {
@@ -53,4 +53,4 @@
     "href": "/resources/FAQs/",
     "icon": "FaQuestionCircle"
   }
-] 
+]

@@ -1,5 +1,5 @@
 import React from 'react';
-import auditData from '../data/AuditData.json';
+import defaultAuditData from '../data/AuditData.json';
 import { ShieldCheckIcon } from 'lucide-react';
 import { useColorMode } from '@docusaurus/theme-common';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
@@ -12,8 +12,14 @@ const findingOrder = [
 ];
 
 export default function Audit() {
-  const { BLOKCaudits, zerodevAudits } = auditData;
   const { i18n } = useDocusaurusContext();
+  let auditData;
+  try {
+    auditData = require(`../../i18n/${i18n.currentLocale}/docusaurus-plugin-content-docs/current/src/data/AuditData.json`);
+  } catch {
+    auditData = defaultAuditData;
+  }
+  const { BLOKCaudits, zerodevAudits } = auditData;
   const t = translations[i18n.currentLocale]?.auditTables || translations.en.auditTables;
 
   const findingLabels: Record<string, string> = {

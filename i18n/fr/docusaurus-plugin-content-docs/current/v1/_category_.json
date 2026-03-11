@@ -1,0 +1,8 @@
+{
+    "label": "Documentation V1",
+    "position": 1,
+    "link": {
+        "type": "generated-index",
+        "description": "Documentation technique complète pour les Contrats Intelligents de Blok Capital V1."
+    }
+}

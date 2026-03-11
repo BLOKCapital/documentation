@@ -1,0 +1,8 @@
+{
+    "label": "V1 Documentation",
+    "position": 1,
+    "link": {
+        "type": "generated-index",
+        "description": "Comprehensive technical documentation for Blok Capital Smart Contracts V1."
+    }
+}

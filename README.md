@@ -1,91 +1,80 @@
-# Docusaurus Project with Multi-Language & Lunr Search
+# BLOK Capital Documentation
 
-This project is built using [Docusaurus](https://docusaurus.io/) with multi-language support and the `docusaurus-lunr-search` plugin for search functionality.
+Developing the future of decentralized wealth management. This repository contains the source code for the BLOK Capital documentation site, built with [Docusaurus](https://docusaurus.io/).
 
-## How to Start
+## Features
 
-### Clone the Repository
-```sh
-git clone <your-repo-url>
-cd <your-repo-name>
-```
+- **Multi-language Support**: Fully localized in English, Spanish, and French.
+- **Search**: Integrated `docusaurus-lunr-search` for fast, offline-compatible search.
+- **Modern UI**: Custom components for Tokenomics, Security Audits, and more.
+- **Documentation Versions**: Supports multiple versions of the protocol documentation.
 
-### Install Dependencies
-```sh
-yarn install
-# or
+## Getting Started
+
+### Prerequisites
+
+- Node.js (v18 or higher)
+- npm or yarn
+
+### Installation
+
+```bash
 npm install
 ```
 
-### Start Development Server
-To start the project with the default language:
-```sh
-yarn start
-# or
-npm run start
+### Development
+
+To start the development server:
+
+```bash
+npm start
 ```
 
-### Running a Specific Language
-If you are using multiple languages and want to run only one language, use:
-```sh
-yarn start --locale <language-code>
-# Example:
-yarn start --locale en
+To run the site in a specific locale:
+
+```bash
+npm start -- --locale es
 ```
+
+### Building for Production
+
+```bash
+npm run build
+```
+
+This will generate static files in the `build/` directory for all configured locales.
+
+## Project Structure
+
+- `docs/`: Version 1 documentation.
+- `educ-docs/`: Educational content and protocol concepts.
+- `builders-docs/`: Technical guides and smart contract documentation.
+- `resources-docs/`: General resources, FAQs, and brand guidelines.
+- `i18n/`: Translation files for all supported languages.
+- `src/components/`: Custom React components used throughout the site.
+- `src/data/`: JSON data files for dynamic content (Tokenomics, Audits, etc.).
 
 ## Configuration
 
-### Multi-Language Support
-Modify `docusaurus.config.js` to enable internationalization (i18n):
+The project configuration is located in `docusaurus.config.ts`. Key settings include:
 
-```js
-module.exports = {
-  i18n: {
-    defaultLocale: 'en',
-    locales: ['en', 'fr', 'es'], // Add your languages here
-    localeConfigs: {
-      en: { label: 'English' },
-      fr: { label: 'Français' },
-      es: { label: 'Español' },
-    },
-  },
-};
-```
+- **i18n**: Configured for `en`, `es`, and `fr`.
+- **Plugins**: Custom documentation instances for separate content areas.
+- **Theme**: Classic theme with custom CSS and Prism syntax highlighting.
 
-### Add Lunr Search
-Install the search plugin:
-```sh
-yarn add docusaurus-lunr-search
-# or
-npm install docusaurus-lunr-search
-```
+## Search
 
-Modify `docusaurus.config.js` to include the plugin:
-```js
-module.exports = {
-  plugins: [
-    [require.resolve("@cmfcmf/docusaurus-search-local"), {
-      indexDocs: true,
-      indexBlog: true,
-      indexPages: true,
-      language: ["en", "fr", "es"],
-    }],
-  ],
-};
-```
+We use `docusaurus-lunr-search`. To verify search functionality locally, you must first build the site:
 
-### Run Local Search
-To use Lunr search locally, build the search index:
-```sh
-yarn build
-yarn serve
-# or
+```bash
 npm run build
 npm run serve
 ```
 
-## Deployment
-You can deploy your Docusaurus site to GitHub Pages, Vercel, Netlify, or any static hosting provider. Follow the [official deployment guide](https://docusaurus.io/docs/deployment).
+## Contributing
+
+Please refer to the [Contribute](/resources/CreateVideo) section in the documentation for details on how to help us improve.
 
 ## License
+
 This project is licensed under the [MIT License](LICENSE).

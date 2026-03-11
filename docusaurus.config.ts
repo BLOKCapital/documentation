@@ -39,7 +39,7 @@ const config: Config = {
         docs: {
           sidebarPath: require.resolve("./sidebar/sidebars.ts"),
           routeBasePath: "/",
-          editUrl: 'https://github.com/BLOKCapital/documentation/issues',
+          editUrl: 'https://github.com/BLOKCapital/documentation/edit/main/',
           remarkPlugins: [remarkMath],
           rehypePlugins: [rehypeKatex],
         },
@@ -81,7 +81,7 @@ const config: Config = {
         path: "educ-docs",
         routeBasePath: "educ",
         sidebarPath: require.resolve("./sidebar/sidebars-educ.ts"),
-        editUrl: 'https://github.com/BLOKCapital/documentation/issues',
+        editUrl: 'https://github.com/BLOKCapital/documentation/edit/main/',
       },
     ],
     [
@@ -91,7 +91,7 @@ const config: Config = {
         path: "builders-docs",
         routeBasePath: "builders",
         sidebarPath: require.resolve("./sidebar/sidebars-builders.ts"),
-        editUrl: 'https://github.com/BLOKCapital/documentation/issues',
+        editUrl: 'https://github.com/BLOKCapital/documentation/edit/main/',
       },
     ],
     [
@@ -101,7 +101,7 @@ const config: Config = {
         path: "resources-docs",
         routeBasePath: "resources",
         sidebarPath: require.resolve("./sidebar/sidebars-resources.ts"),
-        editUrl: 'https://github.com/BLOKCapital/documentation/issues',
+        editUrl: 'https://github.com/BLOKCapital/documentation/edit/main/',
       },
     ],
   ],

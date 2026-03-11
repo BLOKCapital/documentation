@@ -108,7 +108,7 @@ export default function Chart() {
               <Cell
                 key={`cell-${index}`}
                 fill={entry.color}
-                stroke={colorMode === "dark" ? "#222" : "#fff"}
+                stroke={colorMode === "dark" ? "#1a261f" : "#fff"}
                 strokeWidth={1.5}
               />
             ))}

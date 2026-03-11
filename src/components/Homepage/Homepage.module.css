@@ -1,6 +1,6 @@
 .heroSection {
-  background: #ffffff;
-  padding: 0; /* Better spacing for layout */
+  background: var(--brand-base);
+  padding: 0;
 }
 .heroContainer {
   padding-top: 2rem;
@@ -12,37 +12,20 @@
   font-size: 3rem;
   font-weight: 750;
   margin-bottom: 0.5rem;
-}
-
-/* Light Mode: title is black */
-html[data-theme='light'] .title {
-  color: #ffffff;
-}
-
-/* Dark Mode: title is white */
-html[data-theme='dark'] .title {
-  color: #000000;
+  color: var(--brand-primary);
+  font-family: var(--ifm-heading-font-family);
 }
 
 .subtitle {
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 1.8rem; /* Reduced size for better visual hierarchy */
   margin-bottom: 3rem;
   margin-top: 0.5rem;
-  font-weight: 700;
- 
+  font-weight: 600;
+  color: var(--brand-secondary);
+  font-family: var(--ifm-font-family-base);
 }
 
-/* Light Mode: title is black */
-html[data-theme='light'] .subtitle {
-  color: #ffffff;
-}
-
-/* Dark Mode: title is white */
-html[data-theme='dark'] .subtitle {
-  
-  color: #000000;
-}
 .overlay {
   padding: 0;
 }
@@ -50,7 +33,7 @@ html[data-theme='dark'] .subtitle {
 /* Card container */
 .card {
   background: #ffffff;
-  border: 1px solid #e5e7eb;
+  border: 1px solid rgba(21, 113, 69, 0.1);
   border-radius: 12px;
   padding: 1.5rem;
   text-decoration: none;
@@ -58,30 +41,31 @@ html[data-theme='dark'] .subtitle {
   transition: transform 0.2s ease, box-shadow 0.3s ease, border 0.3s ease;
   height: 100%;
   display: block;
-
-  /* NEW: Base shadow for light mode (always on) */
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
 }
 
 .card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 12px 28px rgba(0, 78, 186, 0.15); /* Enhanced for light mode */
-  border-color: var(--ifm-color-primary);
-  background-color: #f0f6ff; /* Light blue hover effect */
-  text-decoration: none; /* Ensure no underline on hover */
+  box-shadow: 0 12px 28px rgba(21, 113, 69, 0.1);
+  border-color: var(--brand-primary);
+  background-color: rgba(87, 167, 115, 0.05);
+  text-decoration: none;
 }
+
 .card:hover h3 {
-  color: var(--ifm-color-primary); /* ✅ Use your brand blue */
+  color: var(--brand-primary);
 }
+
 html[data-theme="dark"] .card:hover h3 {
-  color: var(--ifm-color-primary);
+  color: var(--brand-secondary);
 }
 
 .card h3 {
   margin-top: 1rem;
   font-size: 1.2rem;
   font-weight: 600;
-  color: #111827;
+  color: var(--brand-primary);
+  font-family: var(--ifm-heading-font-family);
 }
 
 .card p {
@@ -92,25 +76,25 @@ html[data-theme="dark"] .card:hover h3 {
 
 .icon {
   font-size: 1.75rem;
-  color: var(--ifm-color-primary);
+  color: var(--brand-primary);
 }
 
 /* Dark mode styles */
 html[data-theme="dark"] .card {
-  background: #1f2937;
-  border: 1px solid #374151;
+  background: #1a261f;
+  border: 1px solid #2a3b31;
   color: #e2e8f0;
-  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.05); /* Soft glow */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 html[data-theme="dark"] .card:hover {
-  background: #2a3545;
-  border-color: var(--ifm-color-primary-light);
-  box-shadow: 0 10px 24px rgba(0, 78, 186, 0.2); /* stronger dark hover */
+  background: #233229;
+  border-color: var(--brand-secondary);
+  box-shadow: 0 10px 24px rgba(87, 167, 115, 0.1);
 }
 
 html[data-theme="dark"] .card h3 {
-  color: #f3f4f6;
+  color: var(--brand-secondary);
 }
 
 html[data-theme="dark"] .card p {
@@ -118,5 +102,5 @@ html[data-theme="dark"] .card p {
 }
 
 html[data-theme="dark"] .icon {
-  color: var(--ifm-color-primary-lightest);
+  color: var(--brand-secondary);
 }

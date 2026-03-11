@@ -1,116 +1,141 @@
 /**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
+ * BLOKC Brand Guidelines Implementation
  */
-/* @import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap'); */
-/* @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');  */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://cdn.jsdelivr.net/npm/geist@1.3.0/dist/fonts/geist-sans/style.css');
 
-/* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #004eba;
-  --ifm-color-primary-dark: #006bb3;
-  --ifm-color-primary-darker: #0061a3;
-  --ifm-color-primary-darkest: #004f85;
-  --ifm-color-primary-light: #0088e6;
-  --ifm-color-primary-lighter: #1996f0;
-  --ifm-color-primary-lightest: #335efa;
+  /* Brand Colors */
+  --brand-primary: #157145;
+  --brand-secondary: #57a773;
+  --brand-accent: #6a8eae;
+  --brand-base: #F4F4F0;
+
+  /* Infima Overrides - Light Mode */
+  --ifm-color-primary: var(--brand-primary);
+  --ifm-color-primary-dark: #13663e;
+  --ifm-color-primary-darker: #125b37;
+  --ifm-color-primary-darkest: #0f4a2d;
+  --ifm-color-primary-light: #1b925b;
+  --ifm-color-primary-lighter: #20a969;
+  --ifm-color-primary-lightest: #25c177;
+
+  /* Typography */
+  --ifm-font-family-base: 'Geist Sans', system-ui, -apple-system, sans-serif;
+  --ifm-heading-font-family: 'Playfair Display', serif;
   --ifm-code-font-size: 95%;
+
+  /* Background & Content */
+  --ifm-background-color: var(--brand-base);
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
-  /* --ifm-font-family-base: "Funnel Display", sans-serif;
-  --ifm-heading-font-family: "Funnel Display", sans-serif; */
+
+  /* Glassmorphism Class */
+  --glass-bg: rgba(255, 255, 255, 0.4);
+  --glass-border: rgba(255, 255, 255, 0.2);
+  --glass-blur: 10px;
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
+/* Base Texture (Subtle Noise) */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.03;
+  pointer-events: none;
+  z-index: 9999;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+}
+
 html[data-theme="dark"] {
-  --ifm-color-primary: #3399ff;
-  --ifm-color-primary-dark: #2e8ceb;
-  --ifm-color-primary-darker: #2a81db;
-  --ifm-color-primary-darkest: #2369b3;
-  --ifm-color-primary-light: #4da6ff;
-  --ifm-color-primary-lighter: #66b3ff;
-  --ifm-color-primary-lightest: #80c1ff;
-  --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.2);
+  --ifm-color-primary: #57a773; /* Using secondary green for better visibility in dark mode */
+  --ifm-color-primary-dark: #4e9667;
+  --ifm-color-primary-darker: #4a8e61;
+  --ifm-color-primary-darkest: #3d7550;
+  --ifm-color-primary-light: #6fb286;
+  --ifm-color-primary-lighter: #7bb890;
+  --ifm-color-primary-lightest: #9fd0b1;
+
+  --ifm-background-color: #0d1a12; /* Very deep forest green/black */
+  --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.1);
+  
+  --glass-bg: rgba(0, 0, 0, 0.4);
+  --glass-border: rgba(255, 255, 255, 0.1);
 }
 
-/* Light mode footer styles (default) */
+/* Layout Components */
+.navbar {
+  background-color: var(--glass-bg);
+  backdrop-filter: blur(var(--glass-blur));
+  -webkit-backdrop-filter: blur(var(--glass-blur));
+  border-bottom: 1px solid var(--glass-border);
+}
+
 .footer {
-  background: linear-gradient(to bottom, #f6f3e8 80%, #bfbdb1 100%) !important;
-  color: black !important;
+  background-color: var(--brand-primary) !important;
+  background-image: none !important;
+  color: #fff !important;
 }
 
-.footer a {
-  color: black !important;
+.footer__title, .footer__link-item, .footer__copyright {
+  color: #fff !important;
 }
 
-.footer__title {
-  color: black !important;
+.footer__link-item:hover {
+  color: var(--brand-secondary) !important;
 }
 
-/* Dark mode footer styles */
-html[data-theme="dark"] .footer {
-  background-color: #303846 !important;
-  background-image: none !important; /* removes light gradient */
-  color: white !important;
+/* Typography Enhancements */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--brand-primary);
+  font-weight: 700;
+  letter-spacing: -0.02em;
 }
 
-html[data-theme="dark"] .footer a {
-  color: white !important;
+html[data-theme="dark"] h1, 
+html[data-theme="dark"] h2, 
+html[data-theme="dark"] h3 {
+  color: var(--brand-secondary);
 }
 
-html[data-theme="dark"] .footer__title {
-  color: white !important;
+/* Menu & Navigation */
+.menu__link--active {
+  color: var(--brand-primary) !important;
+  background-color: rgba(21, 113, 69, 0.1) !important;
+  font-weight: 600;
 }
 
-
-/* Light mode title color */
-.markdown h1,
-.markdown h2,
-.markdown h3 {
-  color: #004eba; /* your desired color for light mode */
+html[data-theme="dark"] .menu__link--active {
+  color: var(--brand-secondary) !important;
+  background-color: rgba(87, 167, 115, 0.1) !important;
 }
 
-/* Dark mode title color */
-html[data-theme='dark'] .markdown h1,
-html[data-theme='dark'] .markdown h2,
-html[data-theme='dark'] .markdown h3 {
-  color: #3399ff; /* your desired color for dark mode */
+.menu__link:hover {
+  background-color: rgba(21, 113, 69, 0.05) !important;
 }
 
-
-
-html[data-theme='light'] .menu__link:hover {
-  background-color: #F6F3E8;
- 
+html[data-theme="dark"] .menu__link:hover {
+  background-color: rgba(87, 167, 115, 0.05) !important;
 }
 
-html[data-theme='light'] .menu__link--active {
-  background-color: #F6F3E8;  /* same as hover */
-  color: #003366;             /* optional: your preferred text color */
-}
-/* Base sidebar link styles on hover and active */
-html[data-theme='light'] .menu__link:hover,
-html[data-theme='light'] .menu__link--active {
-  background-color: #F6F3E8; /* light blue background */
-  color: #003366;            /* deep blue text */
- 
+/* Glassmorphism Utility */
+.glass {
+  background: var(--glass-bg);
+  backdrop-filter: blur(var(--glass-blur));
+  -webkit-backdrop-filter: blur(var(--glass-blur));
+  border: 1px solid var(--glass-border);
 }
 
-/* Expandable category button: on hover and when open */
-html[data-theme='light'] .menu__link--sublist:hover,
-html[data-theme='light'] .menu__link--sublist[aria-expanded='true'] {
-  background-color: #F6F3E8;
-  color: #003366;
-
+/* Buttons */
+.button--primary {
+  background-color: var(--brand-primary);
+  border-color: var(--brand-primary);
 }
 
-/* Optional: indentation for nested items (submenus) */
-html[data-theme='light'] .menu__list .menu__list {
-  padding-left: 1rem; /* indent submenus */
-}
-.brand-link {
-  color: var(--ifm-color-primary-darker);
-  font-weight: bold;
-  text-decoration: none; 
+.button--primary:hover {
+  background-color: var(--ifm-color-primary-dark);
+  border-color: var(--ifm-color-primary-dark);
 }
 

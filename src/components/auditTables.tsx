@@ -34,9 +34,9 @@ export default function Audit() {
   };
 
   const statusStyles: Record<string, { bg: string; color: string }> = {
-    [t.passed]: { bg: '#D1FAE5', color: '#065F46' },
-    [t.failed]: { bg: '#FEE2E2', color: '#991B1B' },
-    [t.default]: { bg: '#E0F2FE', color: '#0369A1' },
+    [t.passed]: { bg: '#D1FAE5', color: '#065F46' }, // Keeps standard green for "passed"
+    [t.failed]: { bg: '#FEE2E2', color: '#991B1B' }, // Keeps standard red for "failed"
+    [t.default]: { bg: 'rgba(87, 167, 115, 0.2)', color: '#157145' }, // Uses brand sage/forest for default
   };
 
   type AuditCardProps = {
@@ -61,7 +61,7 @@ export default function Audit() {
     status = t.passed,
   }: AuditCardProps) => {
     const { colorMode } = useColorMode();
-    const headingColor = colorMode === 'dark' ? '#3399ff' : '#004eba';
+    const headingColor = colorMode === 'dark' ? 'var(--brand-secondary)' : 'var(--brand-primary)';
     const { bg, color } = statusStyles[status] || statusStyles[t.default];
     const cardBg = colorMode === 'dark' ? '#1f2937' : '#ffffff';
     const textPrimary = colorMode === 'dark' ? '#e5e7eb' : '#0f172a';
@@ -99,7 +99,7 @@ export default function Audit() {
         <p style={{ margin: '0.25rem 0', color: textPrimary }}>
           <strong>{t.auditor}:</strong>{' '}
           {auditorlink ? (
-            <a href={auditorlink} target="_blank" rel="noopener noreferrer" style={{ color: '#60a5fa' }}>
+            <a href={auditorlink} target="_blank" rel="noopener noreferrer" style={{ color: 'var(--brand-secondary)' }}>
               {auditor}
             </a>
           ) : auditor}
@@ -143,7 +143,7 @@ export default function Audit() {
         <p style={{
           fontWeight: 600,
           fontSize: '1rem',
-          color: '#2563EB',
+          color: 'var(--brand-primary)',
           display: 'inline-flex',
           alignItems: 'center',
           gap: '0.4rem',

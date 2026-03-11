@@ -4,15 +4,40 @@
  */
 
  .heroBanner {
-  padding: 4rem 0;
-  text-align: center;
   position: relative;
+  background-image: url('../../static/img/1500x500.jpeg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 500px; /* Original height of the image */
+  width: 100%;
+  padding: 0;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--brand-base); /* Fill side gaps if screen is ultra-wide */
+}
+
+.heroBanner::before {
+  display: none; /* Removed overlay to show image "full" and clear */
+}
+
+.heroBanner :global(.container) {
+  position: relative;
+  z-index: 2;
+}
+
+/* Force titles to be white on heritage hero */
+.heroBanner :global(h1),
+.heroBanner :global(p) {
+  color: #ffffff !important;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
 }
 
 @media screen and (max-width: 996px) {
   .heroBanner {
-    padding: 2rem;
+    padding: 3rem 1rem;
   }
 }
 

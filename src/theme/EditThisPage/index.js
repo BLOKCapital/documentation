@@ -11,7 +11,7 @@ export default function EditThisPage({ editUrl }) {
         href={issueUrl}
         target="_blank"
         rel="noopener noreferrer"
-        style={{ fontWeight: 'bold', color: '#2962ff' }}
+        style={{ fontWeight: 'bold', color: 'var(--brand-primary)' }}
       >
         🛠️ Suggest a change to this page
       </a>

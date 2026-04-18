@@ -27,3 +27,4 @@ In simple terms, the proxy owns the data. The implementation supplies the behavi
 BLOK Capital uses proxy contracts to ensure the protocol can evolve without disrupting users or putting assets at risk. All user interactions go through stable proxy addresses, while logic upgrades are handled by deploying new implementations and updating the proxy reference.
 
 This allows BLOK Capital to improve index logic, fix issues, and introduce new features while keeping user state intact and contract addresses consistent. Upgrade authority is governed by the BLOK Capital DAO, ensuring changes are transparent and not controlled by a single party.
+

@@ -1,5 +1,5 @@
 ---
-sidebar_position: 3
+sidebar_position: 5
 id: decentralised-oracle-network
 title: Decentralised Oracle Network
 ---
@@ -24,7 +24,7 @@ This layer is basically a gatekeeper which hold your assets and allow changes wh
 
 1. **Feeders**: Feeders collect the information from various sources such as the monitoring the blockchain watching the events from the garden, track market prices.
 2. **Trigger layer (Batch Processing)**: Trigger layer standardizes all the data into a common format which the DON(Decentralised Oracle Network) can understand and process.
-3. [\*\*DON](https://docs.chain.link/cre) (Decentralised Oracle Network)\*\*: This is the layer where all the execution takes place.
+3. **[DON](https://docs.chain.link/cre) (Decentralised Oracle Network)**: This is the layer where all the execution takes place.
 
    → **Computation** executes the custom workflows. Different operations needs different logic so there are different workflows for the different operations.
 
@@ -39,3 +39,4 @@ This layer is basically a gatekeeper which hold your assets and allow changes wh
 ### 3). Contract Layer (Execution):
 
 After the computation and consensus, the outputs return to the blockchain with the cryptographic proof that multiple DON nodes agreed. After the verification of the DON signature, the operations are executed.
+

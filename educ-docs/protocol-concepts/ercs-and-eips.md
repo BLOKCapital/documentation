@@ -1,5 +1,5 @@
 ---
-sidebar_position: 6
+sidebar_position: 4
 id: ercs-and-eips
 title: ERC’s & EIP’s
 ---
@@ -21,3 +21,4 @@ title: ERC’s & EIP’s
 - **[ERC-5484](https://eips.ethereum.org/EIPS/eip-5484)** – Soulbound tokens for identity and reputation—non-transferable credentials that stay with you.
 
 - **[EIP-7702](https://eips.ethereum.org/EIPS/eip-7702)** – Ethereum update that allows externally owned accounts (EOAs) to upgrade into smart accounts.
+

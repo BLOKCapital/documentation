@@ -1,3 +1,9 @@
+---
+id: garden-index
+title: Garden Indices
+sidebar_position: 5
+---
+
 # Garden Indices
 A market-cap weighted index assigns weights to assets proportional to their market capitalization relative to the total market capitalization of the portfolio (or basket).
 Here’s a structured **overview of market-cap weighted indexes**, based on the content of the document you uploaded.

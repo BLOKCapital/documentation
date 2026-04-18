@@ -1,4 +1,5 @@
 ---
+title: Token Utility
 sidebar_position: 1
 ---
 

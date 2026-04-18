@@ -1,6 +1,9 @@
 ---
 sidebar_position: 2
+title: Behavioural Economics
 ---
+
+# Behavioural Economics
 
 The key market that the protocol is trying to serve is to connect professional medium and long term wealth managers with novice investors who are time poor and need professional help to try and invest in the complexities of Crypto Assets.
 

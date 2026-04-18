@@ -1,4 +1,8 @@
-# Blok Capital Glossary
+---
+id: glossary
+title: Glossary
+sidebar_position: 1
+---
 
 ## Core Architecture (Diamond Pattern / EIP-2535)
 

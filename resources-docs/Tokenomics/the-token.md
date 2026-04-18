@@ -1,7 +1,11 @@
 ---
+title: The Token
 sidebar_position: 3
 description: Key details of the BLOKC token—built on Arbitrum, designed for utility, governance, and long-term ecosystem alignment.
 ---
+
+# The Token
+
 | Field            | Value                                                                              |
 | ---------------- | ---------------------------------------------------------------------------------- |
 | **Token Name**   | BLOKC Coin                                                                         |

@@ -1,7 +1,7 @@
 ---
 sidebar_position: 1
 id: blok-c-overview
-title: Blok C Overview
+title: BLOK Capital Overview
 ---
 
 ## **What is BLOK Capital?**
@@ -14,7 +14,7 @@ You can follow professionally selected crypto indices (like a Standard & Poor’
 
 ## **Why "BLOK Capital"?**
 
-Our founder Mr. Sheetal Nehra wanted a name which could actually define the product we offer.
+Our founder Sheetal Nehra wanted a name which could actually define the product we offer.
 
 **BLOK** = We're blockchain-first. Everything we do is built on the principles that make crypto powerful: transparency, decentralization, and code you can trust instead of middlemen you have to trust.
 
@@ -22,9 +22,9 @@ Our founder Mr. Sheetal Nehra wanted a name which could actually define the prod
 
 Think of us as the infrastructure for how wealth will be managed in the future.
 
-Our Motto: **It's Cryto but Diffrent**
+Our Motto: **It's crypto, but different.**
 
-This is what literally how the protocol works. You hold the keys, you make the decisions, and nobody can take that away from you.
+This isn't marketing. It's how the protocol actually works: you hold the keys, you make the decisions, and no one can take that away from you.
 
 ## **Why did we build BLOK Capital as a DAO?**
 
@@ -32,7 +32,7 @@ We chose the DAO structure because we believe the community should have real con
 
 When we need to upgrade the protocol, the community votes on it directly on the blockchain. The rules aren't enforced by some company that could change its mind tomorrow they're written into the code itself. We don't hold your funds in some corporate bank account. You maintain control. Big decisions about BLOK Capital's future? Those are made by token holders like you, not by a small group behind closed doors.
 
-This approach gives us something traditional companies can't offer: complete transparency in how decisions are made, protection against censorship or arbitrary shutdowns, and a structure where everyone's incentives are aligned for the long haul. When the community succeeds, We all succeed.
+This approach gives us something traditional companies can't offer : complete transparency in how decisions are made, protection against censorship or arbitrary shutdowns, and a structure where everyone's incentives are aligned for the long haul. When the community succeeds, we all succeed.
 
 ## **The Garden Analogy**
 
@@ -41,6 +41,8 @@ This approach gives us something traditional companies can't offer: complete tra
 A **Garden** is your **personal** crypto portfolio on BLOK Capital where your assets live and grow.
 
 **Garden Owner = Investor**: That means you have complete visibility into your portfolio and full control over your funds. Your assets never leave your wallet, and only you decide what happens to them.
+
+You can also connect your Garden to a strategy (an Index) or manage it yourself — more on that in the next page.
 
 ---
 
@@ -51,3 +53,9 @@ This approach:
 - Eliminates intermediaries.
 - Establishes a transparent, peer-to-peer investment model.
 - Promotes financial inclusion by democratizing access to wealth management tools.
+
+---
+
+## **What's Next**
+
+Ready to get started? Head over to our [User Journey](./user-journey.md) to see how you can navigate and use BLOK Capital to its fullest potential.

@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+sidebar_position: 1
 id: diamond
 title: Diamond
 ---
@@ -22,7 +22,7 @@ This architecture is intentionally built for protocols that grow, diversify, and
 
 A Diamond does not contain application logic directly.
 
-Instead, it maintains a registry that maps **function selectors** to external logic modules called _facets_ As we saw in proxy contracts. Each facet is responsible for a specific domain of behavior governance, strategy execution, accounting, risk controls, or protocol extensions.
+Instead, it maintains a registry that maps **function selectors** to external logic modules called _facets_ as we saw in proxy contracts. Each facet is responsible for a specific domain of behavior governance, strategy execution, accounting, risk controls, or protocol extensions.
 
 When a function is called on the Diamond, it resolves _which facet owns that function_ and executes it in the Diamond’s context. All state lives in one place. All behavior is composed around it.
 
@@ -63,3 +63,4 @@ Index execution, asset strategies, accounting rules, and governance logic are im
 This allows BLOK Capital to introduce new strategies, refine execution logic, or upgrade risk controls while preserving protocol continuity and user trust.
 
 The Diamond becomes not just a contract, but the **stable identity of the system itself**.
+

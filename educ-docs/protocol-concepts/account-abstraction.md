@@ -1,5 +1,5 @@
 ---
-sidebar_position: 5
+sidebar_position: 3
 id: account-abstraction
 title: Account Abstraction
 ---
@@ -100,3 +100,4 @@ After deployment, the investor’s Smart Wallet authorizes upgrades to their Gar
 Because the wallet can batch deployment, upgrades, and initialization, the entire setup flow is seamless and requires no additional manual steps.
 
 No party including BLOK Capital can modify an investor’s Garden without authorization from the wallet that owns it.
+

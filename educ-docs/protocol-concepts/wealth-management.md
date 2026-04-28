@@ -4,7 +4,7 @@ id: wealth-management
 title: Wealth Management
 ---
 
-![Wealth Management](/img/Wealth_mgmt.svg)
+![Wealth Management](/img/Wealth_mgmt.png)
 
 ### Introduction
 

@@ -4,7 +4,7 @@ id: account-abstraction
 title: Account Abstraction
 ---
 
-![Account Abstraction](/img/Frame%2027.jpg)
+![Account Abstraction](/img/Frame%2027.png)
 
 Account Abstraction replaces the limitations of traditional Ethereum wallets with programmable smart contract wallets that control how transactions are authorized, executed, and paid for.
 

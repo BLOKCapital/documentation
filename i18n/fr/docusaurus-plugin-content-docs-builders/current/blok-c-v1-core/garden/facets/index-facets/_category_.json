@@ -1,0 +1,8 @@
+{
+  "label": "Index Facets",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "description": "Logique de rééquilibrage de portefeuille pour les Index Gardens. Inclut la disposition du stockage, les types d'interface CRE off-chain et le pipeline intent/rebalance en deux étapes avec protection contre les flash loans."
+  }
+}

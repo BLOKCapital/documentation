@@ -1,0 +1,8 @@
+{
+  "label": "Garden",
+  "position": 1,
+  "link": {
+    "type": "generated-index",
+    "description": "Funcionamiento del contrato y fragmentos de código del Garden — el contrato Diamond propiedad del usuario que custodia los activos y enruta llamadas a los facets."
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "label": "Blok-C-V1-Core",
+  "position": 5,
+  "link": {
+    "type": "generated-index",
+    "description": "Referencia técnica central de BLOK Capital V1: contratos Garden, módulos facet y conclusiones a nivel de código para builders."
+  }
+}

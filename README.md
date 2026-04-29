@@ -13,8 +13,8 @@ Developing the future of decentralized wealth management. This repository contai
 
 ### Prerequisites
 
-- Node.js (v18 or higher)
-- npm or yarn
+- Node.js v20 or higher (see `.nvmrc`)
+- npm
 
 ### Installation
 

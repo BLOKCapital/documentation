@@ -17,13 +17,9 @@ const config: Config = {
 
   onBrokenLinks: "throw",
   markdown: {
-    format: 'mdx', // explicitly setting format to avoid confusion if needed
-    mermaid: true, // common v3+ setting, though not strictly required for this fix
+    format: "mdx",
     hooks: {
-      onBrokenMarkdownLinks: (url) => {
-        // Just warning as before
-        console.warn(`Broken markdown link found: ${url}`);
-      },
+      onBrokenMarkdownLinks: "throw",
     },
   },
 
@@ -80,7 +76,7 @@ const config: Config = {
         id: "educ",
         path: "educ-docs",
         routeBasePath: "educ",
-        sidebarPath: require.resolve("./sidebar/sidebars-educ.ts"),
+        sidebarPath: require.resolve("./sidebar/autogen.ts"),
         editUrl: 'https://github.com/BLOKCapital/documentation/edit/main/',
       },
     ],
@@ -90,7 +86,7 @@ const config: Config = {
         id: "builders",
         path: "builders-docs",
         routeBasePath: "builders",
-        sidebarPath: require.resolve("./sidebar/sidebars-builders.ts"),
+        sidebarPath: require.resolve("./sidebar/autogen.ts"),
         editUrl: 'https://github.com/BLOKCapital/documentation/edit/main/',
       },
     ],
@@ -100,7 +96,7 @@ const config: Config = {
         id: "resources",
         path: "resources-docs",
         routeBasePath: "resources",
-        sidebarPath: require.resolve("./sidebar/sidebars-resources.ts"),
+        sidebarPath: require.resolve("./sidebar/autogen.ts"),
         editUrl: 'https://github.com/BLOKCapital/documentation/edit/main/',
       },
     ],

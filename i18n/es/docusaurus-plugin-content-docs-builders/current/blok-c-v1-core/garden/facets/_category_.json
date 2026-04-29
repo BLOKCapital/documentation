@@ -1,0 +1,8 @@
+{
+  "label": "Facets",
+  "position": 1,
+  "link": {
+    "type": "generated-index",
+    "description": "Módulos lógicos registrados en el Diamond del Garden. Cada facet implementa un dominio de comportamiento específico — ciclo de vida base, estrategia de índice o servicios utilitarios."
+  }
+}

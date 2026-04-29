@@ -1,0 +1,8 @@
+{
+  "label": "Base Facets",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "Le module de base immuable installé sur chaque Garden — gère les mises à niveau, l'introspection, la propriété et le flux de mise à niveau contrôlé imposé par le FacetRegistry global."
+  }
+}

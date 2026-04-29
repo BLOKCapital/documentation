@@ -1,14 +1,42 @@
-
 import React from 'react';
 import Link from '@docusaurus/Link';
 import styles from './Homepage.module.css';
-import * as Icons from 'react-icons/fa';
-import { FaCoins } from 'react-icons/fa'; // default icon
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import {
+  FaBalanceScale,
+  FaChalkboardTeacher,
+  FaCode,
+  FaCogs,
+  FaCoins,
+  FaLock,
+  FaProjectDiagram,
+  FaQuestionCircle,
+  FaShieldAlt,
+} from 'react-icons/fa';
+import type { IconType } from 'react-icons';
+
+const iconMap: Record<string, IconType> = {
+  FaBalanceScale,
+  FaChalkboardTeacher,
+  FaCode,
+  FaCogs,
+  FaCoins,
+  FaLock,
+  FaProjectDiagram,
+  FaQuestionCircle,
+  FaShieldAlt,
+};
+
+type Section = {
+  title: string;
+  description: string;
+  href: string;
+  icon: keyof typeof iconMap;
+};
 
 export default function Homepage() {
   const { i18n } = useDocusaurusContext();
-  let sectionData;
+  let sectionData: Section[];
   try {
     sectionData = require(`../../../i18n/${i18n.currentLocale}/docusaurus-plugin-content-docs/current/src/data/HomepageData.json`);
   } catch {
@@ -19,13 +47,9 @@ export default function Homepage() {
     <section className={styles.heroSection}>
       <div className={styles.overlay}>
         <div className={`container ${styles.heroContainer}`}>
-          {/* <h2 className={styles.title}>BLOK Capital Documentation</h2>
-          <h1 className={styles.subtitle}>
-            The Decentralized Wealth Management Protocol
-          </h1> */}
           <div className="row">
             {sectionData.map(({ title, description, href, icon }) => {
-              const IconComponent = (Icons as any)[icon] || FaCoins;
+              const IconComponent = iconMap[icon] ?? FaCoins;
               return (
                 <div key={href} className="col col--4 margin-bottom--lg">
                   <Link className={styles.card} to={href}>

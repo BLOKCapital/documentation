@@ -1,0 +1,8 @@
+{
+  "label": "Garden",
+  "position": 1,
+  "link": {
+    "type": "generated-index",
+    "description": "Fonctionnement du contrat et extraits de code du Garden — le contrat Diamond détenu par l'utilisateur qui conserve les actifs et achemine les appels vers les facets."
+  }
+}

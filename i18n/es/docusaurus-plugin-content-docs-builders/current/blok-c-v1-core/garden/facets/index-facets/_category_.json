@@ -1,0 +1,8 @@
+{
+  "label": "Index Facets",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "description": "Lógica de rebalanceo de portafolio para Index Gardens. Incluye el layout de almacenamiento, los tipos de interfaz CRE off-chain y la pipeline intent/rebalance en dos pasos con protección frente a flash loans."
+  }
+}

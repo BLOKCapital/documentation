@@ -1,7 +1,7 @@
 ---
 sidebar_position: 1
 id: blok-c-overview
-title: Aperçu de Blok C
+title: Aperçu de BLOK Capital
 ---
 
 ## **Qu'est-ce que BLOK Capital ?**
@@ -14,7 +14,7 @@ Vous pouvez suivre des indices crypto sélectionnés par des professionnels (com
 
 ## **Pourquoi "BLOK Capital" ?**
 
-Notre fondateur, M. Sheetal Nehra, souhaitait un nom qui puisse réellement définir le produit que nous proposons.
+Notre fondateur, Sheetal Nehra, souhaitait un nom qui puisse réellement définir le produit que nous proposons.
 
 **BLOK** = Nous sommes blockchain-first. Tout ce que nous faisons est fondé sur les principes qui rendent la crypto puissante : transparence, décentralisation et un code en lequel vous pouvez avoir confiance plutôt que des intermédiaires auxquels vous devez faire confiance.
 
@@ -22,9 +22,9 @@ Notre fondateur, M. Sheetal Nehra, souhaitait un nom qui puisse réellement déf
 
 Considére-nous comme l'infrastructure de la gestion de patrimoine du futur.
 
-Notre devise : **C'est de la Crypto, mais Différent**
+Notre devise : **C'est de la crypto, mais différent.**
 
-C'est littéralement ainsi que fonctionne le protocole. Vous détenez les clés, vous prenez les décisions, et personne ne peut vous enlever cela.
+Ce n'est pas du marketing. C'est ainsi que fonctionne réellement le protocole : vous détenez les clés, vous prenez les décisions, et personne ne peut vous enlever cela.
 
 ## **Pourquoi avons-nous construit BLOK Capital en tant que DAO ?**
 
@@ -42,6 +42,8 @@ Un **Jardin** est votre portefeuille crypto **personnel** sur BLOK Capital, où 
 
 **Propriétaire du jardin = Investisseur** : Cela signifie que vous avez une visibilité complète sur votre portefeuille et un contrôle total sur vos fonds. Vos actifs ne quittent jamais votre portefeuille, et vous seul décidez de ce qu'il en advient.
 
+Vous pouvez également connecter votre Jardin à une stratégie (un Indice) ou le gérer vous-même — plus de détails sur la page suivante.
+
 ---
 
 ## **Pourquoi c'est important**
@@ -51,3 +53,9 @@ Cette approche :
 - Élimine les intermédiaires.
 - Établit un modèle d'investissement peer-to-peer transparent.
 - Favorise l'inclusion financière en démocratisant l'accès aux outils de gestion de patrimoine.
+
+---
+
+## **Et Maintenant**
+
+Prêt à commencer ? Rendez-vous sur notre [Parcours Utilisateur](./user-journey.md) pour voir comment vous pouvez naviguer et utiliser BLOK Capital à son plein potentiel.

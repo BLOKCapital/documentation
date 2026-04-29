@@ -1,4 +1,8 @@
-# Glosario de Blok Capital
+---
+id: glossary
+title: Glosario
+sidebar_position: 1
+---
 
 ## Arquitectura Central (Patron Diamond / EIP-2535)
 

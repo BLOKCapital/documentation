@@ -1,6 +1,6 @@
 [
   {
-    "title": "Aperçu de Blok C",
+    "title": "Aperçu de BLOK Capital",
     "description": "Découvrez les concepts clés de BLOK Capital",
     "href": "/educ/blok-c-overview",
     "icon": "FaCoins"
@@ -26,13 +26,13 @@
   {
     "title": "Architecture BLOK Capital",
     "description": "Architecture système de BLOK Capital V1",
-    "href": "/builders/BLOK%20CapitalV1",
+    "href": "/builders/blok-capital-v1",
     "icon": "FaProjectDiagram"
   },
   {
     "title": "Audits et sécurité",
     "description": "Rapports de sécurité et d'audit",
-    "href": "/resources/category/audits--security",
+    "href": "/resources/category/audits-and-security",
     "icon": "FaLock"
   },
   {
@@ -44,7 +44,7 @@
   {
     "title": "Contribuer",
     "description": "Créer des tutoriels, guides et vidéos",
-    "href": "/resources/CreateVideo",
+    "href": "/resources/create-video",
     "icon": "FaChalkboardTeacher"
   },
   {

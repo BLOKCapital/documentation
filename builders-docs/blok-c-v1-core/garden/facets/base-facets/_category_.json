@@ -1,0 +1,8 @@
+{
+  "label": "Base Facets",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "The immutable base module installed on every Garden — handles upgrades, introspection, ownership, and the controlled upgrade flow enforced by the global FacetRegistry."
+  }
+}

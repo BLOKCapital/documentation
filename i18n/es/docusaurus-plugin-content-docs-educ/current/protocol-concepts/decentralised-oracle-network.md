@@ -1,5 +1,5 @@
 ---
-sidebar_position: 3
+sidebar_position: 5
 id: decentralised-oracle-network
 title: Red de Oráculos Descentralizados (DON)
 ---
@@ -24,7 +24,7 @@ Esta capa es básicamente un guardián que retiene sus activos y permite cambios
 
 1. **Feeders**: Los Feeders recopilan información de diversas fuentes, como el monitoreo de la cadena de bloques observando los eventos del jardín y el seguimiento de los precios del mercado.
 2. **Capa de activación (Procesamiento por lotes)**: La capa de activación estandariza todos los datos en un formato común que la DON (Red de Oráculos Descentralizados) puede entender y procesar.
-3. [\*\*DON](https://docs.chain.link/cre) (Red de Oráculos Descentralizados)\*\*: Esta es la capa donde se lleva a cabo toda la ejecución.
+3. **[DON](https://docs.chain.link/cre) (Red de Oráculos Descentralizados)**: Esta es la capa donde se lleva a cabo toda la ejecución.
 
    → La **Computación** ejecuta los flujos de trabajo personalizados. Las diferentes operaciones necesitan lógicas distintas, por lo que existen diferentes flujos de trabajo para las diversas operaciones.
 

@@ -1,0 +1,8 @@
+{
+  "label": "Garden",
+  "position": 1,
+  "link": {
+    "type": "generated-index",
+    "description": "Contracts working and code snippets for the Garden — the user-owned Diamond contract that holds assets and routes calls to facets."
+  }
+}

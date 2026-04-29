@@ -1,10 +1,10 @@
 ---
-sidebar_position: 5
+sidebar_position: 3
 id: account-abstraction
 title: Abstraction de Compte
 ---
 
-![Abstraction de Compte](/img/Frame%2027.jpg)
+![Abstraction de Compte](/img/Frame%2027.png)
 
 L'Abstraction de Compte remplace les limitations des portefeuilles Ethereum traditionnels par des portefeuilles de contrats intelligents programmables qui contrôlent la manière dont les transactions sont autorisées, exécutées et payées.
 

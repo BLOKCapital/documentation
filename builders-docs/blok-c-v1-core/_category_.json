@@ -1,0 +1,8 @@
+{
+  "label": "Blok-C-V1-Core",
+  "position": 5,
+  "link": {
+    "type": "generated-index",
+    "description": "Core technical reference for BLOK Capital V1: Garden contracts, facet modules, and code-level builder takeaways."
+  }
+}

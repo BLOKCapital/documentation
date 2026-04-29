@@ -1,5 +1,5 @@
 ---
-sidebar_position: 3
+sidebar_position: 5
 id: decentralised-oracle-network
 title: Réseau d'Oracles Décentralisé (DON)
 ---
@@ -24,7 +24,7 @@ Cette couche est essentiellement un gardien qui détient vos actifs et autorise 
 
 1. **Feeders** : Les Feeders collectent des informations à partir de diverses sources telles que la surveillance de la blockchain en observant les événements du jardin, et le suivi des prix du marché.
 2. **Couche de déclenchement (Traitement par lots)** : La couche de déclenchement normalise toutes les données dans un format commun que le DON (Decentralised Oracle Network) peut comprendre et traiter.
-3. [\*\*DON](https://docs.chain.link/cre) (Decentralised Oracle Network)\*\*: C'est la couche où toute l'exécution a lieu.
+3. **[DON](https://docs.chain.link/cre) (Decentralised Oracle Network)**: C'est la couche où toute l'exécution a lieu.
 
    → La **Computation** exécute les flux de travail personnalisés. Différentes opérations nécessitent des logiques différentes, il existe donc différents flux de travail pour les différentes opérations.
 

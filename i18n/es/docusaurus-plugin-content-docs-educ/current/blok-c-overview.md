@@ -1,7 +1,7 @@
 ---
 sidebar_position: 1
 id: blok-c-overview
-title: Descripción General de Blok C
+title: Descripción General de BLOK Capital
 ---
 
 ## **¿Qué es BLOK Capital?**
@@ -14,7 +14,7 @@ Puede seguir índices criptográficos seleccionados profesionalmente (como un í
 
 ## **¿Por qué "BLOK Capital"?**
 
-Nuestro fundador, el Sr. Sheetal Nehra, quería un nombre que realmente pudiera definir el producto que ofrecemos.
+Nuestro fundador, Sheetal Nehra, quería un nombre que realmente pudiera definir el producto que ofrecemos.
 
 **BLOK** = Somos los primeros en blockchain. Todo lo que hacemos se basa en los principios que hacen que las criptomonedas sean poderosas: transparencia, descentralización y código en el que se puede confiar en lugar de intermediarios en los que se debe confiar.
 
@@ -22,9 +22,9 @@ Nuestro fundador, el Sr. Sheetal Nehra, quería un nombre que realmente pudiera 
 
 Piense en nosotros como la infraestructura para cómo se gestionará el patrimonio en el futuro.
 
-Nuestro lema: **Es Cripto pero Diferente**
+Nuestro lema: **Es cripto, pero diferente.**
 
-Así es literalmente como funciona el protocolo. Usted tiene las llaves, usted toma las decisiones y nadie puede quitarle eso.
+Esto no es marketing. Así es como realmente funciona el protocolo: usted tiene las llaves, usted toma las decisiones y nadie puede quitarle eso.
 
 ## **¿Por qué construimos BLOK Capital como una DAO?**
 
@@ -32,7 +32,7 @@ Elegimos la estructura DAO porque creemos que la comunidad debe tener un control
 
 Cuando necesitamos actualizar el protocolo, la comunidad vota directamente en la cadena de bloques. Las reglas no las impone una empresa que podría cambiar de opinión mañana; están escritas en el propio código. No guardamos sus fondos en ninguna cuenta bancaria corporativa. Usted mantiene el control. ¿Grandes decisiones sobre el futuro de BLOK Capital? Las toman los poseedores de tokens como usted, no un pequeño grupo a puerta cerrada.
 
-Este enfoque nos da algo que las empresas tradicionales no pueden ofrecer: transparencia total en cómo se toman las decisiones, protección contra la censura o cierres arbitrarios, y una estructura donde los incentivos de todos están alineados a largo plazo. Cuando la comunidad tiene éxito, todos tenemos éxito.
+Este enfoque nos da algo que las empresas tradicionales no pueden ofrecer : transparencia total en cómo se toman las decisiones, protección contra la censura o cierres arbitrarios, y una estructura donde los incentivos de todos están alineados a largo plazo. Cuando la comunidad tiene éxito, todos tenemos éxito.
 
 ## **La analogía del jardín**
 
@@ -41,6 +41,8 @@ Este enfoque nos da algo que las empresas tradicionales no pueden ofrecer: trans
 Un **Jardín** es su cartera criptográfica **personal** en BLOK Capital donde sus activos viven y crecen.
 
 **Dueño del Jardín = Inversor**: Eso significa que tiene visibilidad completa de su cartera y control total de sus fondos. Sus activos nunca salen de su billetera y solo usted decide qué sucede con ellos.
+
+También puede conectar su Jardín a una estrategia (un Índice) o gestionarlo usted mismo — más sobre esto en la siguiente página.
 
 ---
 
@@ -51,3 +53,9 @@ Este enfoque:
 - Elimina intermediarios.
 - Establece un modelo de inversión peer-to-peer transparente.
 - Promueve la inclusión financiera al democratizar el acceso a las herramientas de gestión de patrimonio.
+
+---
+
+## **Qué Sigue**
+
+¿Listo para comenzar? Diríjase a nuestro [Recorrido del Usuario](./user-journey.md) para ver cómo puede navegar y utilizar BLOK Capital al máximo de su potencial.

@@ -1,10 +1,10 @@
 ---
-sidebar_position: 5
+sidebar_position: 3
 id: account-abstraction
 title: Abstracción de Cuenta
 ---
 
-![Abstracción de Cuenta](/img/Frame%2027.jpg)
+![Abstracción de Cuenta](/img/Frame%2027.png)
 
 La Abstracción de Cuenta reemplaza las limitaciones de las billeteras tradicionales de Ethereum con billeteras de contratos inteligentes programables que controlan cómo se autorizan, ejecutan y pagan las transacciones.
 

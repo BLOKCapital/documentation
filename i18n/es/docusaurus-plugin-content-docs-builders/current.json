@@ -22,5 +22,45 @@
   "sidebar.sidebar.category.Guides": {
     "message": "Guides",
     "description": "The label for category 'Guides' in sidebar 'sidebar'"
+  },
+  "sidebar.sidebar.category.Blok-C-V1-Core": {
+    "message": "Blok-C-V1-Core",
+    "description": "The label for category 'Blok-C-V1-Core' in sidebar 'sidebar'"
+  },
+  "sidebar.sidebar.category.Blok-C-V1-Core.link.generated-index.description": {
+    "message": "Referencia técnica central de BLOK Capital V1: contratos del Garden, módulos de facetas y conclusiones a nivel de código para Builders.",
+    "description": "The generated-index page description for category 'Blok-C-V1-Core' in sidebar 'sidebar'"
+  },
+  "sidebar.sidebar.category.Garden": {
+    "message": "Garden",
+    "description": "The label for category 'Garden' in sidebar 'sidebar'"
+  },
+  "sidebar.sidebar.category.Garden.link.generated-index.description": {
+    "message": "Funcionamiento de los contratos y fragmentos de código del Garden — el contrato Diamond del usuario que mantiene los activos y enruta llamadas a las facetas.",
+    "description": "The generated-index page description for category 'Garden' in sidebar 'sidebar'"
+  },
+  "sidebar.sidebar.category.Facets": {
+    "message": "Facetas",
+    "description": "The label for category 'Facets' in sidebar 'sidebar'"
+  },
+  "sidebar.sidebar.category.Facets.link.generated-index.description": {
+    "message": "Módulos de lógica registrados con el Diamond del Garden. Cada faceta implementa un dominio de comportamiento específico — ciclo de vida base, estrategia de índice o servicios de utilidad.",
+    "description": "The generated-index page description for category 'Facets' in sidebar 'sidebar'"
+  },
+  "sidebar.sidebar.category.Base Facets": {
+    "message": "Facetas Base",
+    "description": "The label for category 'Base Facets' in sidebar 'sidebar'"
+  },
+  "sidebar.sidebar.category.Base Facets.link.generated-index.description": {
+    "message": "El módulo base inmutable instalado en cada Garden — gestiona las actualizaciones, la introspección, la propiedad y el flujo de actualización controlado impuesto por el FacetRegistry global.",
+    "description": "The generated-index page description for category 'Base Facets' in sidebar 'sidebar'"
+  },
+  "sidebar.sidebar.category.Index Facets": {
+    "message": "Facetas de Índice",
+    "description": "The label for category 'Index Facets' in sidebar 'sidebar'"
+  },
+  "sidebar.sidebar.category.Index Facets.link.generated-index.description": {
+    "message": "Lógica de rebalanceo de cartera para los Index Gardens. Incluye la disposición de almacenamiento, los tipos de interfaz del CRE off-chain y la canalización de intent/rebalance en dos pasos con protección frente a flash loans.",
+    "description": "The generated-index page description for category 'Index Facets' in sidebar 'sidebar'"
   }
 }
